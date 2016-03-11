@@ -1,0 +1,49 @@
+.section.hero
+  .logo.row.animated.fadeInDown
+    = image_tag('logo.png')
+  .container
+    .row
+      .one-half.column.animated.fadeInUp
+        %h4.hero-heading
+          REINVENTA TUS NOCHES,
+          CONOCE LUGARES,
+          PÁSALA BIEN.
+        %form#suscription{:method => "post"}
+          %p Sé el primero en enterarte del lanzamiento
+          %input.email-user{:name => "email", :placeholder => "Email address", type: "email"}
+          %input.button.button-primary{type: "submit", :value => "Suscribirme"}
+      .one-half.column.animated.fadeInRight
+        = image_tag('events.png', class: 'phone')
+.section.features
+  .container
+    .row.header
+      .two.columns &nbsp;
+      .eight.columns.wow.fadeInUp
+        %h2.title PLAKEIT UNA NUEVA FORMA DE DIVERTIRTE
+        %p.description ¿Estás en busca de entretenimiento nocturno? descubre eventos, asiste y obtén grandes beneficios.
+    .row.wow.fadeInUp
+      .four.columns.first
+        .container-text
+          %h2.value-heading Conoce mejor a tus clientes
+          %p.value-description Es importante saber quiénes y cuántos asisten para medir la efectividad de tus eventos. A través de reportes y opiniones realizadas, tendrás la información necesaria para mejorar en tus próximos eventos.
+      .four.columns.second
+        .container-text
+          %h2.value-heading Promociona tus eventos y multiplica tus clientes.
+          %p.value-description Es importante saber quiénes y cuántos asisten para medir la efectividad de tus eventos. A través de reportes y opiniones realizadas, tendrás la información necesaria para mejorar en tus próximos eventos.
+      .four.columns.three
+        .container-text
+          %h2.value-heading Convierte a la gente que asiste a tus eventos en clientes frecuentes.
+          %p.value-description Conectate con ellos, conoce sus gustos y recompensa la preferencia de tus clientes para aumentar las conversiones a tu negocio.
+.section.screen-mobil
+  .container
+    .row
+      .one-half.column.category.wow.fadeInLeft
+        %h3.section-heading ENCUENTRA TUS EVENTOS FAVORITOS
+        %p.section-description Retro occupy organic, stumptown shabby chic pour-over roof party DIY normcore. Actually artisan organic occupy, Wes Anderson ugh whatever pour-over gastropub selvage. Chillwave craft beer tote bag stumptown quinoa hashtag.
+      .one-half.column.category.wow.fadeInRight
+        = image_tag('screen_mobil.png', class: 'u-max-full-width')
+.section.get-help.wow.fadeInUp
+  .container
+    %h3.section-heading Necesitas ayuda para iniciar?
+    %p.section-description Plakeit es facil y sencillo. Si quieres saber más envianos un correo o una llamada a 2892829
+    %a.button.button-primary{:href => "http://getskeleton.com"} Contacto
