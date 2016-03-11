@@ -1,16 +1,16 @@
 .section.hero
-  .logo.row
+  .logo.row.animated.fadeInDown
     = image_tag('logo.png')
   .container
     .row
-      .one-half.column
-        %h4.hero-heading.animated.fadeInUp
+      .one-half.column.animated.fadeInUp
+        %h4.hero-heading
           PROMOCIONA TUS EVENTOS, CONOCE A
           TUS CLIENTES, FIDELIZALOS.
         %form#suscription{:method => "post"}
           %input.email-user{:name => "email", :placeholder => "Email address", type: "email"}
             %input.button.button-primary{type: "submit", :value => "Suscribirme"}
-      .one-half.column
+      .one-half.column.animated.fadeInRight
         = image_tag('events.png', class: 'phone')
 .section.features
   .container
@@ -19,7 +19,7 @@
       .eight.columns.wow.fadeInUp
         %h2.title PLAKEIT UNA NUEVA EXPERIENCIA
         %p.description Crea tus eventos y sincroniza con Facebook. Arma campañas efectivas y atrae más clientes para incrementar el éxito de tu negocio.
-    .row
+    .row.wow.fadeInUp
       .four.columns.first
         .container-text
           %h2.value-heading Conoce mejor a tus clientes
@@ -35,12 +35,12 @@
 .section.screen-mobil
   .container
     .row
-      .one-half.column.category
+      .one-half.column.category.wow.fadeInLeft
         %h3.section-heading ADMINISTRACIÓN MÁS RÁPIDA
         %p.section-description Crea tus eventos y sincroniza con Facebook. Arma campañas efectivas y atrae más clientes para incrementar el éxito de tu negocio
-      .one-half.column.category
+      .one-half.column.category.wow.fadeInRight
         = image_tag('screen_mobil.png', class: 'u-max-full-width')
-.section.get-help
+.section.get-help.wow.fadeInUp
   .container
     %h3.section-heading Necesitas ayuda para iniciar?
     %p.section-description Plakeit es facil y sencillo. Si quieres saber más envianos un correo o una llamada a 2892829
