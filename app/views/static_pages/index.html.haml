@@ -1,0 +1,47 @@
+.section.hero
+  .logo.row
+    = image_tag('logo.png')
+  .container
+    .row
+      .one-half.column
+        %h4.hero-heading
+          PROMOCIONA TUS EVENTOS, CONOCE A
+          TUS CLIENTES, FIDELIZALOS.
+        %form#suscription{:method => "post"}
+          %input.email-user{:name => "email", :placeholder => "Email address", type: "email"}
+            %input.button.button-primary{type: "submit", :value => "Suscribirme"}
+      .one-half.column
+        = image_tag('events.png', class: 'phone')
+.section.features
+  .container
+    .row.header
+      .two.columns &nbsp;
+      .eight.columns
+        %h2.title PLAKEIT UNA NUEVA EXPERIENCIA
+        %p.description Crea tus eventos y sincroniza con Facebook. Arma campañas efectivas y atrae más clientes para incrementar el éxito de tu negocio.
+    .row
+      .four.columns.first
+        .container-text
+          %h2.value-heading Conoce mejor a tus clientes
+          %p.value-description Es importante saber quiénes y cuántos asisten para medir la efectividad de tus eventos. A través de reportes y opiniones realizadas, tendrás la información necesaria para mejorar en tus próximos eventos.
+      .four.columns.second
+        .container-text
+          %h2.value-heading Promociona tus eventos y multiplica tus clientes.
+          %p.value-description Es importante saber quiénes y cuántos asisten para medir la efectividad de tus eventos. A través de reportes y opiniones realizadas, tendrás la información necesaria para mejorar en tus próximos eventos.
+      .four.columns.three
+        .container-text
+          %h2.value-heading Convierte a la gente que asiste a tus eventos en clientes frecuentes.
+          %p.value-description Conectate con ellos, conoce sus gustos y recompensa la preferencia de tus clientes para aumentar las conversiones a tu negocio.
+.section.screen-mobil
+  .container
+    .row
+      .one-half.column.category
+        %h3.section-heading ADMINISTRACIÓN MÁS RÁPIDA
+        %p.section-description Crea tus eventos y sincroniza con Facebook. Arma campañas efectivas y atrae más clientes para incrementar el éxito de tu negocio
+      .one-half.column.category
+        = image_tag('screen_mobil.png', class: 'u-max-full-width')
+.section.get-help
+  .container
+    %h3.section-heading Necesitas ayuda para iniciar?
+    %p.section-description Plakeit es facil y sencillo. Si quieres saber más envianos un correo o una llamada a 2892829
+    %a.button.button-primary{:href => "http://getskeleton.com"} Contacto

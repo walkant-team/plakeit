@@ -1,0 +1,305 @@
+/* Shared
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+
+.button {
+  border-radius: 100px;
+}
+
+/* Sections
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+
+.section {
+  padding: 8rem 0 7rem;
+  text-align: center;
+}
+
+.section-heading, .section-description {
+  margin-bottom: 1.2rem;
+}
+
+/* Hero
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+
+.hero {
+  /* Rectangle 25: */
+  background-image: url(image-path('bg_header.png'));
+  background-size: cover;
+  border: 1px solid #979797;
+  .logo-mobil {
+    display: none;
+  }
+  .logo {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: -190px;
+    margin-bottom: 200px;
+  }
+}
+
+.phones {
+  position: relative;
+}
+
+.phone {
+  position: relative;
+  max-width: 80%;
+  margin: 3rem auto -12rem;
+  + .phone {
+    display: none;
+  }
+}
+
+/* features
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+
+.section.features {
+  color: #fff;
+  background-color: white;
+  padding-bottom: 0px;
+}
+
+.features {
+  .container {
+    padding: 0px;
+  }
+  .header {
+    color: #495D77;
+    .title {
+      font-family: OpenSans-Semibold;
+      font-size: 33px;
+      color: #495D77;
+      letter-spacing: 0.61px;
+      line-height: 35px;
+    }
+    .description {
+      /* Crea tus eventos y s: */
+      font-family: OpenSans;
+      font-size: 22px;
+      color: #495D77;
+      letter-spacing: 0.52px;
+      line-height: 35px;
+      margin-bottom: 10rem;
+    }
+  }
+  .container {
+    width: 100%;
+    max-width: 100%;
+    background-color: white;
+  }
+  .first {
+    max-height: 100%;
+    background-image: url(image-path('bg_1.png'));
+    height: 800px;
+    background-size: cover;
+  }
+  .second {
+    max-height: 100%;
+    background-image: url(image-path('bg_2.png'));
+    height: 800px;
+    background-size: cover;
+  }
+  .three {
+    max-height: 100%;
+    background-image: url(image-path('bg_3.png'));
+    height: 800px;
+    background-size: cover;
+  }
+  .container-text {
+    .value-heading {
+      font-family: OpenSans-Bold;
+      font-size: 44.3px;
+      line-height: 45px;
+      text-align: left;
+      margin-bottom: 60px;
+    }
+    .value-description {
+      font-family: OpenSans;
+      font-weight: 100;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: left;
+    }
+  }
+  .columns .container-text {
+    width: 330px;
+    margin: 0 auto;
+  }
+  .first .container-text {
+    margin-top: 90px;
+    color: #EAA54A;
+  }
+  .second .container-text {
+    color: #4C364C;
+    margin-top: 280px;
+  }
+  .three .container-text {
+    color: #ED3DA4;
+    margin-top: 40px;
+  }
+}
+
+.value-heading {
+  margin-bottom: .3rem;
+}
+
+.value-description {
+  opacity: .8;
+  font-weight: 300;
+}
+
+/* Help
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+
+.get-help {
+  border-bottom: 1px solid #ddd;
+  color: black;
+}
+
+/* screen-mobil
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+/* additional */
+
+.screen-mobil {
+  background-color: #2EB398;
+  color: #fff;
+  .container {
+    max-width: 100%;
+    width: 100%;
+  }
+  .section-description {
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+  .section-heading {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+/* Suscription */
+
+#suscription {
+  .button {
+    border-left-width: 0;
+    border-radius: 0 30px 30px 0;
+    padding: 0 20px;
+  }
+  .email-user {
+    background: white;
+    border-color: #eee;
+    border-color: rgba(255, 255, 255, 0.25);
+    color: #347eb9;
+    box-shadow: none;
+    border-radius: 30px 0px 0px 30px;
+    background-color: white !important;
+    padding-left: 20px;
+    margin-right: -4px;
+  }
+}
+
+/* Bigger than 550 */
+@media (min-width: 550px) {
+  .section {
+    padding: 12rem 0 11rem;
+  }
+  .hero {
+    padding-bottom: 12rem;
+    text-align: left;
+    height: 165px;
+  }
+  .phone {
+    position: absolute;
+    top: -7rem;
+    right: 3rem;
+    max-height: 362px;
+    z-index: 3;
+    + .phone {
+      top: -6rem;
+      display: block;
+      max-width: 73.8%;
+      right: 0;
+      z-index: 2;
+      max-height: 338px;
+    }
+  }
+  .hero-heading {
+    font-size: 2.4rem;
+    /* PROMOCIONA TUS EVENT: */
+    font-family: OpenSans-Semibold;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 1.4px;
+    line-height: 65px;
+    text-shadow: 0px 2px 4px rgba(255, 255, 255, 0.5);
+  }
+}
+
+/* Bigger than 750 */
+@media (min-width: 750px) {
+  .hero {
+    height: 300px;
+  }
+  .hero-heading {
+    font-size: 2.6rem;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .section {
+    padding: 14rem 0 15rem;
+  }
+  .hero {
+    padding: 16rem 0 14rem;
+  }
+  .section-description {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .phone {
+    top: -14rem;
+    right: 5rem;
+    max-height: 510px;
+    + .phone {
+      top: -12rem;
+      max-height: 472px;
+    }
+  }
+  .screen-mobil {
+    padding: 14rem 0 15rem;
+    .section-description {
+      font-size: 2rem;
+    }
+  }
+}
+
+/* Bigger than 1000 */
+@media (min-width: 1000px) {
+  .hero {
+    padding: 22rem 0;
+  }
+  .hero-heading {
+    font-size: 3.0rem;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .phone {
+    top: -16rem;
+    right: -16rem;
+    max-height: 615px;
+    + .phone {
+      top: -14rem;
+      max-height: 570px;
+    }
+  }
+  .screen-mobil {
+    .section-heading {
+      width: 60%;
+      margin: 0 auto;
+      text-align: left;
+      margin-top: 30%;
+    }
+    .section-description {
+      margin-top: 2rem;
+      text-align: left;
+    }
+  }
+}
