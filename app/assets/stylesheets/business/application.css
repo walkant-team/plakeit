@@ -17,4 +17,4 @@
 @import 'base/normalize.css';
 @import 'base/main.scss';
 @import 'base/skeleton.scss';
-@import 'static_pages.scss';
+@import 'business/static_pages.scss';

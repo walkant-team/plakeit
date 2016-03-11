@@ -1,27 +1,25 @@
 .section.hero
-  .logo.row.animated.fadeInDown
+  .logo.row
     = image_tag('logo.png')
   .container
     .row
-      .one-half.column.animated.fadeInUp
+      .one-half.column
         %h4.hero-heading
-          REINVENTA TUS NOCHES,
-          CONOCE LUGARES,
-          PÁSALA BIEN.
+          PROMOCIONA TUS EVENTOS, CONOCE A
+          TUS CLIENTES, FIDELIZALOS.
         %form#suscription{:method => "post"}
-          %p Sé el primero en enterarte del lanzamiento
-          %input.email-user{:name => "email", :placeholder => "Email address", type: "email"}
-          %input.button.button-primary{type: "submit", :value => "Suscribirme"}
-      .one-half.column.animated.fadeInRight
-        = image_tag('events.png', class: 'phone')
+          %input.email-user{:name => "email", :placeholder => "Email address", :type => "email"}
+            %input.button.button-primary{:type => "submit", :value => "Suscribirme"}
+      .one-half.column
+        = image_tag('business/image_events.png', class: 'phone')
 .section.features
   .container
     .row.header
       .two.columns &nbsp;
-      .eight.columns.wow.fadeInUp
-        %h2.title PLAKEIT UNA NUEVA FORMA DE DIVERTIRTE
-        %p.description ¿Estás en busca de entretenimiento nocturno? descubre eventos, asiste y obtén grandes beneficios.
-    .row.wow.fadeInUp
+      .eight.columns
+        %h2.title PLAKEIT UNA NUEVA EXPERIENCIA
+        %p.description Crea tus eventos y sincroniza con Facebook. Arma campañas efectivas y atrae más clientes para incrementar el éxito de tu negocio.
+    .row
       .four.columns.first
         .container-text
           %h2.value-heading Conoce mejor a tus clientes
@@ -37,12 +35,12 @@
 .section.screen-mobil
   .container
     .row
-      .one-half.column.category.wow.fadeInLeft
-        %h3.section-heading ENCUENTRA TUS EVENTOS FAVORITOS
-        %p.section-description Retro occupy organic, stumptown shabby chic pour-over roof party DIY normcore. Actually artisan organic occupy, Wes Anderson ugh whatever pour-over gastropub selvage. Chillwave craft beer tote bag stumptown quinoa hashtag.
-      .one-half.column.category.wow.fadeInRight
-        = image_tag('screen_mobil.png', class: 'u-max-full-width')
-.section.get-help.wow.fadeInUp
+      .one-half.column.category
+        %h3.section-heading ADMINISTRACIÓN MÁS RÁPIDA
+        %p.section-description Crea tus eventos y sincroniza con Facebook. Arma campañas efectivas y atrae más clientes para incrementar el éxito de tu negocio
+      .one-half.column.category
+        = image_tag('business/screen_mobil.png', class: 'u-max-full-width')
+.section.get-help
   .container
     %h3.section-heading Necesitas ayuda para iniciar?
     %p.section-description Plakeit es facil y sencillo. Si quieres saber más envianos un correo o una llamada a 2892829
