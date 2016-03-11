@@ -13,5 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require wow
 //= require modernizr.min
 //= require_tree .
+
+new WOW().init();
