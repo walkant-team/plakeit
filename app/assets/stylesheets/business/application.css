@@ -14,7 +14,7 @@
  *= require_self
  */
 
-@import 'base/normalize.css';
-@import 'base/main.scss';
-@import 'base/skeleton.scss';
-@import 'business/static_pages.scss';
+@import '../base/normalize.css';
+@import '../base/main.scss';
+@import '../business/skeleton.css';
+@import '../business/static_pages.scss';
