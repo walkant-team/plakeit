@@ -177,6 +177,7 @@
     border-left-width: 0;
     border-radius: 0 30px 30px 0;
     padding: 0 20px;
+    padding-top: 1px;
   }
   .email-user {
     background: white;
@@ -188,33 +189,6 @@
     background-color: white !important;
     padding-left: 20px;
     margin-right: -4px;
-  }
-}
-
-@media (max-width: 549px) {
-  .features{
-    .columns .container-text {
-      width: 86%;
-      margin: 0 auto;
-      margin-top: 12%;
-      .value-heading{
-        margin-bottom: 30px;
-        font-size: 2.4em;
-        line-height: 35px;
-      }
-      .value-description{
-        font-size: 1.5em;
-        line-height: 25px;
-      }
-    }
-
-    .content{
-      .columns{
-        max-height: 100%;
-        height: 400px;
-        background-size: cover;
-      }
-    }
   }
 }
 
@@ -234,6 +208,33 @@
   }
 
   .features {
+    .header .description{
+      font-size: 1.3em;
+      line-height: 24px;
+    }
+
+    .columns .container-text {
+      width: 86%;
+      margin: 0 auto;
+      margin-top: 12%;
+      .value-heading{
+        margin-bottom: 30px;
+        font-size: 2.4em;
+        line-height: 35px;
+      }
+      .value-description{
+        font-size: 1.3em;
+        line-height: 25px;
+      }
+    }
+
+    .content{
+      .columns{
+        max-height: 100%;
+        height: 300px;
+        background-size: cover;
+      }
+    }
     .first, .second, .three {
       height: 600px;
     }
@@ -341,6 +342,7 @@
     .section-description {
       margin-top: 2rem;
       text-align: left;
+      font-size: 1.2em;
     }
   }
 }
