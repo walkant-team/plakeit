@@ -25,9 +25,6 @@
   background-image: url(image-path('bg_header.png'));
   background-size: cover;
   border: 1px solid #979797;
-  .logo-mobil {
-    display: none;
-  }
   .logo {
     width: 200px;
     margin: 0 auto;
@@ -203,7 +200,21 @@
   }
 }
 
-@media (max-width: 549px) {
+@media (max-width: 550px) {
+  .hero .logo {
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+
+  #suscription{
+    .button{
+      padding: 0 14px;
+    }
+    .email-user{
+      width: 60%;
+    }
+  }
+
   .features{
     .columns .container-text {
       width: 86%;
