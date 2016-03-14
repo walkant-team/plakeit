@@ -1,23 +1,39 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  static_pages:
+    index:
+      slogan: REINVENTS YOUR NIGHTS, KNOWN PLACES, HAVE A GREAT TIME.
+      be_first: Sé el primero en enterarte del lanzamiento
+      slogan1: PLAKEIT A NEW ALTERNATIVE FOR YOUR FUN NIGHTS.
+      description: Are you looking for evening entertainment? Discover events, assists and get great benefits.
+      title_feature1: Find your fun points
+      description_feature1: Discover the best events to suit your style and preference. Live great moments with people who share your tastes.
+      title_feature2: Receive invitations to events according to your style.
+      description_feature2: You will have a variety of events available according to your preferences to choose the one that suits you.
+      title_feature3: Win and enjoy rewards and discounts
+      description_feature3: Get many benefits for your support and enjoy being a preferred customer.
+      title_feature4: Join your crew.
+      description_feature4: Build your list of friends and enjoy the best events.
+      slogan2: ADMINISTRACIÓN MÁS RÁPIDA
+      description2: Crea tus eventos y sincroniza con Facebook. Arma campañas efectivas y atrae más clientes para incrementar el éxito de tu negocio
+      get_help: You need help to start?
+      get_help_description: Plakeit is easy and simple, if you want to know more contact us (01) 2967992
+      contact: Contact us
+
+  business:
+    static_pages:
+      index:
+        slogan: PROMOTE YOUR EVENTS, KNOW YOUR CUSTOMERS, BECOMES FIXED CUSTOMERS.
+        slogan1: PLAKEIT, A NEW EXPERIENCE
+        be_first: Sé el primero en enterarte del lanzamiento
+        description: Create your events and sync with Facebook. Builds effective campaigns and attract more customers to increase the success of your business.
+        title_feature1: Know your customers bette
+        description_feature1: It’s important to know who and how many attend to measure the effectiveness of your events. Through reports and opinions, you have the information necessary to improve your upcoming events.
+        title_feature2: Promote your events and multiplies your customers.
+        description_feature2: Create custom campaigns for your target audience and invite more people know about your business. Increase your popularity.
+        title_feature3: Turns people attending your events in frequent customers.
+        description_feature3: Connect with them, know their tastes and preference reward your customers to increase conversions for your business.
+        slogan2: FASTEST ADMINISTRATION
+        description2: Create your events and sync with Facebook. Builds effective campaigns and attract more customers to increase the success of your business.
+        get_help: You need help to start?
+        get_help_description: Plakeit is easy and simple, if you want to know more contact us (01) 2967992
+        contact: Contact us

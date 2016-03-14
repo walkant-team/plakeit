@@ -1,0 +1,39 @@
+es:
+  static_pages:
+    index:
+      slogan: PROMOCIONA TUS EVENTOS, CONOCE A TUS CLIENTES, FIDELIZALOS.
+      be_first: Sé el primero en enterarte del lanzamiento
+      slogan1: PLAKEIT UNA NUEVA ALTERNATIVA PARA TUS NOCHES DE DIVERSIÓN.
+      description: ¿Estás en busca de entretenimiento nocturno? Descubre eventos, asiste y obtén grandes beneficios.
+      title_feature1: Encuentra tus puntos de diversión en un solo lugar.
+      description_feature1: Descrubre los mejores eventos según tu estilo y preferencia. Vive grandes momentos junto a la gente que comparte tus gustos.
+      title_feature2: Recibe invitaciones de eventos según tu estilo.
+      description_feature2: Tendrás una gran variedad de eventos disponibles según tus preferencias para elegir el que más se acomode a ti.
+      title_feature3: Gana y disfruta de premios y descuentos.
+      description_feature3: Obtén muchos beneficios por tu asistencia y disfruta de ser un cliente preferencial.
+      title_feature4: Une a tu gente.
+      description_feature4: Arma tu lista de amigos y disfruta de los mejores eventos.
+      slogan2: ADMINISTRACIÓN MÁS RÁPIDA
+      description2: Crea tus eventos y sincroniza con Facebook. Arma campañas efectivas y atrae más clientes para incrementar el éxito de tu negocio
+      get_help: Necesitas ayuda para iniciar?
+      get_help_description: Plakeit es fácil y sencillo, si quieres saber más contacta con nosotros al (01) 2967992
+      contact: Contactanos
+
+  business:
+    static_pages:
+      index:
+        slogan: PROMOCIONA TUS EVENTOS, CONOCE A TUS CLIENTES, FIDELIZALOS.
+        slogan1: PLAKEIT, UNA NUEVA EXPERIENCIA
+        be_first: Sé el primero en enterarte del lanzamiento
+        description: Crea tus eventos y sincroniza con Facebook. Arma campañas efectivas y atrae más clientes para incrementar el éxito de tu negocio.
+        title_feature1: Conoce mejor a tus clientes
+        description_feature1: Es importante saber quiénes y cuántos asisten para medir la efectividad de tus eventos. A través de reportes y opiniones realizadas, tendrás la información necesaria para mejorar en tus próximos eventos.
+        title_feature2: Promociona tus eventos y multiplica tus clientes.
+        description_feature2: Crea campañas personalizadas para tu público objetivo e invita a más personas a conocer tu negocio. Aumenta tu popularidad.
+        title_feature3: Convierte a la gente que asiste a tus eventos en clientes frecuentes.
+        description_feature3: Conéctate con ellos, conoce sus gustos y recompensa la preferencia de tus clientes para aumentar las conversiones a tu negocio.
+        slogan2: ADMINISTRACIÓN MÁS RÁPIDA
+        description2: Crea tus eventos y sincroniza con Facebook. Arma campañas efectivas y atrae más clientes para incrementar el éxito de tu negocio
+        get_help: Necesitas ayuda para iniciar?
+        get_help_description: Plakeit es fácil y sencillo, si quieres saber más contacta con nosotros al (01) 2967992
+        contact: Contactanos

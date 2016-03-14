@@ -4,9 +4,12 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'static_pages#index'
-  namespace :business do
+  scope "(:locale)", locale: /en|es/ do
     root 'static_pages#index'
+
+    namespace :business do
+      root 'static_pages#index'
+    end
   end
 
   # Example of regular route:

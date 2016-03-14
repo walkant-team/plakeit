@@ -371,29 +371,29 @@ input {
 
 .button.button-primary:hover, button.button-primary:hover {
   color: #FFF;
-  background-color: #1EAEDB;
-  border-color: #1EAEDB;
+  background-color: #25927C;
+  border-color: #25927C;
 }
 
 input {
   &[type="submit"].button-primary:hover, &[type="reset"].button-primary:hover, &[type="button"].button-primary:hover {
     color: #FFF;
-    background-color: #1EAEDB;
-    border-color: #1EAEDB;
+    background-color: #25927C;
+    border-color: #25927C;
   }
 }
 
 .button.button-primary:focus, button.button-primary:focus {
   color: #FFF;
-  background-color: #1EAEDB;
-  border-color: #1EAEDB;
+  background-color: #25927C;
+  border-color: #25927C;
 }
 
 input {
   &[type="submit"].button-primary:focus, &[type="reset"].button-primary:focus, &[type="button"].button-primary:focus {
     color: #FFF;
-    background-color: #1EAEDB;
-    border-color: #1EAEDB;
+    background-color: #25927C;
+    border-color: #25927C;
   }
   &[type="email"], &[type="number"], &[type="search"], &[type="text"], &[type="tel"], &[type="url"], &[type="password"] {
     height: 38px;

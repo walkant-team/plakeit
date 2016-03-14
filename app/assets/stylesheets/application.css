@@ -17,4 +17,5 @@
 @import 'base/normalize.css';
 @import 'base/main.scss';
 @import 'base/skeleton.scss';
+@import 'skeleton_override.scss';
 @import 'static_pages.scss';
