@@ -7,7 +7,7 @@
       .one-half.column.animated.fadeInUp
         %h4.hero-heading= t('.slogan')
 
-        =form_for @suscriptor, id: 'suscription', remote: true do |f|
+        =form_for @suscriptor, id: 'suscription' do |f|
           %p= t('.be_first')
           =f.text_field :email, placeholder: 'Correo electronico'
           =f.submit 'Suscribirme', class: 'button button-primary'

@@ -1,4 +1,7 @@
 en:
+  suscriptors:
+    create:
+      notice: It has been successfully signed, thank you.
   static_pages:
     index:
       slogan: REINVENTS YOUR NIGHTS, KNOWN PLACES, HAVE A GREAT TIME.
@@ -20,6 +23,9 @@ en:
       contact: Contact us
 
   business:
+    suscriptors:
+      create:
+        notice: It has been successfully signed, thank you.
     static_pages:
       index:
         slogan: PROMOTE YOUR EVENTS, KNOW YOUR CUSTOMERS, BECOMES FIXED CUSTOMERS.
@@ -37,3 +43,11 @@ en:
         get_help: You need help to start?
         get_help_description: Plakeit is easy and simple, if you want to know more contact us (01) 2967992
         contact: Contact us
+  activerecord:
+    errors:
+      models:
+        suscriptor:
+          attributes:
+            email:
+              blank: Enter your email please
+              taken: The email you entered is already subscribed
