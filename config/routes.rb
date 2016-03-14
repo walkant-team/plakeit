@@ -1,14 +1,18 @@
 Rails.application.routes.draw do
 
+  get 'suscriptors/create'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   scope "(:locale)", locale: /en|es/ do
     root 'static_pages#index'
+    resources :suscriptors, only: [:create]
 
     namespace :business do
       root 'static_pages#index'
+      resources :suscriptors, only: [:create]
     end
   end
 

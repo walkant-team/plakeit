@@ -18,4 +18,5 @@
 @import '../base/main.scss';
 @import '../base/skeleton.css';
 @import 'skeleton_override.css';
+@import '../base/flash_message.scss';
 @import '../business/static_pages.scss';

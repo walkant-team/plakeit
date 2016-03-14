@@ -15,6 +15,7 @@
 //= require turbolinks
 //= require base/wow
 //= require base/modernizr.min
+//= require base/flash_message
 //= require_tree .
 
 new WOW().init();

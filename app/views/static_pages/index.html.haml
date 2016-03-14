@@ -7,10 +7,10 @@
       .one-half.column.animated.fadeInUp
         %h4.hero-heading= t('.slogan')
 
-        %form#suscription{method: "post"}
+        =form_for @suscriptor, id: 'suscription', remote: true do |f|
           %p= t('.be_first')
-          %input.email-user{name: "email", placeholder: "Email address", type: "email"}
-          %input.button.button-primary{type: "submit", value: "Suscribirme"}
+          =f.text_field :email, placeholder: 'Correo electronico'
+          =f.submit 'Suscribirme', class: 'button button-primary'
       .one-half.column.animated.fadeInRight
         = image_tag('events.png', class: 'phone')
 
