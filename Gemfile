@@ -60,4 +60,7 @@ group :test do
   gem 'factory_girl_rails'
 end
 
-gem 'rails_12factor', group: :production
+group :production do
+  gem 'puma'
+  gem 'rails_12factor'
+end
