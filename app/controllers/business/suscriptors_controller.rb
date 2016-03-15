@@ -1,7 +1,7 @@
 module Business
   class SuscriptorsController < ApplicationController
     def create
-      @suscriptor = Suscriptor.new(params_suscriptor)
+      @suscriptor = SuscriptorBusiness.new(params_suscriptor)
       if @suscriptor.save
         flash[:success] = t('.success')
         redirect_to business_root_path
@@ -12,7 +12,7 @@ module Business
     end
 
     def params_suscriptor
-      params.require(:suscriptor).permit(:email)
+      params.require(:suscriptor_business).permit(:email)
     end
   end
 end

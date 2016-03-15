@@ -20,7 +20,6 @@
 .hero {
   /* Rectangle 25: */
   background-image: radial-gradient(50% 67%, rgba(31, 55, 95, 0.9) 40%, rgba(17, 32, 57, 0.9) 99%);
-  border: 1px solid #979797;
   .logo {
     width: 200px;
     margin: 0 auto;
@@ -189,6 +188,7 @@
     background-color: white !important;
     padding-left: 20px;
     margin-right: -4px;
+    width: 22em;
   }
 }
 

@@ -14,9 +14,9 @@
  *= require_self
  */
 
-@import '../base/normalize.css';
-@import '../base/main.scss';
-@import '../base/skeleton.css';
-@import 'skeleton_override.css';
-@import '../base/flash_message.scss';
-@import '../business/static_pages.scss';
+@import '../base/normalize';
+@import '../base/main';
+@import '../base/skeleton';
+@import 'skeleton_override';
+@import '../base/flash_message';
+@import '../business/static_pages';
