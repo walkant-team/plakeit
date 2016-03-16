@@ -3,7 +3,7 @@ module Business
     layout 'business/application'
 
     def index
-      @suscriptor = Suscriptor.new
+
     end
   end
 end

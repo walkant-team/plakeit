@@ -1,16 +1,24 @@
-.section.hero
-  .logo.row.animated.fadeInDown
-    .one-half.column.animated.fadeInUp
+.section.hero-header
+  .row.animated.fadeInDown
+    .five.columns
+      &nbsp;
+    .two.columns.logo-plakeit
       = image_tag('logo.png')
+    .five.columns.options
+      - if params[:locale] == 'en'
+        = link_to "Español", params.merge(locale: :es), class: 'language'
+      - else
+        = link_to "English", params.merge(locale: :en), class: 'language'
+      = link_to t('im_business'), business_root_path, class: 'button button-primary'
+
   .container
     .row
       .one-half.column.animated.fadeInUp
         %h4.hero-heading= t('.slogan')
-
-        =form_for @suscriptor, id: 'suscription' do |f|
-          %p= t('.be_first')
-          =f.text_field :email, placeholder: 'Correo electronico'
-          =f.submit 'Suscribirme', class: 'button button-primary'
+        = form_for @suscriptor, url: suscriptors_path, method: :post, html: { id: 'new_suscriptor' } do |f|
+          %p.be_first= t('.be_first')
+          = f.text_field :email, id: 'suscriptor_email', required: "required", type: 'email', placeholder: t('.email')
+          = f.submit nil, class: 'button button-primary'
       .one-half.column.animated.fadeInRight
         = image_tag('events.png', class: 'phone')
 
@@ -46,12 +54,21 @@
   .container
     .row
       .one-half.column.category.wow.fadeInLeft
-        %h3.section-heading ENCUENTRA TUS EVENTOS FAVORITOS
-        %p.section-description Retro occupy organic, stumptown shabby chic pour-over roof party DIY normcore. Actually artisan organic occupy, Wes Anderson ugh whatever pour-over gastropub selvage. Chillwave craft beer tote bag stumptown quinoa hashtag.
+        %h3.section-heading= t('.slogan2')
+        .section-description
+          %ul
+            - t('.descriptions_screen').each_line do |line|
+              %li= line
       .one-half.column.category.wow.fadeInRight
         = image_tag('screen_mobil.png', class: 'u-max-full-width')
+
 .section.get-help.wow.fadeInUp
   .container
     %h3.section-heading= t('.get_help')
     %p.section-description= t('.get_help_description')
     %a.button.button-primary{href: "#", mail_to: 'hello@walkant.com'}= t('.contact')
+
+.section.im-business.wow.fadeInUp
+  .container
+    %h3.section-heading= t('.get_business')
+    = link_to t('im_business'), business_root_path, class: 'button button-primary'

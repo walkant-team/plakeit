@@ -1,15 +1,21 @@
-.section.hero
-  .logo.row.animated.fadeInDown
-    = image_tag('logo.png')
+.section.hero-header
+  .row.animated.fadeInDown
+    .five.columns
+      &nbsp;
+    .two.columns
+      = link_to image_tag('logo.png'), business_root_path
+    .five.columns.options
+      - if params[:locale] == 'en'
+        = link_to "Español", params.merge(locale: :es), class: 'language'
+      - else
+        = link_to "English", params.merge(locale: :en), class: 'language'
+
   .container
     .row
       .one-half.column.animated.fadeInUp
         %h4.hero-heading= t('.slogan')
-
-        =form_for [:business, @suscriptor], id: 'suscription' do |f|
-          %p= t('.be_first')
-          =f.text_field :email, placeholder: 'Correo electronico'
-          =f.submit 'Suscribirme', class: 'button button-primary'
+        %p.be_first= t('.be_first')
+        = link_to t('.suscribed'), new_business_suscriptor_path(I18n.locale), class: 'button button-primary'
 
       .one-half.column
         = image_tag('business/image_events.png', class: 'phone')
@@ -21,7 +27,7 @@
       .eight.columns.wow.fadeInUp
         %h2.title= t('.slogan1')
         %p.description= t('.description')
-    .row
+    .row.content
       .four.columns.first
         .container-text
           %h2.value-heading= t('.title_feature1')
@@ -29,11 +35,11 @@
       .four.columns.second
         .container-text
           %h2.value-heading= t('.title_feature2')
-          %p.value-description= t('.description_feature1')
+          %p.value-description= t('.description_feature2')
       .four.columns.three
         .container-text
           %h2.value-heading= t('.title_feature3')
-          %p.value-description= t('.description_feature1')
+          %p.value-description= t('.description_feature3')
 
 .section.screen-mobil
   .container

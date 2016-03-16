@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'suscriptors/create'
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -12,7 +10,7 @@ Rails.application.routes.draw do
 
     namespace :business do
       root 'static_pages#index'
-      resources :suscriptors, only: [:create]
+      resources :suscriptors, only: [:create, :new]
     end
   end
 

@@ -1,11 +1,28 @@
 en:
+  im_business: I'm Business
+  helpers:
+    label:
+      suscriptor_business:
+        email: Email
+        fullname: Fullname
+        phone: Phone
+        name_business: Name Business
+    submit:
+      suscriptor_business:
+        create: "SUBSCRIBE"
+      suscriptor_customer:
+        create: "SUBSCRIBE"
   suscriptors:
     create:
-      notice: It has been successfully signed, thank you.
+      success: It has been successfully signed, thank you.
   static_pages:
+    suscriptors:
+      new:
+        email: 'Enter your email'
     index:
+      email: 'Enter your email'
       slogan: REINVENTS YOUR NIGHTS, KNOWN PLACES, HAVE A GREAT TIME.
-      be_first: Sé el primero en enterarte del lanzamiento
+      be_first: Be the first to know launch
       slogan1: PLAKEIT A NEW ALTERNATIVE FOR YOUR FUN NIGHTS.
       description: Are you looking for evening entertainment? Discover events, assists and get great benefits.
       title_feature1: Find your fun points
@@ -16,8 +33,12 @@ en:
       description_feature3: Get many benefits for your support and enjoy being a preferred customer.
       title_feature4: Join your crew.
       description_feature4: Build your list of friends and enjoy the best events.
-      slogan2: ADMINISTRACIÓN MÁS RÁPIDA
-      description2: Crea tus eventos y sincroniza con Facebook. Arma campañas efectivas y atrae más clientes para incrementar el éxito de tu negocio
+      slogan2: FIND THE FUN IN PLAKEIT !
+      descriptions_screen: |
+        Your events entertainment favorites in one application .
+        More places to discover depending on your style and preferences.
+        Enjoy many benefits attend the best events .
+        Have fun in the company of your friends and good times live.
       get_help: You need help to start?
       get_help_description: Plakeit is easy and simple, if you want to know more contact us (01) 2967992
       contact: Contact us
@@ -25,12 +46,19 @@ en:
   business:
     suscriptors:
       create:
-        notice: It has been successfully signed, thank you.
+        success: It has been successfully signed, thank you.
+      new:
+        email: 'Enter your email'
+        fullname: 'Enter your fullname'
+        phone: 'Enter your phone'
+        name_business: 'Your company name'
     static_pages:
       index:
+        suscribed: Subscribe
+        email: 'Enter your email'
         slogan: PROMOTE YOUR EVENTS, KNOW YOUR CUSTOMERS, BECOMES FIXED CUSTOMERS.
         slogan1: PLAKEIT, A NEW EXPERIENCE
-        be_first: Sé el primero en enterarte del lanzamiento
+        be_first: Be the first to know launch
         description: Create your events and sync with Facebook. Builds effective campaigns and attract more customers to increase the success of your business.
         title_feature1: Know your customers bette
         description_feature1: It’s important to know who and how many attend to measure the effectiveness of your events. Through reports and opinions, you have the information necessary to improve your upcoming events.

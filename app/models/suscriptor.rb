@@ -1,3 +1,10 @@
 class Suscriptor < ActiveRecord::Base
-  validates :email, presence: true, uniqueness: true
+
+  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\-.]+\.[a-z]+\z/i
+
+  validates :email, presence: true,
+                    length: { maximum: 255 },
+                    format: { with: VALID_EMAIL_REGEX },
+                    uniqueness: { scope: :type, case_sensitive: false }
+
 end

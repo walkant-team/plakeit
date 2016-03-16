@@ -1,4 +1,5 @@
 class SuscriptorsController < ApplicationController
+
   def create
     @suscriptor = SuscriptorCustomer.new(params_suscriptor)
     if @suscriptor.save

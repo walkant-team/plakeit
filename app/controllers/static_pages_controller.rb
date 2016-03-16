@@ -1,5 +1,5 @@
 class StaticPagesController < ApplicationController
   def index
-    @suscriptor = Suscriptor.new
+    @suscriptor = SuscriptorCustomer.new
   end
 end

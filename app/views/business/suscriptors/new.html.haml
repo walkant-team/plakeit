@@ -1,0 +1,26 @@
+.section.hero-header
+  .row.animated.fadeInDown.logo-plakeit
+    .five.columns
+      &nbsp;
+    .two.columns
+      = link_to image_tag('logo.png'), business_root_path
+
+  .container
+    .row
+      .two.columns
+        &nbsp;
+      .eight.columns
+        = form_for [:business, @suscriptor], url: business_suscriptors_path, method: :post do |f|
+          = f.label :fullname
+          = f.text_field :fullname, required: "required", class: 'u-full-width', autofocus: true, placeholder: t('.fullname')
+
+          = f.label :email
+          = f.text_field :email, required: "required", type: 'email', placeholder: t('.email'), class: 'u-full-width'
+
+          = f.label :name_business
+          = f.text_field :name_business, required: "required", placeholder: t('.email'), class: 'u-full-width', placeholder: t('.name_business')
+
+          = f.label :phone
+          = f.text_field :phone, required: "required", placeholder: t('.phone'), class: 'u-full-width'
+
+          = f.submit nil, class: 'button button-primary'

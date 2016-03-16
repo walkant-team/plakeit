@@ -1,9 +1,23 @@
 es:
+  im_business: Soy un negocio
+  helpers:
+    label:
+      suscriptor_business:
+        email: Correo electronico
+        fullname: Apellidos y nombre
+        phone: Teléfono
+        name_business: Nombre del negocio
+    submit:
+      suscriptor_business:
+        create: "SUSCRIBIRME"
+      suscriptor_customer:
+        create: "SUSCRIBIRME"
   suscriptors:
     create:
-      notice: Se ha suscrito correctamente, gracias.
+      success: Se ha suscrito correctamente, gracias.
   static_pages:
     index:
+      email: 'Ingrese su correo electronico'
       slogan: REINVENTA TUS NOCHES, CONOCE LUGARES, PÁSALA GENIAL.
       be_first: Sé el primero en enterarte del lanzamiento
       slogan1: PLAKEIT UNA NUEVA ALTERNATIVA PARA TUS NOCHES DE DIVERSIÓN.
@@ -16,18 +30,29 @@ es:
       description_feature3: Obtén muchos beneficios por tu asistencia y disfruta de ser un cliente preferencial.
       title_feature4: Une a tu gente.
       description_feature4: Arma tu lista de amigos y disfruta de los mejores eventos.
-      slogan2: ADMINISTRACIÓN MÁS RÁPIDA
-      description2: Crea tus eventos y sincroniza con Facebook. Arma campañas efectivas y atrae más clientes para incrementar el éxito de tu negocio
+      slogan2: ENCUENTRA LA DIVERSIÓN EN PLAKEIT!
+      descriptions_screen: |
+        Tus eventos de entretenimiento favoritos en una sóla App.
+        Más lugares por descubrir según tu estilo y preferencias.
+        Disfruta de muchos beneficios por asistir a los mejores eventos.
+        Diviértete en compañia de tus amigos y vive buenos momentos.
       get_help: Necesitas ayuda para iniciar?
       get_help_description: Plakeit es fácil y sencillo, si quieres saber más contacta con nosotros al (01) 2967992
+      get_business: Eres un negocio?
       contact: Contactanos
 
   business:
     suscriptors:
+      new:
+        email: 'Ingrese su correo electronico'
+        fullname: 'Ingrese su Nombre completo'
+        phone: 'Número de celular o telefono'
+        name_business: 'Nombre del negocio que representa'
       create:
-        notice: Se ha suscrito correctamente, gracias.
+        success: Se ha suscrito correctamente, gracias.
     static_pages:
       index:
+        suscribed: Suscríbete
         slogan: PROMOCIONA TUS EVENTOS, CONOCE A TUS CLIENTES, FIDELIZALOS.
         slogan1: PLAKEIT, UNA NUEVA EXPERIENCIA
         be_first: Sé el primero en enterarte del lanzamiento
@@ -38,7 +63,7 @@ es:
         description_feature2: Crea campañas personalizadas para tu público objetivo e invita a más personas a conocer tu negocio. Aumenta tu popularidad.
         title_feature3: Convierte a la gente que asiste a tus eventos en clientes frecuentes.
         description_feature3: Conéctate con ellos, conoce sus gustos y recompensa la preferencia de tus clientes para aumentar las conversiones a tu negocio.
-        slogan2: ADMINISTRACIÓN MÁS RÁPIDA
+        slogan2: RÁPIDA ADMINISTRACIÓN
         description2: Crea tus eventos y sincroniza con Facebook. Arma campañas efectivas y atrae más clientes para incrementar el éxito de tu negocio
         get_help: Necesitas ayuda para iniciar?
         get_help_description: Plakeit es fácil y sencillo, si quieres saber más contacta con nosotros al (01) 2967992
@@ -46,8 +71,15 @@ es:
   activerecord:
     errors:
       models:
-        suscriptor:
+        suscriptor_customer:
           attributes:
             email:
               blank: Ingrese su correo electronico por favor
               taken: El correo electronico que ingreso ya está suscrito
+              invalid: El correo electronico es invalido
+        suscriptor_business:
+          attributes:
+            email:
+              blank: Ingrese su correo electronico por favor
+              taken: El correo electronico que ingreso ya está suscrito
+              invalid: El correo electronico es invalido

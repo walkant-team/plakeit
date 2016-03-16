@@ -1,0 +1,38 @@
+%table
+  %tr
+    %td
+      %p= "Hola, #{@suscriptor.fullname.titleize}"
+      %p
+        = "¡Bienvenido #{@suscriptor.name_business.titleize} a"
+        %strong Plakeit
+        = "para Empresas!"
+      %p Estamos emocionados que hayas tomado la decisión de suscribirte en nuestra plataforma Plakeit y que nos permitas ser tu socio estratégico tecnológico para hacer crecer aún más tu negocio.
+      %p También te adjuntamos nuestra Carta de Presentación en el siguiente enlace:
+
+      / button
+      %table.btn-primary{:border => "0", :cellpadding => "0", :cellspacing => "0", :align => "center"}
+        %tr
+          %td
+            %a{:href => "https://s3-us-west-2.amazonaws.com/plakeit.documents/Plakeit-es.pdf"} Ver carta de presentación
+
+      %p{style: 'text-align: center'}
+        %strong contraseña:
+        ‘PlakeitBusiness’.
+      / /button
+      %p Si quieres probar nuestro servicio gratuitamente en su versión beta, te invitamos a contactar con nuestro equipo para poder formar parte de esta nueva experiencia.
+
+      %p Gracias, que tenga un día genial :)
+
+      %p
+        %strong Team Walkant
+      %p
+        %strong Contáctanos:
+
+      %ul{style: 'list-style: none'}
+        %li Teléfono: 985284455
+        %li
+          %a{href: "#", mail_to: 'hello@plakeit.com'} hello@plakeit.com
+        %li
+          %a{href: "#", mail_to: 'hello@walkant.com'} hello@walkant.com
+
+/ /content

@@ -18,9 +18,12 @@ ActiveRecord::Schema.define(version: 20160314210300) do
 
   create_table "suscriptors", force: :cascade do |t|
     t.string   "email"
+    t.string   "fullname"
+    t.string   "phone"
+    t.string   "name_business"
     t.string   "type"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
 end

@@ -1,18 +1,24 @@
 module Business
   class SuscriptorsController < ApplicationController
+    layout 'business/application'
+
+    def new
+      @suscriptor = SuscriptorBusiness.new
+    end
+
     def create
       @suscriptor = SuscriptorBusiness.new(params_suscriptor)
+      byebug
       if @suscriptor.save
         flash[:success] = t('.success')
         redirect_to business_root_path
       else
-        flash[:alert] = @suscriptor.errors.full_messages.join(' - ')
-        redirect_to business_root_path
+        render :new
       end
     end
 
     def params_suscriptor
-      params.require(:suscriptor_business).permit(:email)
+      params.require(:suscriptor_business).permit(:email, :fullname, :name_business, :phone)
     end
   end
 end
