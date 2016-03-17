@@ -5,7 +5,7 @@
     .two.columns
       = link_to image_tag('logo.png'), business_root_path
     .five.columns.options
-      - if params[:locale] == 'en'
+      - if params[:locale] == :en
         = link_to "Español", params.merge(locale: :es), class: 'language'
       - else
         = link_to "English", params.merge(locale: :en), class: 'language'
