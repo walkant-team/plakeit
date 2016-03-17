@@ -5,10 +5,11 @@
     .two.columns.logo-plakeit
       = image_tag('logo.png')
     .five.columns.options
-      - if params[:locale] == 'en'
+      - if I18n.locale == :en
         = link_to "Español", params.merge(locale: :es), class: 'language'
       - else
         = link_to "English", params.merge(locale: :en), class: 'language'
+
       = link_to t('im_business'), business_root_path, class: 'button button-primary'
 
   .container
