@@ -8,7 +8,6 @@ module Business
 
     def create
       @suscriptor = SuscriptorBusiness.new(params_suscriptor)
-      byebug
       if @suscriptor.save
         flash[:success] = t('.success')
         redirect_to business_root_path
