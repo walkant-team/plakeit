@@ -165,7 +165,6 @@
 â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
 
 .get-help, .im-business {
-  border-bottom: 1px solid #ddd;
   color: black;
 }
 
@@ -193,6 +192,19 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+  }
+}
+
+.footer{
+  background: #182F56;
+
+  .socials-section{
+    .socials{
+      margin-bottom: 20px;
+      a{
+        color: white
+      }
+    }
   }
 }
 
@@ -402,6 +414,16 @@
       margin-top: 2rem;
       text-align: left;
       margin-left: 20%;
+    }
+  }
+
+  .footer{
+    padding: 8rem 20rem !important;
+    .socials-section {
+      text-align: left;
+    }
+    .do-build{
+      text-align: right;
     }
   }
 }

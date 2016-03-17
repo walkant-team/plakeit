@@ -1,0 +1,15 @@
+.section.footer
+  .row
+    .one-half.column.socials-section
+      .socials
+        = link_to image_tag('facebook_icon.png', size: '22'), 'https://www.facebook.com/plakeit', target: '_blank'
+        = link_to image_tag('twiter_icon.png', size: '22'), 'https://www.twitter.com/plakeitOficial', target: '_blank'
+        = mail_to "hello@plakeit.com", image_tag('mail_icon.png', size: '22')
+
+      %p= t('questions')
+    .one-half.column.do-build
+      %p
+        = t('do-it')
+        = image_tag('heart.png')
+        = link_to t('by-walkant'), 'http://www.walkant.com/', target: '_blank'
+      %p © 2016 Plakeit, Inc.
