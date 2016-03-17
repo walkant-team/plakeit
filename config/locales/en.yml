@@ -14,7 +14,7 @@ en:
         create: "SUBSCRIBE"
   suscriptors:
     create:
-      success: It has been successfully signed, thank you.
+      success: It has been successfully subscribed, thank you.
   static_pages:
     suscriptors:
       new:
