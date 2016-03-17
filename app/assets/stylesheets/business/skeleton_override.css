@@ -1,12 +1,10 @@
 @media (min-width: 550px) {
-  .container {
-    width: 80%; }
-  .column,
-  .columns {
+  .content .column,
+  .content .columns {
     margin-left: 4%; }
-  .column:first-child,
-  .columns:first-child {
+  .content .column:first-child,
+  .content .columns:first-child {
     margin-left: 0; }
 
-  .four.columns                   { width: 33.3333333333%; }
+  .content .four.columns                   { width: 33.3333333333%; }
 }
