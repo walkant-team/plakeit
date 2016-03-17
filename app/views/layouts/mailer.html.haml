@@ -24,37 +24,7 @@
         %td.container{:bgcolor => "#FFFFFF", :style => "font-size: 100%;line-height: 1.6em;margin: 0 auto !important;padding: 20px;border: 1px solid #f0f0f0;clear: both !important;display: block !important;max-width: 600px !important"}
           / content
           .content{:style => "font-size: 100%;line-height: 1.6em;margin: 0 auto;padding: 0;display: block;max-width: 600px"}
-            %table{:style => "font-size: 100%;line-height: 1.6em;margin: 0;padding: 0;width: 100%"}
-              %tr{:style => "font-size: 100%;line-height: 1.6em;margin: 0;padding: 0"}
-                %td{:style => "font-size: 100%;line-height: 1.6em;margin: 0;padding: 0"}
-                  %p{:style => "font-size: 14px;line-height: 1.6em;margin: 0;padding: 0;font-weight: normal;margin-bottom: 10px"} Hola, Angel Huaman Rojas
-                  %p{:style => "font-size: 14px;line-height: 1.6em;margin: 0;padding: 0;font-weight: normal;margin-bottom: 10px"}
-                    ¡Bienvenido Founders a
-                    %strong{:style => "font-size: 100%;line-height: 1.6em;margin: 0;padding: 0"} Plakeit
-                    para Negocios!
-                  %p{:style => "font-size: 14px;line-height: 1.6em;margin: 0;padding: 0;font-weight: normal;margin-bottom: 10px"} Estamos emocionados que hayas tomado la decisión de suscribirte en nuestra plataforma Plakeit y que nos permitas ser tu socio estratégico tecnológico para hacer crecer aún más tu negocio.
-                  %p{:style => "font-size: 14px;line-height: 1.6em;margin: 0;padding: 0;font-weight: normal;margin-bottom: 10px"} También te adjuntamos nuestra Carta de Presentación en el siguiente enlace:
-                  / button
-                  %table.btn-primary{:align => "center", :border => "0", :cellpadding => "0", :cellspacing => "0", :style => "font-size: 100%;line-height: 1.6em;margin: 0;padding: 0;margin-bottom: 10px;width: auto !important;margin-left: 32%"}
-                    %tr{:style => "font-size: 100%;line-height: 1.6em;margin: 0;padding: 0"}
-                      %td{:style => "font-size: 14px;line-height: 1.6em;margin: 0;padding: 0;background-color: #348eda;border-radius: 25px;text-align: center;vertical-align: top"}
-                        %a{:href => "https://s3-us-west-2.amazonaws.com/plakeit.documents/Plakeit-es.pdf", :style => "font-size: 100%;line-height: 2;margin: 0;padding: 0;color: #fff;background-color: #348eda;border: solid 1px #348eda;border-radius: 25px;border-width: 10px 20px;display: inline-block;cursor: pointer;font-weight: bold;text-decoration: none"} Ver carta de presentación
-                  %p{:style => "text-align: center;font-size: 14px;line-height: 1.6em;margin: 0;padding: 0;font-weight: normal;margin-bottom: 10px"}
-                    %strong{:style => "font-size: 100%;line-height: 1.6em;margin: 0;padding: 0"} contraseña:
-                    ‘PlakeitBusiness’.
-                  / /button
-                  %p{:style => "font-size: 14px;line-height: 1.6em;margin: 0;padding: 0;font-weight: normal;margin-bottom: 10px"} Si quieres probar nuestro servicio gratuitamente en su versión beta, te invitamos a contactar con nuestro equipo para poder formar parte de esta nueva experiencia.
-                  %p{:style => "font-size: 14px;line-height: 1.6em;margin: 0;padding: 0;font-weight: normal;margin-bottom: 10px"} Gracias, que tenga un día genial :)
-                  %p{:style => "font-size: 14px;line-height: 1.6em;margin: 0;padding: 0;font-weight: normal;margin-bottom: 10px"}
-                    %strong{:style => "font-size: 100%;line-height: 1.6em;margin: 0;padding: 0"} Team Walkant
-                  %p{:style => "font-size: 14px;line-height: 1.6em;margin: 0;padding: 0;font-weight: normal;margin-bottom: 10px"}
-                    %strong{:style => "font-size: 100%;line-height: 1.6em;margin: 0;padding: 0"} Contáctanos:
-                  %ul{:style => "list-style: none;font-size: 14px;line-height: 1.6em;margin: 0;padding: 0;font-weight: normal;margin-bottom: 10px"}
-                    %li{:style => "font-size: 100%;line-height: 1.6em;margin: 0;padding: 0;margin-left: 5px;list-style-position: inside"} Teléfono: 985284455
-                    %li{:style => "font-size: 100%;line-height: 1.6em;margin: 0;padding: 0;margin-left: 5px;list-style-position: inside"}
-                      %a{:href => "#", :mail_to => "hello@plakeit.com", :style => "font-size: 100%;line-height: 1.6em;margin: 0;padding: 0;color: #348eda"} hello@plakeit.com
-                    %li{:style => "font-size: 100%;line-height: 1.6em;margin: 0;padding: 0;margin-left: 5px;list-style-position: inside"}
-                      %a{:href => "#", :mail_to => "hello@walkant.com", :style => "font-size: 100%;line-height: 1.6em;margin: 0;padding: 0;color: #348eda"} hello@walkant.com
+            = yield
             / /content
         %td{:style => "font-size: 100%;line-height: 1.6em;margin: 0;padding: 0"}/
     / /body
