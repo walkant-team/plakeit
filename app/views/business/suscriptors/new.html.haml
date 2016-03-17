@@ -11,6 +11,11 @@
         &nbsp;
       .eight.columns
         = form_for [:business, @suscriptor], url: business_suscriptors_path, method: :post do |f|
+          - if @suscriptor.errors.any?
+            %ul.error_messages
+              - @suscriptor.errors.full_messages.each do |msg|
+                %li= msg
+
           = f.label :fullname
           = f.text_field :fullname, required: "required", class: 'u-full-width', autofocus: true, placeholder: t('.fullname')
 
