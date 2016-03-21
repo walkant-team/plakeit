@@ -11,7 +11,7 @@
       - else
         = link_to "English", params.merge(locale: :en), class: 'language'
 
-      = link_to t('im_business'), business_root_path, class: 'button button-primary'
+      = link_to t('im_business'), business_root_path(locale: I18n.locale), class: 'button button-primary'
 
   .container
     .row
