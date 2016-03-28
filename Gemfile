@@ -1,6 +1,6 @@
-source 'https://rubygems.org'
-
 ruby '2.3.0'
+
+source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
@@ -40,6 +40,8 @@ gem "animate-rails"
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'capybara'
+  gem 'poltergeist'
 end
 
 group :development do
@@ -57,7 +59,6 @@ group :test do
   gem 'guard-rspec', require: false
   gem 'fuubar'
   gem 'shoulda-matchers', '~> 3.1'
-  gem 'capybara'
   gem 'factory_girl_rails'
 end
 
