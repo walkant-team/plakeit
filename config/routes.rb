@@ -1,12 +1,18 @@
 Rails.application.routes.draw do
 
+  get 'events/index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   scope "(:locale)", locale: /en|es/ do
-    root 'static_pages#index'
-    resources :suscriptors, only: [:create]
+    root 'events#index'
+
+    namespace :clients do
+      root 'static_pages#index'
+      resources :suscriptors, only: [:create]
+    end
 
     namespace :business do
       root 'static_pages#index'

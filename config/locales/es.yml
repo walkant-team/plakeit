@@ -15,35 +15,35 @@ es:
         create: "SUSCRIBIRME"
       suscriptor_customer:
         create: "SUSCRIBIRME"
-  suscriptors:
-    create:
-      success: Se ha suscrito correctamente, gracias.
-  static_pages:
-    index:
-      email: 'Ingrese su correo electronico'
-      slogan: REINVENTA TUS NOCHES, CONOCE LUGARES, PÁSALA GENIAL.
-      be_first: Sé el primero en enterarte del lanzamiento
-      slogan1: PLAKEIT UNA NUEVA ALTERNATIVA PARA TUS NOCHES DE DIVERSIÓN.
-      description: ¿Estás en busca de entretenimiento nocturno? Descubre eventos, asiste y obtén grandes beneficios.
-      title_feature1: Encuentra tus puntos de diversión en un solo lugar.
-      description_feature1: Descrubre los mejores eventos según tu estilo y preferencia. Vive grandes momentos junto a la gente que comparte tus gustos.
-      title_feature2: Recibe invitaciones de eventos según tu estilo.
-      description_feature2: Tendrás una gran variedad de eventos disponibles según tus preferencias para elegir el que más se acomode a ti.
-      title_feature3: Gana y disfruta de premios y descuentos.
-      description_feature3: Obtén muchos beneficios por tu asistencia y disfruta de ser un cliente preferencial.
-      title_feature4: Une a tu gente.
-      description_feature4: Arma tu lista de amigos y disfruta de los mejores eventos.
-      slogan2: ENCUENTRA LA DIVERSIÓN EN PLAKEIT!
-      descriptions_screen: |
-        Tus eventos de entretenimiento favoritos en una sóla App.
-        Más lugares por descubrir según tu estilo y preferencias.
-        Disfruta de muchos beneficios por asistir a los mejores eventos.
-        Diviértete en compañia de tus amigos y vive buenos momentos.
-      get_help: Necesitas ayuda para iniciar?
-      get_help_description: Plakeit es fácil y sencillo, si quieres saber más contacta con nosotros al (01) 2967992
-      get_business: Eres un negocio?
-      contact: Contactanos
-
+  clients:
+    suscriptors:
+      create:
+        success: Se ha suscrito correctamente, gracias.
+    static_pages:
+      index:
+        email: 'Ingrese su correo electronico'
+        slogan: REINVENTA TUS NOCHES, CONOCE LUGARES, PÁSALA GENIAL.
+        be_first: Sé el primero en enterarte del lanzamiento
+        slogan1: PLAKEIT UNA NUEVA ALTERNATIVA PARA TUS NOCHES DE DIVERSIÓN.
+        description: ¿Estás en busca de entretenimiento nocturno? Descubre eventos, asiste y obtén grandes beneficios.
+        title_feature1: Encuentra tus puntos de diversión en un solo lugar.
+        description_feature1: Descrubre los mejores eventos según tu estilo y preferencia. Vive grandes momentos junto a la gente que comparte tus gustos.
+        title_feature2: Recibe invitaciones de eventos según tu estilo.
+        description_feature2: Tendrás una gran variedad de eventos disponibles según tus preferencias para elegir el que más se acomode a ti.
+        title_feature3: Gana y disfruta de premios y descuentos.
+        description_feature3: Obtén muchos beneficios por tu asistencia y disfruta de ser un cliente preferencial.
+        title_feature4: Une a tu gente.
+        description_feature4: Arma tu lista de amigos y disfruta de los mejores eventos.
+        slogan2: ENCUENTRA LA DIVERSIÓN EN PLAKEIT!
+        descriptions_screen: |
+          Tus eventos de entretenimiento favoritos en una sóla App.
+          Más lugares por descubrir según tu estilo y preferencias.
+          Disfruta de muchos beneficios por asistir a los mejores eventos.
+          Diviértete en compañia de tus amigos y vive buenos momentos.
+        get_help: Necesitas ayuda para iniciar?
+        get_help_description: Plakeit es fácil y sencillo, si quieres saber más contacta con nosotros al (01) 2967992
+        get_business: Eres un negocio?
+        contact: Contactanos
   business:
     suscriptors:
       new:

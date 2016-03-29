@@ -15,37 +15,37 @@ en:
         create: "SUBSCRIBE"
       suscriptor_customer:
         create: "SUBSCRIBE"
-  suscriptors:
-    create:
-      success: It has been successfully subscribed, thank you.
-  static_pages:
+  clients:
     suscriptors:
-      new:
+      create:
+        success: It has been successfully subscribed, thank you.
+    static_pages:
+      suscriptors:
+        new:
+          email: 'Enter your email'
+      index:
         email: 'Enter your email'
-    index:
-      email: 'Enter your email'
-      slogan: REINVENTS YOUR NIGHTS, KNOWN PLACES, HAVE A GREAT TIME.
-      be_first: Be the first to know launch
-      slogan1: PLAKEIT A NEW ALTERNATIVE FOR YOUR FUN NIGHTS.
-      description: Are you looking for evening entertainment? Discover events, assists and get great benefits.
-      title_feature1: Find your fun points
-      description_feature1: Discover the best events to suit your style and preference. Live great moments with people who share your tastes.
-      title_feature2: Receive invitations to events according to your style.
-      description_feature2: You will have a variety of events available according to your preferences to choose the one that suits you.
-      title_feature3: Win and enjoy rewards and discounts
-      description_feature3: Get many benefits for your support and enjoy being a preferred customer.
-      title_feature4: Join your crew.
-      description_feature4: Build your list of friends and enjoy the best events.
-      slogan2: FIND THE FUN IN PLAKEIT !
-      descriptions_screen: |
-        Your events entertainment favorites in one application .
-        More places to discover depending on your style and preferences.
-        Enjoy many benefits attend the best events .
-        Have fun in the company of your friends and good times live.
-      get_help: You need help to start?
-      get_help_description: Plakeit is easy and simple, if you want to know more contact us (01) 2967992
-      contact: Contact us
-
+        slogan: REINVENTS YOUR NIGHTS, KNOWN PLACES, HAVE A GREAT TIME.
+        be_first: Be the first to know launch
+        slogan1: PLAKEIT A NEW ALTERNATIVE FOR YOUR FUN NIGHTS.
+        description: Are you looking for evening entertainment? Discover events, assists and get great benefits.
+        title_feature1: Find your fun points
+        description_feature1: Discover the best events to suit your style and preference. Live great moments with people who share your tastes.
+        title_feature2: Receive invitations to events according to your style.
+        description_feature2: You will have a variety of events available according to your preferences to choose the one that suits you.
+        title_feature3: Win and enjoy rewards and discounts
+        description_feature3: Get many benefits for your support and enjoy being a preferred customer.
+        title_feature4: Join your crew.
+        description_feature4: Build your list of friends and enjoy the best events.
+        slogan2: FIND THE FUN IN PLAKEIT !
+        descriptions_screen: |
+          Your events entertainment favorites in one application .
+          More places to discover depending on your style and preferences.
+          Enjoy many benefits attend the best events .
+          Have fun in the company of your friends and good times live.
+        get_help: You need help to start?
+        get_help_description: Plakeit is easy and simple, if you want to know more contact us (01) 2967992
+        contact: Contact us
   business:
     suscriptors:
       create:

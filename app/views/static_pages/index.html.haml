@@ -3,7 +3,7 @@
     .five.columns
       &nbsp;
     .two.columns.logo-plakeit
-      = link_to image_tag('logo.png'), root_path(I18n.locale)
+      = link_to image_tag('logo.png'), clients_root_path(I18n.locale)
 
     .five.columns.options
       - if I18n.locale == :en
@@ -17,7 +17,7 @@
     .row
       .one-half.column.animated.fadeInUp
         %h4.hero-heading= t('.slogan')
-        = form_for @suscriptor, url: suscriptors_path, method: :post, html: { id: 'new_suscriptor' } do |f|
+        = form_for [:clients, @suscriptor], url: clients_suscriptors_path, method: :post, html: { id: 'new_suscriptor' } do |f|
           %p.be_first= t('.be_first')
           = f.text_field :email, id: 'suscriptor_email', required: "required", type: 'email', placeholder: t('.email')
           = f.submit nil, class: 'button button-primary'
