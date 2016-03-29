@@ -1,0 +1,11 @@
+@media (min-width: 550px) {
+
+  .content .column,
+  .content .columns {
+    margin-left: 0%; }
+  .content .column:first-child,
+  .content .columns:first-child {
+    margin-left: 0; }
+
+  .content .six.columns { width: 50% }
+}
