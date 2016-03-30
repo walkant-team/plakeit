@@ -18,11 +18,8 @@
       .card
         .card-image
           = link_to(image_tag("bg_3.png", :alt => "plakeit", :height => 250))
-          %span.card-title Card Title
         .card-content
-          %p
-            I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.
+          = link_to 'I am a very simple card. I am good at containing small bits of information.'
         .card-action
           %p 
             %i{:class => "tiny material-icons"} location_on

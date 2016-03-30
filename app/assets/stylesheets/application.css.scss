@@ -28,7 +28,7 @@ body{
 }
 
 .bgIndex{
-	background: url(image-path('bg_header.png'));
+	background: linear-gradient(rgba(12, 24, 44, .6), rgba(12, 24, 44, .6)),url(image-path('header.jpeg'));
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -79,6 +79,15 @@ nav{
 	}
 }
 
+input[type="text"]{
+    font-size:24px;
+    color: white;
+}
+
+input::-webkit-input-placeholder {
+		color: silver;
+}
+
 .sizeP{
 	margin: 0 0 10px;
 }
@@ -127,6 +136,9 @@ nav{
 
 .card-content{
 	color: #504e4e;
+	a{
+		color: #504e4e;
+	}
 }
 
 .card-action{
