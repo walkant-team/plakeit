@@ -10,11 +10,21 @@
             .col.s12.m3
               %input{:placeholder => "Conciertos de", :type => "text"}
             .col.s12.m9.formTog
-              %input{:placeholder => "Nombre o #tag", :type => "text"}
+              %input{:placeholder => "Nombre o #tag", :type => "text", :name => "name "}
 
+.col.s12.m12
+  .col.s12.m12
+    .row
+      .col.s12.m7.offset-m3.menubar
+        %ul
+          %li.active TODOS
+          %li CONCIERTOS
+          %li TEATROS
+          %li MUSICALES
+      
 .row.size-content
   - 9.times do 
-    .col.512.m4
+    .col.s12.m4
       .card
         .card-image
           = link_to(image_tag("bg_3.png", :alt => "plakeit", :height => 250))
@@ -49,4 +59,5 @@
       %li.waves-effect
         %a{:href => "#!"}
           %i.material-icons chevron_right
+
 

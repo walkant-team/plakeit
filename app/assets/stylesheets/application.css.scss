@@ -32,10 +32,10 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-	height: 100%;
+	height: 85%;
 }
 
-.bgShow{
+.parallax-container{
 	background: url(image-path('bgshow.jpeg'));
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -52,6 +52,20 @@ nav{
 	top: 50px;
 	margin-left: 70px;
 	margin-right: 70px;
+}
+
+.menubar{
+	margin-top:50px;	
+	ul li{
+		display: inline;
+		margin-left: 70px;
+	}
+
+	li.active{
+		color: #3d5a99;
+		font-weight: bold;
+		border-bottom: 5px solid #3d5a99;
+	}
 }
 
 .header-text{
