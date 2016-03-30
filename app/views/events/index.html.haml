@@ -1,2 +1,55 @@
-%h1 Events#index
-%p Find me in app/views/events/index.html.haml
+%header.bgIndex
+  %nav
+    .nav-wrapper
+      %a.brand-logo{:href => "#"}
+        = link_to(image_tag("logo.png", :alt => "plakeit", :width => 150, :height => 60))
+      .row.header-text
+        .col.m8.offset-m2
+          %h3 DESCUBRE EVENTOS EN TU CIUDAD
+          %form.size-form
+            .col.s12.m3
+              %input#form-search{:placeholder => "Buscar por", :type => "text"}
+            .col.s12.m9.formTog
+              %input#form-style{:placeholder => "Nombre o #tag", :type => "text"}
+
+.row.size-content
+  - 5.times do 
+    .col.512.m4
+      .card
+        .card-image
+          = link_to(image_tag("bg_3.png", :alt => "plakeit", :height => 250))
+          %span.card-title Card Title
+        .card-content
+          %p
+            I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.
+        .card-action
+          %p 
+            %i{:class => "tiny material-icons"} location_on
+            Cotati SC Toban 955 Zip: 74168-6613
+          %br
+          %p 
+            %i{:class => "tiny material-icons"} perm_contact_calendar
+            Viernes 18 de marzo
+          %br
+
+.row
+  .col.s12.m5.offset-m5  
+    %ul.pagination
+      %li.disabled
+        %a{:href => "#!"}
+          %i.material-icons chevron_left
+      %li.active
+        %a{:href => "#!"} 1
+      %li.waves-effect
+        %a{:href => "#!"} 2
+      %li.waves-effect
+        %a{:href => "#!"} 3
+      %li.waves-effect
+        %a{:href => "#!"} 4
+      %li.waves-effect
+        %a{:href => "#!"} 5
+      %li.waves-effect
+        %a{:href => "#!"}
+          %i.material-icons chevron_right
+

@@ -125,6 +125,8 @@ GEM
     lumberjack (1.0.10)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
+    materialize-sass (0.97.5)
+      sass (~> 3.3)
     method_source (0.8.2)
     mime-types (2.99.1)
     mini_portile2 (2.0.0)
@@ -270,6 +272,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   letter_opener
+  materialize-sass
   pg (~> 0.15)
   poltergeist
   pry-rails
