@@ -16,3 +16,7 @@
 //= require turbolinks
 //= require base/modernizr.min
 //= require_self
+
+// $(document).ready(function(){
+//   $('.parallax').parallax();
+// });
