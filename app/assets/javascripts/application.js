@@ -15,11 +15,7 @@
 //= require materialize-sprockets
 //= require turbolinks
 //= require base/modernizr.min
-//= require base/flash_message
-//= require_tree .
 
-$(document).on('page:load', function(){
-  $(document).ready(function(){
-    console.log("asdasda");
-  });
-});
+// $(document).ready(function(){
+//   $('.parallax').parallax();
+// });   

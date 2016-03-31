@@ -1,5 +1,19 @@
 %header.parallax-container
 	%nav
+		.nav-wrapper
+			%a.brand-logo{:href => "#"}
+				= link_to(image_tag("logo.png", :alt => "plakeit", :width => 150, :height => 60))
+			%ul#nav-mobile.right.hide-on-med-and-down
+				%li
+					Alditus madafaqa
+				%li
+					= image_tag("https://scontent-grt2-1.xx.fbcdn.net/hphotos-xat1/v/t1.0-9/12936633_1289683714378612_7226081659011426520_n.jpg?oh=3d63f80916e891bdc31e1b7b1205c700&oe=57822905", :alt => "plakeit", :width => 50, :height => 50, class: 'circle user')
+	.col.s12.m12
+		%nav.calendar
+			.nav-wrapper
+				%ul#nav-mobile.right.hide-on-med-and-down
+					%li
+						= image_tag("calendar.png", :alt => "plakeit", :width => 50, :height => 50, class: 'circle user')
 	.row
 		.col.s12.m10.offset-m1.headerShow
 			%h3
@@ -22,6 +36,7 @@
 			%li 
 				= link_to(image_tag("mail.png"))
 			%li 200 views
+
 .col.s12.m12.content-information
 	.row
 		.col.s12.m10.offset-m1.sizeText
@@ -40,4 +55,3 @@
 				General – S/.140
 
 	.col.s12.m12.content-map
-

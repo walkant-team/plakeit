@@ -3,6 +3,12 @@
     .nav-wrapper
       %a.brand-logo{:href => "#"}
         = link_to(image_tag("logo.png", :alt => "plakeit", :width => 150, :height => 60))
+      %ul#nav-mobile.right.hide-on-med-and-down
+        %li
+          %a.waves-effect.waves-light.btn-large
+            %span.icon-facebook
+              = image_tag('Facebook_Icon.png')
+            Ingresa con facebook
       .row.header-text
         .col.m8.offset-m2
           %h3 DESCUBRE EVENTOS EN TU CIUDAD
