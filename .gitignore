@@ -21,6 +21,7 @@ system/
 *.DS_Store
 */.DS_Store
 /spec/tmp
+.byebug_history
 
 .sass-cache
 .env
