@@ -1,6 +1,8 @@
 class HomeController < ApplicationController
   def index
-    @public_events = PublicEvent.order(:start_at).page(params[:page]).per(10)
+    events = PublicEvent.order(:start_at)
+    @weekly_events = events.weekly
+    @public_events = events.page(params[:page]).per(10)
   end
 
   def show

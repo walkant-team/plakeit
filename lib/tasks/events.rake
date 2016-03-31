@@ -7,15 +7,14 @@ namespace :events do
   task generate_test_events: :environment do
     Event.destroy_all
 
-    25.times do
+    50.times do
       title = FFaker::Product.product
       category = Category.all.sample
 
       event = Event.create!(
         title: title,
         category_id: category.id,
-        start_at: Time.zone.now + 10.days,
-        end_at: Time.zone.now + 10.days + 1.hour,
+        start_at: Time.zone.now + (rand(2..10)).days,
         address: FFaker::Address.street_address,
         latitude: FFaker::Geolocation.lat,
         longitude: FFaker::Geolocation.lng,

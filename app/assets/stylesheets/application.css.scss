@@ -39,12 +39,11 @@ body{
 	}
 
 	.nav-wrapper{
-		top: 50px;
 		margin-left: 70px;
 		margin-right: 70px;
+		padding-top: 20px;
 	}
 }
-
 
 .parallax-container{
 	background: url(image-path('bgshow.jpeg'));
@@ -60,11 +59,10 @@ body{
 	}
 
 	.nav-wrapper{
-		top: 10px;
 		margin-left: 70px;
 		margin-right: 70px;
 	}
-	
+
 	.user{
 		margin-left: 25px;
 	}
@@ -93,7 +91,7 @@ body{
   background-color: transparent;
   text-transform: none;
   border: 1px solid white;
-  border-radius: 9px;	 
+  border-radius: 9px;
 }
 
 .btn-large:hover{
@@ -102,7 +100,7 @@ body{
 }
 
 .icon-facebook{
-	margin-right: 10px;	
+	margin-right: 10px;
 }
 
 .header-text{
@@ -256,9 +254,9 @@ nav.calendar{
 	}
 
 	.nav-wrapper{
-		top: 15px;
 		margin-left: 10px;
 		margin-right: 10px;
+		padding-top: 5px;
 	}
 
 	.size-content{
@@ -285,9 +283,9 @@ nav.calendar{
 	}
 
 	.nav-wrapper{
-		top: 15px;
 		margin-left: 10px;
 		margin-right: 10px;
+		padding-top: 10px;
 	}
 
 	.size-content{
