@@ -36,6 +36,8 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
+    acts-as-taggable-on (3.4.4)
+      activerecord (>= 3.2, < 5)
     addressable (2.4.0)
     animate-rails (1.0.9)
       rails
@@ -70,6 +72,7 @@ GEM
     factory_girl_rails (4.6.0)
       factory_girl (~> 4.5.0)
       railties (>= 3.0.0)
+    ffaker (2.2.0)
     ffi (1.9.10)
     formatador (0.2.5)
     fuubar (2.0.0)
@@ -122,9 +125,12 @@ GEM
       rb-inotify (>= 0.9.7)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
+    lorempixel_helper (1.1.0)
     lumberjack (1.0.10)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
+    materialize-sass (0.97.5)
+      sass (~> 3.3)
     method_source (0.8.2)
     mime-types (2.99.1)
     mini_portile2 (2.0.0)
@@ -259,17 +265,21 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  acts-as-taggable-on (~> 3.4)
   animate-rails
   byebug
   capybara
   coffee-rails (~> 4.1.0)
   factory_girl_rails
+  ffaker
   fuubar
   guard-rspec
   haml-rails (~> 0.9)
   jbuilder (~> 2.0)
   jquery-rails
   letter_opener
+  lorempixel_helper
+  materialize-sass
   pg (~> 0.15)
   poltergeist
   pry-rails

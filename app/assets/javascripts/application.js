@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require materialize-sprockets
 //= require turbolinks
 //= require base/modernizr.min
-//= require base/flash_message
-//= require_tree .
+//= require_self

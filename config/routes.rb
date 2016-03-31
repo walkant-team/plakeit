@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
+  get 'public_events/show'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  scope "(:locale)", locale: /en|es/ do
-    root 'events#index'
+  root 'home#index'
+  resources :public_events, only: [:show], path: 'events'
 
+  scope "(:locale)", locale: /en|es/ do
     namespace :clients do
       root 'static_pages#index'
       resources :suscriptors, only: [:create]

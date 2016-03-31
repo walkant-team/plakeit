@@ -1,0 +1,33 @@
+require 'ffaker'
+require "#{Rails.root}/app/helpers/application_helper"
+include ApplicationHelper
+
+namespace :events do
+  desc 'Generate events accounts'
+  task generate_test_events: :environment do
+    Event.destroy_all
+
+    25.times do
+      title = FFaker::Product.product
+      category = Category.all.sample
+
+      event = Event.create!(
+        title: title,
+        category_id: category.id,
+        start_at: Time.zone.now + 10.days,
+        end_at: Time.zone.now + 10.days + 1.hour,
+        address: FFaker::Address.street_address,
+        latitude: FFaker::Geolocation.lat,
+        longitude: FFaker::Geolocation.lng,
+        type: 'PublicEvent',
+        publish: true,
+        manual: false,
+        region: 'Perú, Lima',
+        description: FFaker::Lorem.sentence
+        # image: File.open("#{Rails.root}/spec/factories/files/business.jpeg")
+      )
+      event.tag_list.add(ActsAsTaggableOn::Tag.all.sample(rand(1..3)).map(&:name).join(', '))
+      event.save
+    end
+  end
+end
