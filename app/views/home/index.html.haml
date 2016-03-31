@@ -22,25 +22,11 @@
           %li TEATROS
           %li MUSICALES
 
-.row.size-content
+.row.size-content#list-public-events
   = render @public_events
 
 .row
   .col.s12.m5.offset-m5
-    %ul.pagination
-      %li.disabled
-        %a{:href => "#!"}
-          %i.material-icons chevron_left
-      %li.active
-        %a{:href => "#!"} 1
-      %li.waves-effect
-        %a{:href => "#!"} 2
-      %li.waves-effect
-        %a{:href => "#!"} 3
-      %li.waves-effect
-        %a{:href => "#!"} 4
-      %li.waves-effect
-        %a{:href => "#!"} 5
-      %li.waves-effect
-        %a{:href => "#!"}
-          %i.material-icons chevron_right
+    - unless @public_events.current_page == @public_events.total_pages
+      %p#view-more
+        = link_to('View More', url_for(page: @public_events.current_page + 1), remote: true)

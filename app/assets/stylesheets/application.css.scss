@@ -20,11 +20,11 @@
 @import "materialize";
 
 html{
-	height: 100%;	
+	height: 100%;
 }
 
 body{
-	height: 100%;	
+	height: 100%;
 }
 
 .bgIndex{
@@ -55,7 +55,7 @@ nav{
 }
 
 .menubar{
-	margin-top:50px;	
+	margin-top:50px;
 	ul li{
 		display: inline;
 		margin-left: 70px;
@@ -112,7 +112,7 @@ input::-webkit-input-placeholder {
 	.sizeText{
 		margin-top: 70px;
 		margin-bottom: 50px;
-		font-size: 16px;	
+		font-size: 16px;
 		line-height: 26px;
 	}
 }
@@ -135,7 +135,7 @@ input::-webkit-input-placeholder {
 	margin-top: 100px;
 	margin-bottom: 50px;
 	margin-left: 50px;
-	margin-right: 50px;	
+	margin-right: 50px;
 }
 
 #form-search{
@@ -144,7 +144,7 @@ input::-webkit-input-placeholder {
     width: 100%;
     padding: 5px;
     border: 1px solid #f2f2f2;
-    border-radius: 5px 0px 0px 5px !important; 
+    border-radius: 5px 0px 0px 5px !important;
     height: 3.8rem;
 }
 
@@ -165,25 +165,13 @@ input::-webkit-input-placeholder {
     width: 100%;
     padding: 5px;
     border: 1px solid #f2f2f2;
-    border-radius: 0px 5px 5px 0px !important; 
+    border-radius: 0px 5px 5px 0px !important;
     height: 3.8rem;
-}
-
-.pagination{
-	margin-bottom: 100px;
-	li.active {
-    	background-color: rgba(24, 47, 85, 1);
-    	a{
-    		color: #e4cb04;
-    	}
-    }
 }
 
 .card-action{
 	color:silver;
 }
-
-
 
 @media (max-width: 400px) {
 	.header-text{
