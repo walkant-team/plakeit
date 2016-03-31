@@ -22,12 +22,17 @@
     .row
       .col.s12.m7.offset-m3.menubar
         %ul
-          %li.active TODOS
-          %li CONCIERTOS
-          %li TEATROS
-          %li MUSICALES
+          %li.active= link_to 'TODOS'
+          %li= link_to 'CONCIERTOS'
+          %li= link_to 'TEATROS'
+          %li= link_to 'MUSICALES'
 
 .row.size-content#list-public-events
+  %h5 Eventos de la semana
+  = render @weekly_events
+
+.row.size-content#list-public-events
+  %h5 Proximos Eventos
   = render @public_events
 
 .row
