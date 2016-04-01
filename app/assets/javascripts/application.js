@@ -20,6 +20,9 @@
 //= require_self
 
 $(function() {
+  $('select').material_select();
+
+  // maps
   var mapStyle = [
       {
           "featureType": "all",

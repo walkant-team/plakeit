@@ -10,12 +10,17 @@
             Ingresa con facebook
       .row.header-text
         .col.m8.offset-m2
-          %h3 DESCUBRE EVENTOS EN TU CIUDAD
+          %h4 DESCUBRE EVENTOS EN TU CIUDAD
           %form.size-form
             .col.s12.m3
-              %input{:placeholder => "Conciertos de", :type => "text"}
+              %select.browser-default
+                %option.color{:disabled => "", :selected => "", :value => ""} Concierto de
+                %option.color{:value => "1"} Option 1
+                %option.color{:value => "2"} Option 2
+                %option.color{:value => "3"} Option 3
             .col.s12.m9.formTog
-              %input{:placeholder => "Nombre o #tag", :type => "text", :name => "name "}
+              %input#icon-form{:placeholder => "Nombre o #tag", :type => "text"}
+              / %input{:placeholder => "Nombre o #tag", :type => "text", :name => "name "}
 
 .col.s12.m12
   .col.s12.m12

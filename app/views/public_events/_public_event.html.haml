@@ -3,7 +3,7 @@
     .card-image
       = link_to public_event do
         - categories = %w(nightlife people city)
-        = lorempixel_image_tag '400x200', category: categories.sample, item: (1..10).to_a.sample
+        = lorempixel_image_tag '400x200', class: 'img-hover', category: categories.sample, item: (1..10).to_a.sample
     .card-content
       = link_to public_event.title, public_event
     .card-action
