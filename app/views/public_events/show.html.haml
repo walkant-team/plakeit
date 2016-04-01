@@ -25,6 +25,7 @@
 		%p.sizeP
 			%i{:class => "tiny material-icons"} perm_contact_calendar
 			= l(@public_event.start_at, format: :long)
+
 	.col.s9.offset-s2.m3.offset-m2.contentShow
 		%p.sizeP Difunde
 		%ul
@@ -34,7 +35,7 @@
 				= link_to(image_tag("facebook.png"))
 			%li
 				= link_to(image_tag("mail.png"))
-			%li 200 views
+			%li= "#{@public_event.impressionist_count} views"
 
 .col.s12.m12.content-information
 	.row
@@ -42,4 +43,6 @@
 			%p.sizeP
 				= @public_event.description
 
-	.col.s12.m12.content-map
+	.row
+		%div{style: 'width: 100%'}
+			#custom_style{style: 'width: 100%; height: 400px'}

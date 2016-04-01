@@ -33,6 +33,11 @@ gem 'acts-as-taggable-on', '~> 3.4'
 
 gem 'kaminari'
 
+gem 'impressionist' #views_count
+
+gem 'gmaps4rails'
+gem 'underscore-rails'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

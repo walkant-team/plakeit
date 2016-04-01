@@ -22,12 +22,12 @@
     .row
       .col.s12.m7.offset-m3.menubar
         %ul
-          %li.active= link_to 'TODOS'
-          %li= link_to 'CONCIERTOS'
-          %li= link_to 'TEATROS'
-          %li= link_to 'MUSICALES'
+          %li.active= link_to 'TODOS', root_path
+          %li= link_to 'CONCIERTOS', category_events_path('concerts')
+          %li= link_to 'TEATROS', category_events_path('theater')
+          %li= link_to 'MUSICALES', category_events_path('musical')
 
-.row.size-content#list-public-events
+.row.size-content#list-weekly-events
   %h5 Eventos de la semana
   = render @weekly_events
 
