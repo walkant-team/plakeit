@@ -22,7 +22,7 @@ namespace :events do
         publish: true,
         manual: false,
         region: 'Perú, Lima',
-        description: FFaker::Lorem.sentence
+        description: FFaker::Lorem.paragraphs
         # image: File.open("#{Rails.root}/spec/factories/files/business.jpeg")
       )
       event.tag_list.add(ActsAsTaggableOn::Tag.all.sample(rand(1..3)).map(&:name).join(', '))

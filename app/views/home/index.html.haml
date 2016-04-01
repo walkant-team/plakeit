@@ -20,14 +20,13 @@
                 %option.color{:value => "3"} Option 3
             .col.s12.m9.formTog
               %input#icon-form{:placeholder => "Nombre o #tag", :type => "text"}
-              / %input{:placeholder => "Nombre o #tag", :type => "text", :name => "name "}
 
 .col.s12.m12
   .col.s12.m12
     .row
       .col.s12.m7.offset-m3.menubar
         %ul
-          %li.active= link_to 'TODOS', root_path
+          %li= link_to 'TODOS', root_path, class: 'active'
           %li= link_to 'CONCIERTOS', category_events_path('concerts')
           %li= link_to 'TEATROS', category_events_path('theater')
           %li= link_to 'MUSICALES', category_events_path('musical')

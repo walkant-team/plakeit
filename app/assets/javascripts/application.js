@@ -22,6 +22,8 @@
 $(function() {
   $('select').material_select();
 
+  $('.parallax').parallax();
+
   // maps
   var mapStyle = [
       {
@@ -170,7 +172,8 @@ $(function() {
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         styles:    mapStyle,
         lat:       -12.118071,
-        lng:       -76.997861
+        lng:       -76.997861,
+        scrollwheel:  false
       }
     },
     function(){ }

@@ -20,7 +20,28 @@
   <div class="flash_messages">
     <%= render partial: "shared/flash_messages", flash: flash %>
   </div>
+  <% unless controller.controller_name == 'home' %>
+    <header class="header-alpha">
+      <nav>
+        <div class="container">
+          <div class="nav-wrapper">
+            <%= link_to(image_tag("logo.png", :alt => "plakeit", :width => 150, :height => 60), root_path) %>
+            <ul class="right hide-on-med-and-down" id="nav-mobile">
+              <li>Alditus madafaqa</li>
+              <li>
+                <%= image_tag("https://scontent-grt2-1.xx.fbcdn.net/hphotos-xat1/v/t1.0-9/12936633_1289683714378612_7226081659011426520_n.jpg?oh=3d63f80916e891bdc31e1b7b1205c700&oe=57822905", :alt => "plakeit", :width => 50, :height => 50, class: 'circle user') %>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  <% end %>
+
   <%= yield %>
+  <footer class='center'>
+    <h1>hecho por Walkant</h1>
+  </footer>
   <% if Rails.env.production? %>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

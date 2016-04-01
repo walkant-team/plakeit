@@ -1,48 +1,44 @@
-%header.parallax-container
-	%nav
-		.nav-wrapper
-			= link_to(image_tag("logo.png", :alt => "plakeit", :width => 150, :height => 60), root_path)
-			%ul#nav-mobile.right.hide-on-med-and-down
-				%li
-					Alditus madafaqa
-				%li
-					= image_tag("https://scontent-grt2-1.xx.fbcdn.net/hphotos-xat1/v/t1.0-9/12936633_1289683714378612_7226081659011426520_n.jpg?oh=3d63f80916e891bdc31e1b7b1205c700&oe=57822905", :alt => "plakeit", :width => 50, :height => 50, class: 'circle user')
-	.col.s12.m12
-		%nav.calendar
-			.nav-wrapper
-				%ul#nav-mobile.right.hide-on-med-and-down
-					%li
-						= image_tag("calendar.png", :alt => "plakeit", :width => 50, :height => 50, class: 'circle user')
-	.row
-		.col.s12.m10.offset-m1.headerShow
-			%h3
-				= @public_event.title
-.row
-	.col.s9.offset-s2.m5.offset-m1.contentShow
-		%p.sizeP
-			%i{:class => "tiny material-icons"} location_on
-			= @public_event.address
-		%p.sizeP
-			%i{:class => "tiny material-icons"} perm_contact_calendar
-			= l(@public_event.start_at, format: :long)
+.parallax-container
+  .parallax
+    - categories = %w(nightlife people city)
+    = lorempixel_image_tag '1400x1100', category: categories.sample, item: (1..10).to_a.sample, class: 'imag-bg'
+    .col.s12.m12
+      %nav.calendar
+        .nav-wrapper
+          %ul#nav-mobile.right.hide-on-med-and-down
+            %li
+              = image_tag("calendar.png", :alt => "plakeit", :width => 50, :height => 50, class: 'circle user')
+    .row.headerShow
+      .col.s12.m10.offset-m1.title-event
+        %h3
+          = @public_event.title
 
-	.col.s9.offset-s2.m3.offset-m2.contentShow
-		%p.sizeP Difunde
-		%ul
-			%li
-				= link_to(image_tag("twitter.png"))
-			%li
-				= link_to(image_tag("facebook.png"))
-			%li
-				= link_to(image_tag("mail.png"))
-			%li= "#{@public_event.impressionist_count} views"
+.row.contentShow
+  .col.s9.offset-s2.m5.offset-m1
+    %p.sizeP
+      %i{:class => "tiny material-icons"} location_on
+      = @public_event.address
+    %p.sizeP
+      %i{:class => "tiny material-icons"} perm_contact_calendar
+      = l(@public_event.start_at, format: :long)
+
+  .col.s9.offset-s2.m3.offset-m2.diffuses
+    %p.sizeP Difunde
+    %ul
+      %li
+        = link_to(image_tag("twitter.png"))
+      %li
+        = link_to(image_tag("facebook.png"))
+      %li
+        = link_to(image_tag("mail.png"))
+      %li= "#{@public_event.impressionist_count} views"
 
 .col.s12.m12.content-information
-	.row
-		.col.s12.m10.offset-m1.sizeText
-			%p.sizeP
-				= @public_event.description
+  .row
+    .col.s12.m10.offset-m1.sizeText
+      %p.sizeP
+        = @public_event.description
 
-	.row
-		%div{style: 'width: 100%'}
-			#custom_style{style: 'width: 100%; height: 400px'}
+  .row
+    %div{style: 'width: 100%'}
+      #custom_style{style: 'width: 100%; height: 400px'}
