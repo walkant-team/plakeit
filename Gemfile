@@ -27,6 +27,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem "haml-rails", "~> 0.9"
 
 gem "animate-rails"
+gem 'omniauth-facebook'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -42,6 +43,7 @@ group :development, :test do
   gem 'byebug'
   gem 'capybara'
   gem 'poltergeist'
+  gem 'dotenv-rails'
 end
 
 group :development do
