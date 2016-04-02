@@ -17,8 +17,7 @@
 @import 'base/normalize';
 @import 'base/reset';
 @import 'base/main';
-@import 'materialize';
-@import 'style';
+@import "materialize";
 
 html{
 	height: 100%;
@@ -82,6 +81,12 @@ body{
 	}
 
 	a.active{
+		color: #3d5a99;
+		font-weight: bold;
+		border-bottom: 5px solid #3d5a99;
+	}
+
+	a:hover {
 		color: #3d5a99;
 		font-weight: bold;
 		border-bottom: 5px solid #3d5a99;
