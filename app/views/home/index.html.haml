@@ -6,7 +6,7 @@
         %li
           %a.waves-effect.waves-light.btn-large
             %span.icon-facebook
-              = image_tag('facebook_icon.png')
+              = image_tag('facebook-icon-login.png')
             Ingresa con facebook
       .row.header-text
         .col.m8.offset-m2
@@ -39,7 +39,7 @@
   = render @public_events
 
 .row
-  .col.s12.m5.offset-m5
+  .col.s12.m12
     - unless @public_events.current_page == @public_events.total_pages
-      %p#view-more
-        = link_to('View More', url_for(page: @public_events.current_page + 1), remote: true)
+      = link_to url_for(page: @public_events.current_page + 1), remote: true do
+        %p#view-more View More
