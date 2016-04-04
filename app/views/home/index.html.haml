@@ -6,7 +6,7 @@
         %li
           %a.waves-effect.waves-light.btn-large
             %span.icon-facebook
-              = image_tag('facebook_icon.png')
+              = image_tag('facebook-icon-login.png')
             Ingresa con facebook
       .row.header-text
         .col.m8.offset-m2
@@ -21,15 +21,16 @@
             .col.s12.m9.formTog
               %input#icon-form{:placeholder => "Nombre o #tag", :type => "text"}
 
-.col.s12.m12
+.col.s12.m12#content-event
   .col.s12.m12
     .row
       .col.s12.m7.offset-m3.menubar
         %ul
-          %li= link_to 'TODOS', root_path, class: 'active'
-          %li= link_to 'CONCIERTOS', category_events_path('concerts')
-          %li= link_to 'TEATROS', category_events_path('theater')
-          %li= link_to 'MUSICALES', category_events_path('musical')
+          %li= link_to 'TODOS', root_path(anchor: 'content-event'), class: active_class(root_path)
+          %li= link_to 'CONCIERTOS', category_events_path('concerts', anchor: 'content-event'), class: active_class(category_events_path('concerts'))
+          %li= link_to 'TEATROS', category_events_path('theater', anchor: 'content-event'), class: active_class(category_events_path('theater'))
+          %li.scrolltop= link_to 'MUSICALES', category_events_path('musical', anchor: 'content-event'), class: active_class(category_events_path('musical'))
+
 .row.size-content#list-weekly-events
   %h5 Eventos de la semana
   = render @weekly_events
@@ -39,7 +40,7 @@
   = render @public_events
 
 .row
-  .col.s12.m5.offset-m5
+  .col.s12.m12
     - unless @public_events.current_page == @public_events.total_pages
-      %p#view-more
-        = link_to('View More', url_for(page: @public_events.current_page + 1), remote: true)
+      = link_to url_for(page: @public_events.current_page + 1), remote: true do
+        %p#view-more View More

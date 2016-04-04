@@ -39,9 +39,32 @@
   <% end %>
 
   <%= yield %>
-  <footer class='center'>
-    <h1>hecho por Walkant</h1>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Consultas</h5>
+          <p class="grey-text text-lighten-4">llamanos (01) 2967992</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Siguenos</h5>
+          <ul class='social'>
+            <li><%= link_to image_tag('facebook_icon.png', size: '22'), 'https://www.facebook.com/plakeit', target: '_blank' %></li>
+            <li><%= link_to image_tag('twiter_icon.png', size: '22'), 'https://www.twitter.com/plakeitOficial', target: '_blank' %> </li>
+            <li><%= mail_to "hello@plakeit.com", image_tag('mail_icon.png', size: '22') %> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2016 Plakeit, Inc.
+      </div>
+    </div>
   </footer>
+
+
+
   <% if Rails.env.production? %>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

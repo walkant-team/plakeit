@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'home#index'
-  get ':category' => 'home#index', as: :category_events
+  get 'category/:category' => 'home#index', as: :category_events
 
   resources :public_events, only: [:show], path: 'events'
 
