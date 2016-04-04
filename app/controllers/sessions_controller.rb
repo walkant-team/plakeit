@@ -1,8 +1,8 @@
 class SessionsController < ApplicationController
   def create
-    binding.pry
-    # @user = User.find_or_create_from_auth_hash(auth_hash)
+    @user = User.find_or_create_from_auth_hash(auth_hash)
     self.current_user = @user
+    binding.pry
     redirect_to '/'
   end
 
