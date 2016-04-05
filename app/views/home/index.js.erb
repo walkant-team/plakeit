@@ -1,0 +1,8 @@
+// views/posts/index.js.erb
+$('#list-public-events').append("<%=j render @public_events %>");
+
+<% if @public_events.current_page == @public_events.total_pages %>
+  $('#view-more').remove();
+<% else %>
+  $('#view-more a').attr('href', '<%= url_for(page: @public_events.current_page + 1) %>');
+<% end %>

@@ -22,7 +22,7 @@
 
 .hero-header {
   /* Rectangle 25: */
-  background-image: url(image-path('bg_header.png'));
+  background-image: url(image-path('clients/bg_header.png'));
   background-size: cover;
   padding-top: 40px;
   text-align: left;
@@ -112,25 +112,25 @@
       .container-text {
         color: #2F4366;
       }
-      background-image: url(image-path('bg_1.png'));
+      background-image: url(image-path('clients/bg_1.png'));
     }
     .second {
       .container-text {
         color: #C1C2C2;
       }
-      background-image: url(image-path('bg_2.png'));
+      background-image: url(image-path('clients/bg_2.png'));
     }
     .three {
       .container-text {
         margin-top: 20%;
       }
-      background-image: url(image-path('bg_3.png'));
+      background-image: url(image-path('clients/bg_3.png'));
     }
     .four {
       .container-text {
         color: #182F56;
       }
-      background-image: url(image-path('bg_4.png'));
+      background-image: url(image-path('clients/bg_4.png'));
     }
   }
 

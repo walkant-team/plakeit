@@ -15,8 +15,7 @@
  */
 
 @import 'base/normalize';
+@import 'base/reset';
 @import 'base/main';
-@import 'base/skeleton';
-@import 'skeleton_override';
-@import 'base/flash_message';
-@import 'static_pages';
+@import 'materialize';
+@import 'style';

@@ -9,15 +9,62 @@
   <meta property="og:image:width" content="450"/>
   <meta property="og:image:height" content="298"/>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'https://maps.googleapis.com/maps/api/js?key=AIzaSyD0mYZ71rVMAT-FEjiVs4t15zkSdSZr6yo&libraries=places' %>
+  <%#= javascript_include_tag '//maps.google.com/maps/api/js?v=3.13&sensor=false&libraries=geometry' %>
+  <%= javascript_include_tag '//google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.14/src/markerclusterer_packed.js' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
   <div class="flash_messages">
     <%= render partial: "shared/flash_messages", flash: flash %>
   </div>
+  <% unless controller.controller_name == 'home' %>
+    <header class="header-alpha">
+      <nav>
+        <div class="container">
+          <div class="nav-wrapper">
+            <%= link_to(image_tag("logo.png", :alt => "plakeit", :width => 150, :height => 60), root_path) %>
+            <ul class="right hide-on-med-and-down" id="nav-mobile">
+              <li>Alditus madafaqa</li>
+              <li>
+                <%= image_tag("https://scontent-grt2-1.xx.fbcdn.net/hphotos-xat1/v/t1.0-9/12936633_1289683714378612_7226081659011426520_n.jpg?oh=3d63f80916e891bdc31e1b7b1205c700&oe=57822905", :alt => "plakeit", :width => 50, :height => 50, class: 'circle user') %>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  <% end %>
+
   <%= yield %>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Consultas</h5>
+          <p class="grey-text text-lighten-4">llamanos (01) 2967992</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Siguenos</h5>
+          <ul class='social'>
+            <li><%= link_to image_tag('facebook_icon.png', size: '22'), 'https://www.facebook.com/plakeit', target: '_blank' %></li>
+            <li><%= link_to image_tag('twiter_icon.png', size: '22'), 'https://www.twitter.com/plakeitOficial', target: '_blank' %> </li>
+            <li><%= mail_to "hello@plakeit.com", image_tag('mail_icon.png', size: '22') %> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2016 Plakeit, Inc.
+      </div>
+    </div>
+  </footer>
+
   <% if Rails.env.production? %>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

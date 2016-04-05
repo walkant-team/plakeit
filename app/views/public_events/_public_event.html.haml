@@ -1,0 +1,17 @@
+.col.s12.m4
+  .card
+    .card-image
+      = link_to public_event, 'data-no-turbolink' => true do
+        - categories = %w(nightlife people city)
+        = lorempixel_image_tag '400x200', category: categories.sample, item: (1..10).to_a.sample
+    .card-content
+      = link_to public_event.title, public_event, 'data-no-turbolink' => true
+    .card-action
+      %p
+        %i{:class => "tiny material-icons"} location_on
+        = public_event.address
+      %br
+      %p
+        %i{:class => "tiny material-icons"} perm_contact_calendar
+        = l(public_event.start_at, format: :long)
+      %br

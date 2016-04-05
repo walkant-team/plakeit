@@ -8,6 +8,7 @@ gem 'rails', '4.2.5.1'
 gem 'pg', '~> 0.15'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+gem 'materialize-sass'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -29,6 +30,15 @@ gem "haml-rails", "~> 0.9"
 gem "animate-rails"
 gem 'omniauth-facebook'
 
+gem 'acts-as-taggable-on', '~> 3.4'
+
+gem 'kaminari'
+
+gem 'impressionist' #views_count
+
+gem 'gmaps4rails'
+gem 'underscore-rails'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -44,6 +54,8 @@ group :development, :test do
   gem 'capybara'
   gem 'poltergeist'
   gem 'dotenv-rails'
+  gem 'lorempixel_helper'
+  gem 'ffaker'
 end
 
 group :development do
