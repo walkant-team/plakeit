@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
 
   root 'home#index'
+  resources :scrappers
+
   get 'category/:category' => 'home#index', as: :category_events
+
   resources :public_events, only: [:show], path: 'events'
 
   # sessions

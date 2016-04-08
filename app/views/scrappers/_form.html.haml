@@ -1,0 +1,18 @@
+= simple_form_for @event, url: scrappers_path, method: :post do |f|
+  - if @event.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@event.errors.count, "error")} prohibited this scrapper from being saved:"
+      %ul
+        - @event.errors.full_messages.each do |msg|
+          %li= msg
+  = f.input :title
+  = f.input :start_at
+  = f.input :end_at
+  = f.input :address
+  = f.input :location
+  = f.input :latitude
+  = f.input :longitude
+  = f.input :description
+  = f.attachment_field :image
+  .actions
+    = f.submit 'Save'
