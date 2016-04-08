@@ -26,15 +26,12 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem "haml-rails", "~> 0.9"
-
-gem "animate-rails"
-gem 'omniauth-facebook'
-
 gem 'acts-as-taggable-on', '~> 3.4'
-
-gem 'kaminari'
-
+gem "animate-rails"
 gem 'impressionist' #views_count
+
+gem 'omniauth-facebook'
+gem 'kaminari'
 
 gem 'gmaps4rails'
 gem 'underscore-rails'
