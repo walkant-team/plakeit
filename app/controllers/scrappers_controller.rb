@@ -75,7 +75,7 @@ class ScrappersController < ApplicationController
 
     def authenticate
       authenticate_or_request_with_http_basic('Administration') do |username, password|
-        username == 'admin' && password == 'password'
+        username == 'admin' && password == 'Scr4pp3r5'
       end
     end
 end

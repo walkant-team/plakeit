@@ -151,27 +151,6 @@ body{
 	}
 }
 
-input[type="text"]{
-    color: #272727;
-    background: white;
-	  width: 100%;
-	  border: 1px solid #f2f2f2;
-	  border-radius: 3px;
-	  height: 2.5rem;
-}
-
-select.browser-default{
-	height: 2.7rem;
-	margin-top: 12px;
-	color: #212121;
-	background: white;
-}
-
-input::-webkit-input-placeholder {
-		color: silver;
-		margin-left: 5px;
-}
-
 .sizeP{
 	margin: 0 0 10px;
 }
