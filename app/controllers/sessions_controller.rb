@@ -2,7 +2,7 @@ class SessionsController < ApplicationController
   def create
     authentication = Authentication.find_or_create_from_auth_hash(auth_hash)
     self.current_user = authentication.user
-    redirect_to root_path, notice: 'Logeado :)'
+    redirect_to root_path
   end
 
   protected

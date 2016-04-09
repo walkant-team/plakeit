@@ -4,10 +4,14 @@
       = link_to(image_tag("logo.png", :alt => "plakeit", :width => 150, :height => 60), root_path)
       %ul#nav-mobile.right.hide-on-med-and-down
         %li
-          = link_to '/auth/facebook', class: 'waves-effect waves-light btn-large' do
-            %span.icon-facebook
-              = image_tag('facebook-icon-login.png')
-            Ingresa con facebook
+          - if logged_in?
+            = current_user.fullname
+            = image_tag(current_user.avatar)
+          - else
+            = link_to '/auth/facebook', class: 'waves-effect waves-light btn-large' do
+              %span.icon-facebook
+                = image_tag('facebook-icon-login.png')
+              Ingresa con facebook
       .row.header-text
         .col.m8.offset-m2
           %h4 DESCUBRE EVENTOS EN TU CIUDAD
