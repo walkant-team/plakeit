@@ -1,6 +1,6 @@
 class ScrappersController < ApplicationController
-  before_action :set_scrapper, only: [:show, :edit, :update, :destroy]
   before_action :authenticate
+  before_action :set_scrapper, only: [:show, :edit, :update, :destroy]
 
   # GET /scrappers
   # GET /scrappers.json
@@ -15,7 +15,7 @@ class ScrappersController < ApplicationController
 
   # GET /scrappers/new
   def new
-    @event = Event.new
+    @event = PublicEvent.new
   end
 
   # GET /scrappers/1/edit
@@ -25,15 +25,13 @@ class ScrappersController < ApplicationController
   # POST /scrappers
   # POST /scrappers.json
   def create
-    @event = Event.new(scrapper_params)
-
+    @event = PublicEvent.new(scrapper_params)
+    @event.manual = false
     respond_to do |format|
       if @event.save
-        format.html { redirect_to @event, notice: 'Scrapper was successfully created.' }
-        format.json { render :show, status: :created, location: @event }
+        format.html { redirect_to scrappers_path, notice: 'Scrapper was successfully created.' }
       else
         format.html { render :new }
-        format.json { render json: @event.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -43,11 +41,9 @@ class ScrappersController < ApplicationController
   def update
     respond_to do |format|
       if @event.update(scrapper_params)
-        format.html { redirect_to @event, notice: 'Scrapper was successfully updated.' }
-        format.json { render :show, status: :ok, location: @event }
+        format.html { redirect_to scrappers_path, notice: 'Scrapper was successfully updated.' }
       else
         format.html { render :edit }
-        format.json { render json: @event.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -70,7 +66,7 @@ class ScrappersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def scrapper_params
-      params.fetch(:scrapper, {})
+      params.fetch(:public_event, {}).permit(:title, :start_at, :end_at, :address, :location, :latitude, :longitude, :description, :image, :category_id)
     end
 
     def authenticate

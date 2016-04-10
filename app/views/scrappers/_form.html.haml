@@ -1,6 +1,6 @@
 .container
-
-  = simple_form_for @event, url: scrappers_path, method: :post do |f|
+  - url = @event.new_record? ? scrappers_path : scrapper_path(@event)
+  = simple_form_for @event, url: url do |f|
     - if @event.errors.any?
       #error_explanation
         %h2= "#{pluralize(@event.errors.count, "error")} prohibited this scrapper from being saved:"
@@ -8,13 +8,24 @@
           - @event.errors.full_messages.each do |msg|
             %li= msg
     = f.input :title
-    = f.input :start_at
-    = f.input :end_at
+    = f.label :start_at
+    .row
+      = f.input_field :start_at, class: 'col s2'
+    = f.label :end_at
+    .row
+      = f.input_field :end_at, class: 'col s2'
     = f.input :address
     = f.input :location
-    = f.input :latitude
-    = f.input :longitude
-    = f.input :description
-    = f.attachment_field :image
+    .row
+      .col.s6
+        = f.input :latitude
+      .col.s6
+        = f.input :longitude
+    = f.input :description, input_html: { class: 'materialize-textarea' }
+    = image_tag attachment_url(@event, :image, :fill, 300, 300, format: 'jpg')
+    = f.label :image
+    .row
+      = f.attachment_field :image
+    = f.association :category
     .actions
-      = f.submit 'Save'
+      = f.submit 'Save', class: 'btn waves-effect'

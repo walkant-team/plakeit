@@ -9,13 +9,13 @@ class CreateEvents < ActiveRecord::Migration
       t.float :latitude
       t.float :longitude
       t.text :description
-      t.string :image
+      t.string :image_id
       t.integer :count_views, default: 0
       t.string :type # types => [public, private]
       t.boolean :manual, default: true # true => business, false => scrapping
-      t.boolean :publish, default: false # true => active, false => [:draft, :past]
+      t.boolean :publish, default: true # true => active, false => [:draft, :past]
       t.string :region # ejem => 'Perú, Lima', 'Argentina, Buenos Aires'
-      t.references :category, index: true, foreign_key: true
+      t.references :category, index: true, foreign_key: true, null: false
 
       t.timestamps null: false
     end

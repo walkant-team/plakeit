@@ -12,16 +12,16 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require base/modernizr.min
 //= require materialize-sprockets
 //= require turbolinks
 //= require underscore
 //= require gmaps/google
-//= require base/modernizr.min
 //= require_self
 
 $(function() {
-  $('select').material_select();
 
+  $('select').material_select();
   $('.parallax').parallax();
 
   // maps

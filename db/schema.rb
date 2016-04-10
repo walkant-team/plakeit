@@ -34,23 +34,23 @@ ActiveRecord::Schema.define(version: 20160404214527) do
   end
 
   create_table "events", force: :cascade do |t|
-    t.string   "title",                       null: false
-    t.datetime "start_at",                    null: false
+    t.string   "title",                      null: false
+    t.datetime "start_at",                   null: false
     t.datetime "end_at"
     t.string   "address"
     t.string   "location"
     t.float    "latitude"
     t.float    "longitude"
     t.text     "description"
-    t.string   "image"
+    t.string   "image_id"
     t.integer  "count_views", default: 0
     t.string   "type"
     t.boolean  "manual",      default: true
-    t.boolean  "publish",     default: false
+    t.boolean  "publish",     default: true
     t.string   "region"
-    t.integer  "category_id"
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
+    t.integer  "category_id",                null: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
   end
 
   add_index "events", ["category_id"], name: "index_events_on_category_id", using: :btree
