@@ -57,7 +57,7 @@ group :development, :test do
   gem 'poltergeist'
   gem 'dotenv-rails'
   gem 'lorempixel_helper'
-  gem 'ffaker'
+  # gem 'ffaker'
 end
 
 group :development do
@@ -82,3 +82,7 @@ group :production do
   gem 'puma'
   gem 'rails_12factor'
 end
+
+# These gems are selectively required in production when we want to generate
+# seed data. Normally, they are only used in test.
+gem 'ffaker', require: false
