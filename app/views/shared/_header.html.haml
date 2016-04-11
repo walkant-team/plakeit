@@ -1,0 +1,27 @@
+.navbar-fixed
+  %ul#dropdown1.dropdown-content
+    %li= link_to 'Logout', '#!'
+  %nav
+    .nav-wrapper
+      = link_to root_path, class: 'left' do
+        = image_tag 'logo.png', alt: 'plakeit', width: 100, height: 40
+      %ul#nav-mobile.left.hide-on-med-and-down
+        %li
+          = link_to 'Todos', root_path(anchor: 'content-event')
+        %li
+          = link_to 'Conciertos', category_events_path('concerts', anchor: 'content-event')
+        %li
+          = link_to 'Musicales', category_events_path('musical', anchor: 'content-event')
+        %li
+          = link_to 'Teatro', category_events_path('theater', anchor: 'content-event')
+      %ul#nav-mobile.right.hide-on-med-and-down
+        %li
+          = link_to '#' do
+            %i.material-icons search
+        - if logged_in?
+          %li
+            = link_to '#!', class: 'dropdown-button', data: { activates: 'dropdown1' } do
+              = image_tag current_user.avatar
+              %i.material-icons.right arrow_drop_down
+        - else
+          %li= link_to 'SIGN UP / LOGIN' ,'/auth/facebook'

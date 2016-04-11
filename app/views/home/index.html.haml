@@ -1,39 +1,10 @@
 %header.bgIndex
-  %nav
-    .nav-wrapper
-      = link_to(image_tag("logo.png", :alt => "plakeit", :width => 150, :height => 60), root_path)
-      %ul#nav-mobile.right.hide-on-med-and-down
-        %li
-          - if logged_in?
-            = current_user.fullname
-            = image_tag(current_user.avatar)
-          - else
-            = link_to '/auth/facebook', class: 'waves-effect waves-light btn-large' do
-              %span.icon-facebook
-                = image_tag('facebook-icon-login.png')
-              Ingresa con facebook
-      .row.header-text
-        .col.m8.offset-m2
-          %h4 DESCUBRE EVENTOS EN TU CIUDAD
-          %form.size-form
-            .col.s12.m3
-              %select.browser-default
-                %option.color{:disabled => "", :selected => "", :value => ""} Concierto de
-                %option.color{:value => "1"} Option 1
-                %option.color{:value => "2"} Option 2
-                %option.color{:value => "3"} Option 3
-            .col.s12.m9.formTog
-              %input#icon-form{:placeholder => "Nombre o #tag", :type => "text"}
-
-.col.s12.m12#content-event
-  .col.s12.m12
-    .row
-      .col.s12.m7.offset-m3.menubar
-        %ul
-          %li= link_to 'TODOS', root_path(anchor: 'content-event'), class: active_class(root_path)
-          %li= link_to 'CONCIERTOS', category_events_path('concerts', anchor: 'content-event'), class: active_class(category_events_path('concerts'))
-          %li= link_to 'TEATROS', category_events_path('theater', anchor: 'content-event'), class: active_class(category_events_path('theater'))
-          %li.scrolltop= link_to 'MUSICALES', category_events_path('musical', anchor: 'content-event'), class: active_class(category_events_path('musical'))
+  .row.header-text
+    .col.m8.offset-m2
+      %h4 DESCUBRE EVENTOS EN TU CIUDAD
+      %form.size-form
+        .col.s12.m9.formTog
+          %input#icon-form{:placeholder => "Nombre o #tag", :type => "text"}
 
 .row.size-content#list-weekly-events
   %h5 Eventos de la semana

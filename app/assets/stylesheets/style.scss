@@ -6,42 +6,23 @@ body{
 	height: 100%;
 }
 
+
+// nav
+nav{
+  background-color: #F8F8F8;
+
+  ul {
+    a { color: #404D57;}
+  }
+}
+
+// header
 .bgIndex{
 	background: linear-gradient(rgba(12, 24, 44, .6), rgba(12, 24, 44, .6)),url(image-path('header.jpeg'));
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-	height: 85%;
-	nav{
-		background: transparent;
-		box-shadow: none;
-	}
-
-	.nav-wrapper{
-		margin-left: 70px;
-		margin-right: 70px;
-		padding-top: 20px;
-    vertical-align: top;
-	}
-}
-
-.header-alpha{
-	position: absolute;
-	width: 100%;
-  z-index: 1;
-  height: 44px;
-	nav{
-		background-color: rgba(6, 6, 6, 0.53);
-    height: 44px;
-    .container{
-      width: 100%;
-    }
-    .nav-wrapper{
-
-      vertical-align: top;
-      line-height: 44px;
-    }
-	}
+	height: 70%;
 }
 
 .parallax-container{
@@ -117,17 +98,6 @@ body{
 
 .icon-facebook{
 	margin-right: 10px;
-}
-
-.header-text{
-	margin-top: 140px;
-	color: #e4cb04;
-	h4{
-		text-align:center;
-	}
-	i{
-		color: white;
-	}
 }
 
 // assitant events
