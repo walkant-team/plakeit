@@ -1,17 +1,19 @@
 .parallax-container
   .parallax
     - categories = %w(nightlife people city)
-    = lorempixel_image_tag '1400x1100', category: categories.sample, item: (1..10).to_a.sample, class: 'imag-bg'
-    .col.s12.m12
-      %nav.calendar
-        .nav-wrapper
-          %ul#nav-mobile.right.hide-on-med-and-down
-            %li
-              = image_tag("calendar.png", :alt => "plakeit", :width => 50, :height => 50, class: 'circle user')
+    = lorempixel_image_tag '1400x900', category: categories.sample, item: (1..10).to_a.sample, class: 'imag-bg'
     .row.headerShow
       .col.s12.m10.offset-m1.title-event
         %h3
           = @public_event.title
+
+    .col.s12.m12.headerAssistant.center-align
+      .contentAssistant
+        .row
+          .col.rigth
+            = image_tag("https://scontent-grt2-1.xx.fbcdn.net/hphotos-xat1/v/t1.0-9/12936633_1289683714378612_7226081659011426520_n.jpg?oh=3d63f80916e891bdc31e1b7b1205c700&oe=57822905", :alt => "plakeit", :width => 40, :height => 40, class: 'circle user')
+          .col.rigth
+            = image_tag("https://scontent-grt2-1.xx.fbcdn.net/hphotos-xat1/v/t1.0-9/12936633_1289683714378612_7226081659011426520_n.jpg?oh=3d63f80916e891bdc31e1b7b1205c700&oe=57822905", :alt => "plakeit", :width => 40, :height => 40, class: 'circle user')
 
 .row.contentShow
   .col.s9.offset-s2.m5.offset-m1
@@ -23,21 +25,35 @@
       = l(@public_event.start_at, format: :long)
 
   .col.s9.offset-s2.m3.offset-m2.diffuses
-    %p.sizeP Difunde
     %ul
       %li
-        = link_to(image_tag("twitter.png"))
-      %li
-        = link_to(image_tag("facebook.png"))
-      %li
-        = link_to(image_tag("mail.png"))
-      %li= "#{@public_event.impressionist_count} views"
+        %a.waves-effect.waves-light.btn
+          %i.large.material-icons.left perm_contact_calendar
+          Agendar
 
 .col.s12.m12.content-information
   .row
-    .col.s12.m10.offset-m1.sizeText
+    .col.s7.m6.offset-m1.sizeText
       %p.sizeP
         = @public_event.description
+
+    .col.s5.m4.align-center
+      .card.whithe-grey.darken-1
+        .card-content.black-text
+          %span.card-title Card Title
+          %p.sizeCart
+            %i{:class => "tiny material-icons"} location_on
+            = @public_event.address
+          %p.sizeCart
+            %i{:class => "tiny material-icons"} perm_contact_calendar
+            = l(@public_event.start_at, format: :long)
+          %p.sizeCart.red-text
+            = "#{@public_event.impressionist_count} vistas"
+
+        .card-action
+          = link_to(image_tag("twitter.png"))
+          = link_to(image_tag("facebook.png"))
+          = link_to(image_tag("mail.png"))
 
   .row
     %div{style: 'width: 100%'}

@@ -21,6 +21,7 @@ body{
 		margin-left: 70px;
 		margin-right: 70px;
 		padding-top: 20px;
+    vertical-align: top;
 	}
 }
 
@@ -28,10 +29,17 @@ body{
 	position: absolute;
 	width: 100%;
   z-index: 1;
+  height: 44px;
 	nav{
 		background-color: rgba(6, 6, 6, 0.53);
+    height: 44px;
     .container{
       width: 80%;
+    }
+    .nav-wrapper{
+
+      vertical-align: top;
+      line-height: 44px;
     }
 	}
 }
@@ -122,13 +130,61 @@ body{
 	}
 }
 
+// assitant event
+.headerAssistant{
+  width: 100%;
+  height: 60px;
+  bottom: 0;
+  position: absolute;
+  background: rgba(0,0,0,0.5);
+  text-align: center;
+  color: white;
+}
+
+.contentAssistant{
+  margin-top: 150px;
+  margin-left: -200px;
+
+  width: 40%;
+  left: 30%;
+
+  margin-top: -20px;
+  margin-left: -20%;
+
+  color: white;
+  position: absolute;
+  height: 40px;
+
+  top: 20%;
+  margin: auto;
+  max-width: 1280px;
+  .row .col {
+    float: right;
+    width: 50px;
+    padding-right: 0px;
+    padding-left: 0px;
+
+  }
+}
+
+.contentAssistant img {
+  display: block !important;
+  min-width: 0 !important;
+  position: inherit !important;
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+// end assitant event
+
 .headerShow{
 	position: absolute;
   bottom: 0;
 	color: white;
 	width: 100%;
 	background-image: linear-gradient(-180deg, rgba(65,76,87,0.00) 0%, rgba(65,67,87,0.70) 100%);
-	margin-bottom: 0;
+  margin-bottom: 60px;
 	height: 50%;
 	.title-event{
 		position: absolute;
@@ -137,7 +193,9 @@ body{
 }
 
 .contentShow{
-	padding: 30px 0;
+  padding-top: 14px;
+  padding-bottom: 6px;
+
 	margin-bottom: 0;
 	.sizeP{
 		color: #666464;
@@ -153,6 +211,10 @@ body{
 
 .sizeP{
 	margin: 0 0 10px;
+}
+
+.sizeCart{
+  margin-bottom: 10px !important;
 }
 
 .content-information{
