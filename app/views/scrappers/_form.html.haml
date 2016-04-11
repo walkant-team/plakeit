@@ -8,6 +8,7 @@
           - @event.errors.full_messages.each do |msg|
             %li= msg
     = f.input :title
+    = f.association :category
     = f.label :start_at
     .row
       = f.input_field :start_at, class: 'col s2'
@@ -22,10 +23,12 @@
       .col.s6
         = f.input :longitude
     = f.input :description, input_html: { class: 'materialize-textarea' }
-    = image_tag attachment_url(@event, :image, :fill, 300, 300, format: 'jpg')
     = f.label :image
     .row
       = f.attachment_field :image
-    = f.association :category
+    .row
+      = f.input :remote_image_url
+    - if @event.image_id?
+      = image_tag attachment_url(@event, :image, :fill, 300, 300, format: 'jpg')
     .actions
       = f.submit 'Save', class: 'btn waves-effect'
