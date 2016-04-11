@@ -66,7 +66,7 @@ class ScrappersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def scrapper_params
-      params.fetch(:public_event, {}).permit(:title, :start_at, :end_at, :address, :location, :latitude, :longitude, :description, :image, :category_id)
+      params.fetch(:public_event, {}).permit(:title, :start_at, :end_at, :address, :location, :latitude, :longitude, :description, :image, :remote_image_url, :category_id)
     end
 
     def authenticate
