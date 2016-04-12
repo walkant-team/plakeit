@@ -1,10 +1,16 @@
 %header.bgIndex
-  .row.header-text
-    .col.m8.offset-m2
-      %h4 DESCUBRE EVENTOS EN TU CIUDAD
-      %form.size-form
-        .col.s12.m9.formTog
-          %input#icon-form{:placeholder => "Nombre o #tag", :type => "text"}
+  .row.header-title
+    .row
+      .col.s8.push-s2.center
+        %h1 Encuentra tu lugar de diversión :)
+        %h2 Conoce lugares de acuerdo a tu estilo y pásala genial junto a tus amigos.
+    .row
+      .col.s6.push-s3
+        = simple_form_for :search, url: '' do |f|
+          .row
+            .input-field.col.s12
+              %i.material-icons.prefix search
+              = f.input_field :search, id: 'icon_prefix', class: 'search', placeholder: 'Nombre o #tag'
 
 .row.size-content#list-weekly-events
   %h5 Eventos de la semana

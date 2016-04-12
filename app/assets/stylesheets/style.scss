@@ -1,11 +1,19 @@
 html{
 	height: 100%;
+  font-family: GillSans, Calibri, Trebuchet, sans-serif;
 }
 
 body{
 	height: 100%;
+  color: #F8F8F8;
 }
 
+h1, h2 { color: #F8F8F8; }
+
+h2 {
+  font-size: 2rem;
+  font-style: italic;
+}
 
 // nav
 nav{
@@ -17,12 +25,21 @@ nav{
 }
 
 // header
-.bgIndex{
+.bgIndex {
 	background: linear-gradient(rgba(12, 24, 44, .6), rgba(12, 24, 44, .6)),url(image-path('header.jpeg'));
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-	height: 70%;
+	height: 95%;
+  color: white;
+  .header-title {
+    bottom: 80px;
+    position: absolute;
+    width: 100%;
+  }
+  .search {
+    font-size: 2.5rem; 
+  }
 }
 
 .parallax-container{
@@ -210,13 +227,6 @@ nav.calendar{
 	height: 350px;
 }
 
-.formTog{
-	margin-left: -10px !important;
-}
-
-.size-form{
-	margin-top: 50px;
-}
 
 .size-content{
 	margin-top: 100px;
@@ -331,17 +341,8 @@ footer.page-footer {
 }
 
 @media (max-width: 400px) {
-	.header-text{
-		margin-top: 100px;
-	}
-
 	.diffuses{
 		margin-top: 20px;
-	}
-
-	.formTog{
-		margin-left: 0px !important;
-		margin-top: 15px;
 	}
 
 	.nav-wrapper{
@@ -364,15 +365,6 @@ footer.page-footer {
  }
 
 @media (max-width: 360px) {
-	.header-text{
-		margin-top: 100px;
-	}
-
-	.formTog{
-		margin-left: 0px !important;
-		margin-top: 15px;
-	}
-
 	.nav-wrapper{
 		margin-left: 10px;
 		margin-right: 10px;
@@ -393,15 +385,6 @@ footer.page-footer {
  }
 
 @media (max-width: 320px) {
-	.header-text{
-		margin-top: 100px;
-	}
-
-	.formTog{
-		margin-left: 0px !important;
-		margin-top: 15px;
-	}
-
 	.nav-wrapper{
 		top: 15px;
 		margin-left: 10px;
