@@ -47,6 +47,9 @@ nav{
 }
 
 // card efect
+.card {
+  height: 350px;
+}
 .card-image {
   position: relative;
   overflow: hidden;
@@ -67,6 +70,7 @@ nav{
 
 
 .card-content{
+  font-size: 16px;
 	color: #504e4e;
 	a{
 		color: #504e4e;

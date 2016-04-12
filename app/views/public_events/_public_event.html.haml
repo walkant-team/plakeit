@@ -4,7 +4,7 @@
       = link_to public_event, 'data-no-turbolink' => true do
         = image_tag attachment_url(public_event, :image)
     .card-content
-      = link_to public_event.title, public_event, 'data-no-turbolink' => true
+      = link_to public_event.title, public_event, class: 'truncate', 'data-no-turbolink' => true
     .card-action
       %p
         %i{:class => "tiny material-icons"} location_on
