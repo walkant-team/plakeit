@@ -56,7 +56,6 @@ group :development, :test do
   gem 'capybara'
   gem 'poltergeist'
   gem 'dotenv-rails'
-  gem 'lorempixel_helper'
   # gem 'ffaker'
 end
 

@@ -1,7 +1,6 @@
 .parallax-container
   .parallax
-    - categories = %w(nightlife people city)
-    = lorempixel_image_tag '1400x900', category: categories.sample, item: (1..10).to_a.sample, class: 'imag-bg'
+    = image_tag attachment_url(@public_event, :image)
     .row.headerShow
       .col.s12.m10.offset-m1.title-event
         %h3
