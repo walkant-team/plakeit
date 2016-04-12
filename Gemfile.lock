@@ -148,7 +148,6 @@ GEM
       rb-inotify (>= 0.9.7)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
-    lorempixel_helper (1.1.0)
     lumberjack (1.0.10)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
@@ -342,7 +341,6 @@ DEPENDENCIES
   jquery-rails
   kaminari
   letter_opener
-  lorempixel_helper
   materialize-sass
   omniauth-facebook
   pg (~> 0.15)

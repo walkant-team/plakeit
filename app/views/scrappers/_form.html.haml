@@ -15,8 +15,8 @@
     = f.label :end_at
     .row
       = f.input_field :end_at, class: 'col s2'
-    = f.input :address
     = f.input :location
+    = f.input :address
     .row
       .col.s6
         = f.input :latitude
@@ -25,9 +25,10 @@
     = f.input :description, input_html: { class: 'materialize-textarea' }
     = f.label :image
     .row
-      = f.attachment_field :image
-    .row
-      = f.input :remote_image_url
+      .col.s4
+        = f.attachment_field :image
+      .col.s8
+        = f.input :remote_image_url
     - if @event.image_id?
       = image_tag attachment_url(@event, :image, :fill, 300, 300, format: 'jpg')
     .actions
