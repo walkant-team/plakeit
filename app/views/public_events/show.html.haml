@@ -15,46 +15,44 @@
           .col.rigth
             = image_tag("https://scontent-grt2-1.xx.fbcdn.net/hphotos-xat1/v/t1.0-9/12936633_1289683714378612_7226081659011426520_n.jpg?oh=3d63f80916e891bdc31e1b7b1205c700&oe=57822905", :alt => "plakeit", :width => 40, :height => 40, class: 'circle user')
 
-.row.contentShow
-  .col.s9.offset-s2.m5.offset-m1
-    %p.sizeP
-      %i{:class => "tiny material-icons"} location_on
-      = @public_event.address
-    %p.sizeP
-      %i{:class => "tiny material-icons"} perm_contact_calendar
-      = l(@public_event.start_at, format: :long)
+.row.contentEvent
+  .col.s12.m6
+    .col.s12.push-s3
+      %p
+        %i{:class => "tiny material-icons "} location_on
+        = @public_event.address
+      %p
+        %i{:class => "tiny material-icons"} perm_contact_calendar
+        = l(@public_event.start_at, format: :long)
+  .col.s12.m6
+    .col.s6.push-s4
+      %a.waves-effect.waves-light.btn
+        %i.large.material-icons.left perm_contact_calendar
+        Agendar
 
-  .col.s9.offset-s2.m3.offset-m2.diffuses
-    %ul
-      %li
-        %a.waves-effect.waves-light.btn
-          %i.large.material-icons.left perm_contact_calendar
-          Agendar
-
-.col.s12.m12.content-information
+.container
   .row
-    .col.s7.m6.offset-m1.sizeText
-      %p.sizeP
+    .col.l8
+      %h4
+        = @public_event.title
+      %p
         = @public_event.description
-
-    .col.s5.m4.align-center
-      .card.whithe-grey.darken-1
+    .col.l4
+      .card.whithe-grey.darken-1#aside
         .card-content.black-text
-          %span.card-title Card Title
           %p.sizeCart
             %i{:class => "tiny material-icons"} location_on
             = @public_event.address
           %p.sizeCart
             %i{:class => "tiny material-icons"} perm_contact_calendar
             = l(@public_event.start_at, format: :long)
-          %p.sizeCart.red-text
+          %p.sizeCart.red-text.center
             = "#{@public_event.impressionist_count} vistas"
 
-        .card-action
+        .card-action.center
           = link_to(image_tag("twitter.png"))
           = link_to(image_tag("facebook.png"))
           = link_to(image_tag("mail.png"))
 
-  .row
-    %div{style: 'width: 100%'}
-      #custom_style{style: 'width: 100%; height: 400px'}
+.row.mb0
+  #custom_style{style: 'width: 100%; height: 470px'}

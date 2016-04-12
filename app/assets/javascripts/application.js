@@ -23,7 +23,6 @@ $(function() {
 
   $('select').material_select();
   $('.parallax').parallax();
-
   // maps
   var mapStyle = [
       {
@@ -180,3 +179,4 @@ $(function() {
   );
 
 })
+

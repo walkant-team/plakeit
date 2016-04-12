@@ -21,7 +21,7 @@
         - if logged_in?
           %li
             = link_to '#!', class: 'dropdown-button', data: { activates: 'dropdown1' } do
-              = image_tag current_user.avatar
+              = image_tag current_user.avatar, class: 'circle user'
               %i.material-icons.right arrow_drop_down
         - else
           %li= link_to 'SIGN UP / LOGIN' ,'/auth/facebook'
