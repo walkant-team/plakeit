@@ -1,5 +1,4 @@
 class SuscriptorCustomer < Suscriptor
-
   after_create :send_mail
 
   def send_mail

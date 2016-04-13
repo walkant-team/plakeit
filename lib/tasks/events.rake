@@ -14,7 +14,7 @@ namespace :events do
       event = Event.create!(
         title: title,
         category_id: category.id,
-        start_at: Time.zone.now + (rand(2..10)).days,
+        start_at: Time.zone.now + rand(2..10).days,
         address: FFaker::Address.street_address,
         latitude: FFaker::Geolocation.lat,
         longitude: FFaker::Geolocation.lng,
@@ -22,8 +22,8 @@ namespace :events do
         publish: true,
         manual: false,
         region: 'Perú, Lima',
-        description: FFaker::Lorem.paragraphs
         # image: File.open("#{Rails.root}/spec/factories/files/business.jpeg")
+        description: FFaker::Lorem.paragraphs
       )
       event.tag_list.add(ActsAsTaggableOn::Tag.all.sample(rand(1..3)).map(&:name).join(', '))
       event.save

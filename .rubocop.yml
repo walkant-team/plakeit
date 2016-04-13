@@ -1,0 +1,16 @@
+Documentation:
+  Enabled: false
+MethodLength:
+  Max: 15
+AbcSize:
+  Max: 20
+Metrics/LineLength:
+  Max: 100
+AllCops:
+  Exclude:
+    - 'db/schema.rb' 
+    - 'db/migrate/*'
+    - 'config/**/*'
+    - 'bin/*'
+    - 'test/test_helper.rb'
+    - 'Guardfile'

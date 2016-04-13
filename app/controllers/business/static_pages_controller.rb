@@ -3,7 +3,6 @@ module Business
     layout 'business/application'
 
     def index
-
     end
   end
 end
