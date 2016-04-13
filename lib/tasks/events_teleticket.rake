@@ -5,7 +5,8 @@
 # include Capybara::DSL
 # Capybara.default_driver = :poltergeist
 #
-# url = "http://www.teleticket.com.pe/tlk_formularios/frm_Busqueda.aspx?l_categoria=2&l_subcategoria=0"
+# url = "http://www.teleticket.com.pe/tlk_formularios/frm_Busqueda.aspx\
+# ?l_categoria=2&l_subcategoria=0"
 # next_page = "div[onclick='javascript:funcionLecturaSig2();']"
 #
 # namespace :events_teleticket do

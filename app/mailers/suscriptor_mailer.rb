@@ -1,5 +1,4 @@
 class SuscriptorMailer < ApplicationMailer
-
   def suscription_business(suscriptor)
     @suscriptor = suscriptor
     mail to: @suscriptor.email, subject: 'Bienvenido a Plakeit para Negocios'

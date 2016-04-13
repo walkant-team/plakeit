@@ -5,7 +5,7 @@
 #
 #   task extraer: :environment do
 #     include Capybara::DSL
-#     carga_partido 'TODOS POR EL PERÚ'
+#     carga_partido('TODOS POR EL PERU')
 #     within('#accordion') do
 #       find("[href='#collapse0']").click
 #       tabla_periodos = find('table tbody')
@@ -90,7 +90,7 @@
 #   end
 #
 #   def ultima_fila?(celdas)
-#     celdas[0].text.strip == 'IMPORTE TOTAL DE PÁGINA' || fila_total?(celdas)
+#     celdas[0].text.strip == 'IMPORTE TOTAL DE PAGINA' || fila_total?(celdas)
 #   end
 #
 #   def nuevo_aporte_del_periodo(aportes)
@@ -108,7 +108,9 @@
 #   end
 #
 #   def nuevo_aporte(celdas)
-#     return Subtotal.new(celdas[0].text.strip, celdas[1].text.strip) if fila_subtotal?(celdas) || ultima_fila?(celdas)
+#     if fila_subtotal?(celdas) || ultima_fila?(celdas)
+#       return Subtotal.new(celdas[0].text.strip, celdas[1].text.strip)
+#     end
 #     return Aporte.new(
 #       fecha: celdas[0].text.strip,
 #       proceso_electoral: celdas[1].text.strip,

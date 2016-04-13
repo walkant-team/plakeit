@@ -1,5 +1,4 @@
 class SuscriptorBusiness < Suscriptor
-
   after_create :send_mail
 
   validates :phone, presence: true, length: { maximum: 255 }

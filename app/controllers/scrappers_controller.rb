@@ -59,19 +59,22 @@ class ScrappersController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_scrapper
-      @event = Event.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def scrapper_params
-      params.fetch(:public_event, {}).permit(:title, :start_at, :end_at, :address, :location, :latitude, :longitude, :description, :image, :remote_image_url, :category_id)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_scrapper
+    @event = Event.find(params[:id])
+  end
 
-    def authenticate
-      authenticate_or_request_with_http_basic('Administration') do |username, password|
-        username == 'admin' && password == 'Scr4pp3r5'
-      end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def scrapper_params
+    params.fetch(:public_event, {}).permit(:title, :start_at, :end_at, :address, :location,
+                                           :latitude, :longitude, :description, :image,
+                                           :remote_image_url, :category_id)
+  end
+
+  def authenticate
+    authenticate_or_request_with_http_basic('Administration') do |username, password|
+      username == 'admin' && password == 'Scr4pp3r5'
     end
+  end
 end
