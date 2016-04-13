@@ -29,16 +29,16 @@
         %i.large.material-icons.left perm_contact_calendar
         Agendar
 
-.container
+.containerDescription
   .row
     .col.l8
-      %h4.black-text
+      %h4
         = @public_event.title
-      %p.black-text
+      %p.contentDescription
         = @public_event.description
     .col.l4
       .card.whithe-grey.darken-1#aside
-        .card-content.black-text
+        .card-content
           %p.sizeCart
             %i{:class => "tiny material-icons"} location_on
             = @public_event.address

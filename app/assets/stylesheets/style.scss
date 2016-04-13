@@ -37,7 +37,7 @@ nav{
     width: 100%;
   }
   .search {
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
   }
 }
 
@@ -182,17 +182,13 @@ nav{
 .contentAssistant{
   margin-top: 150px;
   margin-left: -200px;
-
   width: 40%;
   left: 30%;
-
   margin-top: -20px;
   margin-left: -20%;
-
   color: white;
   position: absolute;
   height: 40px;
-
   top: 20%;
   margin: auto;
   max-width: 1280px;
@@ -215,6 +211,16 @@ nav{
   transition: all 0.3s;
 }
 // end assitant events
+
+// content description
+.contentDescription {
+  color: rgba(0,0,0,0.71);
+  -webkit-font-smoothing: antialiased;
+  font-size: 21px !important;
+  line-height: 1.5;
+}
+
+// end content description
 
 .headerShow{
 	position: absolute;
@@ -268,6 +274,8 @@ nav{
 	}
 }
 
+
+
 nav.calendar{
 	background: transparent;
 }
@@ -296,6 +304,16 @@ nav.calendar{
     border: 1px solid #f2f2f2;
     border-radius: 0px 5px 5px 0px !important;
     height: 3.8rem;
+}
+
+#aside{
+  height: 200px;
+}
+
+.containerDescription{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1280px;
 }
 
 .card-action{
@@ -339,6 +357,11 @@ footer{
 footer.page-footer {
   margin-top: 0px;
   padding-top: 0px;
+}
+
+// margins
+.mb0{
+  margin-bottom: 0px;
 }
 
 @media (max-width: 400px) {
@@ -417,9 +440,3 @@ footer.page-footer {
         top: auto !important;
     }
 }
-
-.mb0{
-  margin-bottom: 0px;
-}
-
-

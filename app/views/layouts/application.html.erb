@@ -26,17 +26,18 @@
   <%= yield %>
   <footer class="page-footer">
     <div class="container">
-      <div class="row">
+      <div class="row mb0">
         <div class="col l6 s12">
-          <h5 class="white-text">Consultas</h5>
-          <p class="grey-text text-lighten-4">Correo: hello@plakeit.com</p>
+          <h5 class="white-text center">Contactanos</h5>
+            <ul class='social center'>
+              <li class="white-text"> +51 985 284 455</li>
+            </ul>
         </div>
         <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Siguenos</h5>
-          <ul class='social'>
+          <h5 class="white-text center">Siguenos</h5>
+          <ul class='social center'>
             <li><%= link_to image_tag('facebook_icon.png', size: '22'), 'https://www.facebook.com/plakeit', target: '_blank' %></li>
             <li><%= link_to image_tag('twiter_icon.png', size: '22'), 'https://www.twitter.com/plakeitOficial', target: '_blank' %> </li>
-            <li><%= mail_to "hello@plakeit.com", image_tag('mail_icon.png', size: '22') %> </li>
           </ul>
         </div>
       </div>
