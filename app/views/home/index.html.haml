@@ -12,15 +12,16 @@
               %i.material-icons.prefix search
               = f.input_field :search, id: 'icon_prefix', class: 'search', placeholder: 'Nombre o #tag'
 
-.row.list-events#list-weekly-events
-  .col.s8.push-s2
-    %h5 Eventos de la semana
-    = render @weekly_events
+#content-event
+  .row.list-events#list-weekly-events
+    .col.s8.push-s2
+      %h5 Eventos de la semana
+      = render @weekly_events
 
-.row.list-events#list-public-events
-  .col.s8.push-s2
-    %h5 Proximos Eventos
-    = render @public_events
+  .row.list-events#list-public-events
+    .col.s8.push-s2
+      %h5 Proximos Eventos
+      = render @public_events
 
 .row
   .col.s12.m12
