@@ -54,4 +54,7 @@
           = link_to(image_tag("mail.png"))
 
 .row.mb0
-  #custom_style{style: 'width: 100%; height: 470px'}
+  #map{style: 'width: 100%; height: 470px'}
+
+:javascript
+  buildMap(#{raw @hash.to_json})
