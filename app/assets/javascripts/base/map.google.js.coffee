@@ -90,6 +90,7 @@ mapStyle = [
 
   handler.buildMap {
     provider:
+      disableDefaultUI: true
       styles: mapStyle
       scrollwheel: false
     internal: {id: 'map'} }, ->
