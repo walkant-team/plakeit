@@ -1,0 +1,4 @@
+test:
+  pre:
+    - RAILS_ENV=test bundle exec rake assets:clobber
+    - RAILS_ENV=test bundle exec rake assets:precompile
