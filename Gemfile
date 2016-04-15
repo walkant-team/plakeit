@@ -76,7 +76,7 @@ group :test do
   gem 'guard-rspec', require: false
   gem 'fuubar'
   gem 'shoulda-matchers', '~> 3.1'
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', require: false
 end
 
 group :production do
