@@ -214,10 +214,13 @@ nav{
 
 // content description
 .contentDescription {
-  color: rgba(0,0,0,0.71);
+  color: #404d57;
   -webkit-font-smoothing: antialiased;
-  font-size: 21px !important;
-  line-height: 1.5;
+  font-size: 14px !important;
+  white-space: pre-line;
+ // line-height: 1.5;
+  line-height: 1.75rem;
+  font-family: visuelt-reg,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 // end content description
@@ -252,14 +255,23 @@ nav{
   padding-top: 10px;
   margin-bottom: 0;
   padding-bottom: 5px;
-  background: rgba(47, 67, 102, 0.32);
+  background: rgb(248, 248, 248);
   p{
     margin: 0 0 10px;
+    color: #404d57;
+    opacity: .75;
   }
+}
+
+.contentTitle {
+  color: #404d57;
+  font-family: visuelt-lig,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  opacity: .75;
 }
 
 .sizeCart{
   margin-bottom: 10px !important;
+
 }
 
 .content-information{
