@@ -2,6 +2,10 @@ dependencies:
   post:
     - bin/cisetup
 
+checkout:
+  post:
+    - git fetch origin — depth=1000000
+
 test:
   pre:
     - RAILS_ENV=test bundle exec rake db:seed
