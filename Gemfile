@@ -58,7 +58,6 @@ group :development, :test do
   gem 'capybara'
   gem 'poltergeist'
   gem 'dotenv-rails'
-  # gem 'ffaker'
 end
 
 group :development do
@@ -77,6 +76,7 @@ group :test do
   gem 'fuubar'
   gem 'shoulda-matchers', '~> 3.1'
   gem 'factory_girl_rails', require: false
+  gem 'database_cleaner'
 end
 
 group :production do
