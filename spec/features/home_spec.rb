@@ -2,7 +2,7 @@ require 'rails_helper'
 
 feature 'Home' do
   scenario 'Events of week' do
-    event = create(:event)
+    event = create(:event, :public)
 
     visit root_path
 
