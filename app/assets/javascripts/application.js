@@ -19,6 +19,21 @@
 //= require gmaps/google
 //= require_self
 
+$(document).ready(function(){
+  $('#fbmsn').click(function(){
+    var url_event= location.href;
+    var url=url_event+".html";
+    alert(url);
+         // assume we are already logged in
+      FB.init({appId: '870486713077037', xfbml: true, cookie: true});
+      FB.ui({
+          method: 'send',
+          name: 'Plakeit',
+          link: url,
+          });
+
+    });
+  });
 (function($, window, document, undefined) {
 
 

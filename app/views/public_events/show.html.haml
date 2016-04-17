@@ -29,7 +29,6 @@
           %i.small.material-icons.left perm_contact_calendar
           Agendar
 
-
 .row
   .col.s8.push-s2
     .col.l8
@@ -50,13 +49,12 @@
             = "#{@public_event.impressionist_count} vistas"
 
         .card-action.center
-          = link_to(image_tag("facebook-msn.png"))
+          %a#fbmsn
+            = image_tag("facebook-msn.png")
           %a.goodshare{"data-type" => "fb", :href => "#"}
             = image_tag("facebook.png")
           %a.goodshare{"data-type" => "wa", :href => "#"}
             = image_tag("whatsapp.png")
-          .fb-send{"data-href" => "http://www.plakeit.com/"}
 
 .row.mb0
   #custom_style{style: 'width: 100%; height: 470px'}
-
