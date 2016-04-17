@@ -13,6 +13,11 @@
 !/log/.keep
 /tmp
 
+# Ignore SimpleCov test coverage
+/coverage
+
+TODO.txt
+test.png
 *.dump
 public/assets/
 config/database.yml

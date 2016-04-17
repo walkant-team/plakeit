@@ -80,6 +80,7 @@ group :test do
   gem 'shoulda-matchers', '~> 3.1', require: false
   gem 'factory_girl_rails', require: false
   gem 'database_cleaner'
+  gem 'simplecov', require: false
 end
 
 group :production do
