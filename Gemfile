@@ -77,7 +77,7 @@ group :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'guard-rspec', require: false
   gem 'fuubar'
-  gem 'shoulda-matchers', '~> 3.1'
+  gem 'shoulda-matchers', '~> 3.1', require: false
   gem 'factory_girl_rails', require: false
   gem 'database_cleaner'
 end
