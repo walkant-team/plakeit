@@ -41,11 +41,6 @@ gem 'refile', require: 'refile/rails'
 gem 'refile-mini_magick'
 gem 'refile-s3'
 
-gem 'rubocop', require: false
-gem 'pronto'
-gem 'pronto-rubocop', require: false
-gem 'pronto-flay', require: false
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -61,6 +56,10 @@ group :development, :test do
   gem 'capybara'
   gem 'poltergeist'
   gem 'dotenv-rails'
+  gem 'rubocop', require: false
+  gem 'pronto'
+  gem 'pronto-rubocop', require: false
+  gem 'pronto-flay', require: false
 end
 
 group :development do
