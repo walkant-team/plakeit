@@ -2,7 +2,7 @@
   .card
     .card-image
       = link_to public_event, 'data-no-turbolink' => true do
-        = image_tag attachment_url(public_event, :image)
+        = attachment_image_tag(public_event, :image, fallback: 'header.jpeg')
     .card-content
       = link_to public_event.title, public_event, class: 'truncate', 'data-no-turbolink' => true
     .card-action

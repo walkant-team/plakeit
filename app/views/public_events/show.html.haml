@@ -1,6 +1,6 @@
 .parallax-container
   .parallax
-    = image_tag attachment_url(@public_event, :image)
+    = attachment_image_tag(@public_event, :image, fallback: 'header.jpeg')
     .row.headerShow
       .col.s12.m10.offset-m1.title-event
         %h3
@@ -57,4 +57,7 @@
             = image_tag("whatsapp.png")
 
 .row.mb0
-  #custom_style{style: 'width: 100%; height: 470px'}
+  #map{style: 'width: 100%; height: 470px'}
+
+:javascript
+  buildMap(#{raw @hash.to_json})

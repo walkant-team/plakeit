@@ -41,7 +41,7 @@ gem 'refile', require: 'refile/rails'
 gem 'refile-mini_magick'
 gem 'refile-s3'
 
-gem 'rubocop', require: false
+gem "koala", "~> 2.2"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -58,7 +58,10 @@ group :development, :test do
   gem 'capybara'
   gem 'poltergeist'
   gem 'dotenv-rails'
-  # gem 'ffaker'
+  gem 'rubocop', require: false
+  gem 'pronto'
+  gem 'pronto-rubocop', require: false
+  gem 'pronto-flay', require: false
 end
 
 group :development do
@@ -75,8 +78,10 @@ group :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'guard-rspec', require: false
   gem 'fuubar'
-  gem 'shoulda-matchers', '~> 3.1'
-  gem 'factory_girl_rails'
+  gem 'shoulda-matchers', '~> 3.1', require: false
+  gem 'factory_girl_rails', require: false
+  gem 'database_cleaner'
+  gem 'simplecov', require: false
 end
 
 group :production do

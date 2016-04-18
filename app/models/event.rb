@@ -5,5 +5,5 @@ class Event < ActiveRecord::Base
   belongs_to :category
   # has_and_belongs_to_many :users
 
-  validates :title, :start_at, :image, :category, presence: true
+  validates :title, :start_at, :category, presence: true
 end

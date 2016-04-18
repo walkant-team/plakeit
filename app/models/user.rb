@@ -14,4 +14,14 @@ class User < ActiveRecord::Base
       user.region   = info['location']
     end
   end
+
+  def facebook
+    @facebook ||= Koala::Facebook::API.new(oauth_access_token)
+  end
+
+  private
+
+  def oauth_access_token
+    authentications.facebook.token
+  end
 end
