@@ -8,8 +8,6 @@ Rails.application.routes.draw do
 
   resources :scrappers
   get 'category/:category' => 'home#index', as: :category_events
-  resources :public_events, only: [:show], path: ''
-  # get ':name_event' => 'public_events#show', as: 'events'
 
   # sessions
   get '/auth/:provider/callback', to: 'sessions#create'
@@ -27,5 +25,8 @@ Rails.application.routes.draw do
       resources :suscriptors, only: [:create, :new]
     end
   end
+
+  resources :public_events, only: [:show], path: ''
+  # get ':name_event' => 'public_events#show', as: 'events'
 
 end
