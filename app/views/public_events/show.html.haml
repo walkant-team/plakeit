@@ -15,24 +15,24 @@
             = image_tag("https://scontent-grt2-1.xx.fbcdn.net/hphotos-xat1/v/t1.0-9/12936633_1289683714378612_7226081659011426520_n.jpg?oh=3d63f80916e891bdc31e1b7b1205c700&oe=57822905", :alt => "plakeit", :width => 40, :height => 40, class: 'circle user')
 
 .row.contentEvent
-  .col.s12.m6
-    .col.s12.push-s3
+  .col.s8.push-s2
+    .col.l8
       %p
         %i{:class => "tiny material-icons "} location_on
         = @public_event.address
       %p
         %i{:class => "tiny material-icons"} perm_contact_calendar
         = l(@public_event.start_at, format: :long)
-  .col.s12.m6
-    .col.s6.push-s4
-      %a.waves-effect.waves-light.btn
-        %i.large.material-icons.left perm_contact_calendar
-        Agendar
+    .col.l4
+      .col.s12.push-s1
+        %a.waves-effect.waves-light.btn
+          %i.small.material-icons.left perm_contact_calendar
+          Agendar
 
-.containerDescription
-  .row
+.row
+  .col.s8.push-s2
     .col.l8
-      %h4
+      %h5.contentTitle
         = @public_event.title
       %p.contentDescription
         = @public_event.description
@@ -49,9 +49,12 @@
             = "#{@public_event.impressionist_count} vistas"
 
         .card-action.center
-          = link_to(image_tag("twitter.png"))
-          = link_to(image_tag("facebook.png"))
-          = link_to(image_tag("mail.png"))
+          %a#fbmsn{:href => "#"}
+            = image_tag("facebook-msn.png")
+          %a.goodshare{"data-type" => "fb", :href => "#"}
+            = image_tag("facebook.png")
+          %a.goodshare{"data-type" => "wa", :href => "#"}
+            = image_tag("whatsapp.png")
 
 .row.mb0
   #map{style: 'width: 100%; height: 470px'}
