@@ -93,6 +93,8 @@ GEM
       erubis (~> 2.7.0)
       ruby_parser (~> 3.0)
       sexp_processor (~> 4.0)
+    font-awesome-rails (4.5.0.1)
+      railties (>= 3.2, < 5.1)
     formatador (0.2.5)
     fuubar (2.0.0)
       rspec (~> 3.0)
@@ -384,6 +386,7 @@ DEPENDENCIES
   dotenv-rails
   factory_girl_rails
   ffaker
+  font-awesome-rails
   fuubar
   gmaps4rails
   guard-rspec

@@ -46,9 +46,27 @@ nav{
   margin-top: 50px;
 }
 
-// card efect
+// card aside 
+
+.card#aside {
+  width: 280px;
+
+  .card-content {
+    padding: 0;
+
+    .detail { padding: 15px; font-size: 20px; }
+    .material-icons { vertical-align: bottom; }
+  }
+
+  .card-action {
+    a { margin: 0 auto; color: black; }
+    img { height: 36px; }
+  }
+}
+
+// card efect - list events
 .card {
-  height: 350px;
+  max-height: 350px;
 }
 .card-image {
   position: relative;
@@ -67,7 +85,6 @@ nav{
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-
 
 .card-content{
   font-size: 16px;
@@ -267,11 +284,6 @@ nav{
   opacity: .75;
 }
 
-.sizeCart{
-  margin-bottom: 10px !important;
-
-}
-
 .content-information{
 	background: #f1f1f1;
 	.sizeText{
@@ -316,18 +328,10 @@ nav.calendar{
     height: 3.8rem;
 }
 
-#aside{
-  height: 200px;
-}
-
 .containerDescription{
     width: 80%;
     margin: 0 auto;
     max-width: 1280px;
-}
-
-.card-action{
-	color:silver;
 }
 
 // more

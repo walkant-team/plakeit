@@ -28,8 +28,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'haml-rails', '~> 0.9'
 gem 'simple_form'
 gem 'acts-as-taggable-on', '~> 3.4'
-gem 'animate-rails'
+gem 'animate-rails' # verified?
 gem 'impressionist' # views_count
+gem "font-awesome-rails"
 
 gem 'omniauth-facebook'
 gem 'kaminari'
