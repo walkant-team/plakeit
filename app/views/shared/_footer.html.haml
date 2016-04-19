@@ -1,0 +1,32 @@
+.row
+  .col.s12.m6
+    .col.l6.s6.m3.push-l2
+      %h5.center.footer-tittle Negocios
+      %ul.footer-content
+        %li
+          %p Gestiona tus Eventos
+        %li
+          %p Fidelizacion de Clientes
+    .col.l6.s6.m3.push-l2
+      %h5.center.footer-tittle Asistentes
+      %ul.footer-content
+        %li
+          %p Eventos Personalizados
+        %li
+          %p Ofertas de Eventos
+        %li
+          %p Promociones
+  .col.s12.m6
+    .col.s6.m6.push-m3
+      %h5.center.footer-tittle Siguenos
+      .col.s6.m6.push-m3.center
+        %ul.footer-social
+          %li= link_to image_tag('facebook_icon.png', size: '22'), 'https://www.facebook.com/plakeit', target: '_blank'
+          %li
+            = link_to image_tag('twiter_icon.png', size: '22'), 'https://www.twitter.com/plakeitOficial', target: '_blank'
+%footer.page-footer
+  .footer-image
+    = image_tag('footer.png')
+  .footer-copyright.center
+    .container
+      © 2016 Plakeit, Inc.

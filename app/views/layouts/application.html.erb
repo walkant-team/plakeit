@@ -27,52 +27,7 @@
   </div>
   <%= render partial: 'shared/header' %>
   <%= yield %>
-
-
-
-  <div class="row">
-      <div class="col s12 m6">
-
-          <div class="col l6 s6 m3 push-l2">
-            <h5 class="center">Negocio</h5>
-              <ul class="">
-                <li>Gestiona tus Eventos</li>
-                <li>Fidelizacion de Clientes</li>
-              </ul>
-          </div>
-          <div class="col l6 s6 m3 push-l2">
-            <h5 class="center">Beneficiate</h5>
-              <ul class="">
-                <li>Eventos Personalizados</li>
-                <li>Ofertas de Eventos</li>
-                <li>Promociones</li>
-              </ul>
-          </div>
-
-          <!-- <ul>
-              <li> +51 985 284 455</li>
-            </ul> -->
-      </div>
-        <div class="col s12 m6">
-          <h5 class="center">Siguenos</h5>
-          <ul class='social center'>
-            <li><%= link_to image_tag('facebook_icon.png', size: '22'), 'https://www.facebook.com/plakeit', target: '_blank' %></li>
-            <li><%= link_to image_tag('twiter_icon.png', size: '22'), 'https://www.twitter.com/plakeitOficial', target: '_blank' %> </li>
-          </ul>
-        </div>
-      </div>
-
-
-  <footer class="page-footer">
-    <div class="footer-image">
-      <%= image_tag('footer.png') %>
-    </div>
-    <div class="footer-copyright center">
-      <div class="container">
-      © 2016 Plakeit, Inc.
-      </div>
-    </div>
-  </footer>
+  <%= render 'shared/footer' %>
   <% if Rails.env.production? %>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
