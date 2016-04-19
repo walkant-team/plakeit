@@ -23,5 +23,11 @@
 $(function() {
   $('select').material_select();
   $('.parallax').parallax();
+
+  window.addeventasync = function(){
+    addeventatc.settings({
+      css        : false
+    });
+  };
 })
 

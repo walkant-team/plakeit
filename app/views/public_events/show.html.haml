@@ -5,6 +5,7 @@
       .col.s12.m10.offset-m1.title-event
         %h3
           = @public_event.title
+        = render 'shared/addevent', event: @public_event
 
     .col.s12.m12.headerAssistant.center-align
       .contentAssistant
@@ -25,9 +26,7 @@
         = l(@public_event.start_at, format: :long)
   .col.s12.m6
     .col.s6.push-s4
-      %a.waves-effect.waves-light.btn
-        %i.large.material-icons.left perm_contact_calendar
-        Agendar
+      = render 'shared/addcalendar', event: @public_event
 
 .containerDescription
   .row
