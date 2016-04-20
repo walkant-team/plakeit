@@ -17,7 +17,7 @@
 //= require turbolinks
 //= require underscore
 //= require gmaps/google
-//= require base/map.google
+//= require clients/map.google
 //= require_self
 
 $(document).ready(function(){
@@ -161,5 +161,19 @@ $(function() {
     addeventatc.settings({
       css        : false
     });
+
+    addeventatc.register('button-click', function(obj){
+      if(gon.logged){
+        $.post('reminders', { event_id: gon.event.id, user_id: gon.current_user.id });
+      } else {
+        $('#' + obj.id).click();
+        alert('Necesita estar logeado para agendar :)');
+      }
+    });
+
+    addeventatc.register('button-dropdown-click', function(obj){
+      window.location.reload();
+    });
+
   };
 })

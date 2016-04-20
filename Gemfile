@@ -42,7 +42,8 @@ gem 'refile', require: 'refile/rails'
 gem 'refile-mini_magick'
 gem 'refile-s3'
 
-gem "koala", "~> 2.2"
+gem 'koala', '~> 2.2'
+gem 'gon'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
