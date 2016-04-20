@@ -369,9 +369,9 @@ footer{
 }
 
 .footer-social {
-    display: inline-block;
+    display: inline-flex;
     li{
-    display: inline-block;
+    display: inline-flex;
     margin-right: 10px;
   }
 }
@@ -389,6 +389,9 @@ footer.page-footer {
   color: #404d57;
   font-family: visuelt-lig,"Helvetica Neue",Helvetica,Arial,sans-serif;
   opacity: .75;
+  a {
+    color: #404d57;
+  }
 }
 
 .footer-content p{
@@ -400,6 +403,11 @@ footer.page-footer {
 // margins
 .mb0{
   margin-bottom: 0px;
+}
+
+// padding
+.pt20{
+  padding-top: 20px;
 }
 
 @media (max-width: 400px) {
