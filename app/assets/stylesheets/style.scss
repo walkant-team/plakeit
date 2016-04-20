@@ -17,7 +17,6 @@ h2 {
 // nav
 nav{
   background-color: #F8F8F8;
-
   ul {
     a { color: #404D57;}
   }
@@ -67,7 +66,6 @@ nav{
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-
 
 .card-content{
   font-size: 16px;
@@ -125,7 +123,6 @@ nav{
 	.user{
 		margin-left: 25px;
 	}
-
 }
 
 .menubar{
@@ -218,11 +215,9 @@ nav{
   -webkit-font-smoothing: antialiased;
   font-size: 14px !important;
   white-space: pre-line;
- // line-height: 1.5;
   line-height: 1.75rem;
   font-family: visuelt-reg,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-
 // end content description
 
 .headerShow{
@@ -271,7 +266,6 @@ nav{
 
 .sizeCart{
   margin-bottom: 10px !important;
-
 }
 
 .content-information{
@@ -333,7 +327,6 @@ nav.calendar{
 }
 
 // more
-
 #view-more {
   padding: 2em;
   text-align: center;
