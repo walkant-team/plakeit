@@ -6,13 +6,11 @@
         %h3
           = @public_event.title
 
-    .col.s12.m12.headerAssistant.center-align
-      .contentAssistant
-        .row
-          .col.rigth
-            = image_tag("https://scontent-grt2-1.xx.fbcdn.net/hphotos-xat1/v/t1.0-9/12936633_1289683714378612_7226081659011426520_n.jpg?oh=3d63f80916e891bdc31e1b7b1205c700&oe=57822905", :alt => "plakeit", :width => 40, :height => 40, class: 'circle user')
-          .col.rigth
-            = image_tag("https://scontent-grt2-1.xx.fbcdn.net/hphotos-xat1/v/t1.0-9/12936633_1289683714378612_7226081659011426520_n.jpg?oh=3d63f80916e891bdc31e1b7b1205c700&oe=57822905", :alt => "plakeit", :width => 40, :height => 40, class: 'circle user')
+    .row.assistant
+      .col.l6.push-l3
+        %span= pluralize(@public_event.users.count, 'asistirá', 'asistirán')
+        - @assistants.each do |assistant|
+          = image_tag assistant.avatar, class: 'circle', :alt => assistant.fullname, :width => 50, :height => 50
 
 .row.contentEvent
   .col.l8.push-l2.s12.m12

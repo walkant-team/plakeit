@@ -8,4 +8,15 @@ class PublicEvent < Event
   def to_param
     [id, title.parameterize].join('-')
   end
+
+  def assistants(current_user)
+    assistants = users.last(8) - [current_user]
+
+    exist?(current_user) ? assistants.unshift(current_user) : assistants
+  end
+
+  def exist?(current_user)
+    return false unless current_user
+    Reminder.exists?(event_id: id, user_id: current_user.id)
+  end
 end
