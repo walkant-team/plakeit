@@ -15,40 +15,61 @@
             = image_tag("https://scontent-grt2-1.xx.fbcdn.net/hphotos-xat1/v/t1.0-9/12936633_1289683714378612_7226081659011426520_n.jpg?oh=3d63f80916e891bdc31e1b7b1205c700&oe=57822905", :alt => "plakeit", :width => 40, :height => 40, class: 'circle user')
 
 .row.contentEvent
-  .col.s8.push-s2
-    .col.l8
+  .col.l8.push-l2.s12.m12
+    .col.l8.hide-on-small-only.hide-on-med-only
       %p
         %i{:class => "tiny material-icons "} location_on
         = @public_event.address
       %p
         %i{:class => "tiny material-icons"} perm_contact_calendar
         = l(@public_event.start_at, format: :long)
-    .col.l4
+    .col.l4.m4.hide-on-small-only.hide-on-med-only
       = render 'shared/addcalendar', event: @public_event
-
+    .col.s12.center.hide-on-large-only
+      = render 'shared/addcalendar', event: @public_event
 .row
-  .col.s8.push-s2
-    .col.l8
+  .col.l8.push-l2.s12.m12
+    .col.l8.m8.hide-on-small-only
       %h5.contentTitle
         = @public_event.title
       %p.contentDescription
         = @public_event.description
-    .col.l4
+    .col.l4.m4.hide-on-small-only
       .card#aside
         .card-content
           = render 'shared/addevent', event: @public_event
           .detail.center
             %i.material-icons face
             %span= "#{@public_event.impressionist_count} visitas"
-
         .card-action.row
-          .col.l4.center
+          .col.l4.m4.center
             %a#fbmsn{:href => "#"}
               = image_tag("icons/fb-messenger.svg")
-          .col.l4.center
+          .col.l4.m4.center
             %a.fa.fa-facebook-square.fa-3x.goodshare{"data-type" => "fb", :href => "#"}
-          .col.l4.center
+          .col.l4.m4.center
             %a.fa.fa-whatsapp.fa-3x.goodshare{"data-type" => "wa", :href => "#"}
+
+    .col.s8.push-s2.hide-on-large-only.hide-on-med-only
+      .card#aside
+        .card-content
+          = render 'shared/addevent', event: @public_event
+          .detail.center
+            %i.material-icons face
+            %span= "#{@public_event.impressionist_count} visitas"
+        .card-action.row
+          .col.s4.center
+            %a#fbmsn{:href => "#"}
+              = image_tag("icons/fb-messenger.svg")
+          .col.s4.center
+            %a.fa.fa-facebook-square.fa-3x.goodshare{"data-type" => "fb", :href => "#"}
+          .col.s4.center
+            %a.fa.fa-whatsapp.fa-3x.goodshare{"data-type" => "wa", :href => "#"}
+    .col.s12.hide-on-large-only.hide-on-med-only
+      %h5.contentTitle
+        = @public_event.title
+      %p.contentDescription
+        = @public_event.description
 
 .row.mb0
   #map{style: 'width: 100%; height: 470px'}
