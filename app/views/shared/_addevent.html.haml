@@ -1,0 +1,27 @@
+.addeventatc.theme4
+  .date
+    %span.mon= event.start_at.strftime('%b')
+    %span.day= event.start_at.day
+    .bdr1
+    .bdr2
+  .desc
+    %p
+      %strong.hed= event.title
+      %span.des
+        = "Location: #{event.location}"
+        %br>/
+        When:
+        = event.start_at.hour
+        h -
+        = event.end_at ? event.end_at.hour : (event.start_at.hour + 4)
+        h
+
+  %span.start= event.start_at
+  %span.end= event.end_at
+  %span.timezone America/Lima
+  %span.title= event.title
+  %span.description= event.description
+  %span.location= event.location
+  %span.organizer Plakeit
+  %span.all_day_event false
+  %span.date_format MM/DD/YYYY

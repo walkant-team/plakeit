@@ -1,8 +1,10 @@
 class PublicEventsController < ApplicationController
+  before_action :current_user_js, only: :show
   impressionist actions: [:show], unique: [:session_hash, :impressionable_type, :impressionable_id]
 
   def show
     @public_event = PublicEvent.find(params[:id])
+    gon.event = @public_event
     @hash = Gmaps4rails.build_markers(@public_event) do |event, marker|
       marker.lat event.latitude
       marker.lng event.longitude
