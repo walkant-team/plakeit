@@ -13,4 +13,9 @@ module SessionsHelper
   def logged_in?
     !current_user.nil?
   end
+
+  def current_user_js
+    gon.logged = logged_in?
+    gon.current_user = current_user
+  end
 end
