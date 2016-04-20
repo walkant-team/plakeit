@@ -357,23 +357,20 @@ nav.calendar{
 }
 
 // Footer
-footer{
+footer {
 	background: #323232 !important;
-	h5{
+	h5 {
 		font-weight: 300;
 		margin-bottom: 1.2em;
-	}
-	.social li{
-		display: inline-block;
-		margin-right: 10px;
 	}
 }
 
 .footer-social {
-    display: inline-flex;
-    li{
+  display: inline-flex;
+  li {
     display: inline-flex;
     margin-right: 10px;
+    a { color: black; }
   }
 }
 
@@ -382,7 +379,7 @@ footer.page-footer {
   padding-top: 0px;
 }
 
-.footer-image img{
+.footer-image img {
   width: 100%;
 }
 
