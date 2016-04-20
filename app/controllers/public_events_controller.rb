@@ -4,6 +4,7 @@ class PublicEventsController < ApplicationController
 
   def show
     @public_event = PublicEvent.find(params[:id])
+    @assistants = @public_event.assistants(current_user)
     gon.event = @public_event
     @hash = Gmaps4rails.build_markers(@public_event) do |event, marker|
       marker.lat event.latitude

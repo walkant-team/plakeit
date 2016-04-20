@@ -1,5 +1,5 @@
 .addeventatc.theme1{title: 'Add to Calendar'}
-  Add to Calendar
+  = event.exist?(current_user) ? 'Scheduled' : 'Add to Calendar'
   %span.start= event.start_at
   %span.end= event.end_at
   %span.timezone America/Lima
