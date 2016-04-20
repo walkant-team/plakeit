@@ -1,0 +1,39 @@
+.row.pt20
+  .col.s8.push-s2
+    .col.l4
+      %h5.footer-tittle= link_to 'Negocios',  business_root_path
+      %ul.footer-content
+        %li
+          %p Conoce mejor a tu cliente
+        %li
+          %p Promociona tus eventos
+        %li
+          %p Convierte asistentes a clientes
+    .col.l4
+      %h5.footer-tittle= link_to 'Usuarios', clients_root_path
+      %ul.footer-content
+        %li
+          %p Eventos Personalizados
+        %li
+          %p Eventos según tu estilo
+        %li
+          %p Gana premios y descuentos
+        %li
+          %p Une a tu gente
+    .col.l4
+      %h5.footer-tittle Síguenos
+      .col.s6.m6
+        %ul.footer-social
+          %li
+            = link_to 'https://www.facebook.com/plakeit', target: '_blank' do
+              .fa.fa-facebook-square.fa-2x
+          %li
+            = link_to 'https://www.twitter.com/plakeitOficial', target: '_blank' do
+              .fa.fa-twitter-square.fa-2x
+
+%footer.page-footer
+  .footer-image
+    = image_tag('footer.png')
+  .footer-copyright.center
+    .container
+      © 2016 Plakeit, Inc.
