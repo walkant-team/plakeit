@@ -33,7 +33,7 @@ $(function() {
 
     addeventatc.register('button-click', function(obj){
       if(gon.logged){
-        $.post('reminders', { event_id: gon.event.id, user_id: gon.current_user.id });
+        $.post('reminders', { event_id: gon.event.id });
       } else {
         $('#' + obj.id).click();
         alert('Necesita estar logeado para agendar :)');

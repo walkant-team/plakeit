@@ -29,30 +29,7 @@
   </div>
   <%= render partial: 'shared/header' %>
   <%= yield %>
-  <footer class="page-footer">
-    <div class="container">
-      <div class="row mb0">
-        <div class="col l6 s12">
-          <h5 class="white-text center">Contactanos</h5>
-            <ul class='social center'>
-              <li class="white-text"> +51 985 284 455</li>
-            </ul>
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text center">Siguenos</h5>
-          <ul class='social center'>
-            <li><%= link_to image_tag('facebook_icon.png', size: '22'), 'https://www.facebook.com/plakeit', target: '_blank' %></li>
-            <li><%= link_to image_tag('twiter_icon.png', size: '22'), 'https://www.twitter.com/plakeitOficial', target: '_blank' %> </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright center">
-      <div class="container">
-      © 2016 Plakeit, Inc.
-      </div>
-    </div>
-  </footer>
+  <%= render 'shared/footer' %>
   <% if Rails.env.production? %>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

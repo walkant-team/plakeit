@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
   has_many :authentications
-  # has_and_belongs_to_many :events
+  has_many :reminders
+  has_many :events, through: :reminders
 
   def self.find_or_create_from_auth_hash(auth_hash)
     info = auth_hash['info']

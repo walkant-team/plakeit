@@ -1,6 +1,8 @@
 html{
 	height: 100%;
   font-family: GillSans, Calibri, Trebuchet, sans-serif;
+  background: #FCFCFC;
+  color: #404d57;
 }
 
 body{
@@ -46,7 +48,6 @@ nav{
 }
 
 // card aside
-
 .card#aside {
   width: 280px;
 
@@ -351,16 +352,21 @@ nav.calendar{
 }
 
 // Footer
-footer{
-	background: #182F56 !important;
-	h5{
+footer {
+	background: #323232 !important;
+	h5 {
 		font-weight: 300;
 		margin-bottom: 1.2em;
 	}
-	.social li{
-		display: inline-block;
-		margin-right: 10px;
-	}
+}
+
+.footer-social {
+  display: inline-flex;
+  li {
+    display: inline-flex;
+    margin-right: 10px;
+    a { color: black; }
+  }
 }
 
 footer.page-footer {
@@ -368,9 +374,33 @@ footer.page-footer {
   padding-top: 0px;
 }
 
+.footer-image img {
+  width: 100%;
+}
+
+.footer-tittle {
+  color: #404d57;
+  font-family: visuelt-lig,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  opacity: .75;
+  a {
+    color: #404d57;
+  }
+}
+
+.footer-content p{
+  margin: 0 0 10px;
+  color: #404d57;
+  opacity: .75;
+}
+
 // margins
 .mb0{
   margin-bottom: 0px;
+}
+
+// padding
+.pt20{
+  padding-top: 20px;
 }
 
 @media (max-width: 400px) {
