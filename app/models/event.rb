@@ -3,7 +3,8 @@ class Event < ActiveRecord::Base
   attachment :image, type: :image
 
   belongs_to :category
-  # has_and_belongs_to_many :users
+  has_many :reminders
+  has_many :users, through: :reminders
 
   validates :title, :start_at, :category, presence: true
 end
