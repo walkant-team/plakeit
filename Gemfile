@@ -30,7 +30,7 @@ gem 'simple_form'
 gem 'acts-as-taggable-on', '~> 3.4'
 gem 'animate-rails' # verified?
 gem 'impressionist' # views_count
-gem "font-awesome-rails"
+gem 'font-awesome-rails'
 
 gem 'omniauth-facebook'
 gem 'kaminari'

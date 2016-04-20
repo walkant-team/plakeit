@@ -1,7 +1,7 @@
 class Authentication < ActiveRecord::Base
   belongs_to :user
 
-  scope :facebook, -> { where(provider: 'facebook').first }
+  scope :facebook, -> { find_by(provider: 'facebook') }
 
   def self.find_or_create_from_auth_hash(auth_hash)
     auth = find_by(provider: auth_hash['provider'], uid: auth_hash['uid'])
