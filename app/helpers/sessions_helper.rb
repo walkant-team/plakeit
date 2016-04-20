@@ -16,6 +16,6 @@ module SessionsHelper
 
   def current_user_js
     gon.logged = logged_in?
-    gon.current_user = current_user
+    # gon.current_user = current_user
   end
 end
