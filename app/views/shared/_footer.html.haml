@@ -1,35 +1,20 @@
 .row.pt20.hide-on-small-only
   .col.s8.push-s2
     .col.l4
-      %h5.footer-tittle= link_to 'Negocios',  business_root_path
+      %h5.footer-tittle Negocios
       %ul.footer-content
-        %li
-          %p Conoce mejor a tu cliente
-        %li
-          %p Promociona tus eventos
-        %li
-          %p Convierte asistentes a clientes
+        = render 'shared/link_business'
+
     .col.l4
-      %h5.footer-tittle= link_to 'Usuarios', clients_root_path
+      %h5.footer-tittle Usuarios
       %ul.footer-content
-        %li
-          %p Eventos Personalizados
-        %li
-          %p Eventos según tu estilo
-        %li
-          %p Gana premios y descuentos
-        %li
-          %p Une a tu gente
+        = render 'shared/link_user'
+
     .col.l4
       %h5.footer-tittle Síguenos
       .col.s6.m6
         %ul.footer-social
-          %li
-            = link_to 'https://www.facebook.com/plakeit', target: '_blank' do
-              .fa.fa-facebook-square.fa-2x
-          %li
-            = link_to 'https://www.twitter.com/plakeitOficial', target: '_blank' do
-              .fa.fa-twitter-square.fa-2x
+          = render 'shared/link_social'
 
 %footer.page-footer.hide-on-small-only
   .footer-image
@@ -43,29 +28,21 @@
     %li
       .collapsible-header
         %i.material-icons> business
-        = link_to 'Negocios',  business_root_path
-      .collapsible-body.footer-movil-list
-        %p Conoce mejor a tu cliente
-        %p Promociona tus eventos
-        %p Convierte asistentes a clientes
+        Negocios
+      .collapsible-body
+        %ul.footer-movil-list
+          = render 'shared/link_business'
     %li
       .collapsible-header
         %i.material-icons> group
-        = link_to 'Usuarios', clients_root_path
-      .collapsible-body.footer-movil-list
-        %p Eventos Personalizados
-        %p Eventos según tu estilo
-        %p Gana premios y descuentos
-        %p Une a tu gente
+        Usuarios
+      .collapsible-body
+        %ul.footer-movil-list
+          = render 'shared/link_user'
 
 %footer.page-footer.hide-on-large-only.hide-on-med-only
   .footer-copyright
     = image_tag 'logo.png', alt: 'plakeit', width: 100, height: 40
     %ul.footer-social-movil
-      %li Siguenos
-      %li
-        = link_to 'https://www.facebook.com/plakeit', target: '_blank' do
-          .fa.fa-facebook-square.fa-2x
-      %li
-        = link_to 'https://www.twitter.com/plakeitOficial', target: '_blank' do
-          .fa.fa-twitter-square.fa-2x
+      %li Síguenos
+      = render 'shared/link_social'
