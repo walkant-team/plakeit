@@ -1,0 +1,14 @@
+.card#aside
+  .card-content
+    = render 'shared/addevent', event: @public_event
+    .detail.center
+      %i.material-icons face
+      %span= "#{@public_event.impressionist_count} visitas"
+  .card-action.row
+    .col.s4.center
+      %a#fbmsn{:href => "#"}
+        = image_tag("icons/fb-messenger.svg")
+    .col.s4.center
+      %a.fa.fa-facebook-square.fa-3x.goodshare{"data-type" => "fb", :href => "#"}
+    .col.s4.center
+      %a.fa.fa-whatsapp.fa-3x.goodshare{"data-type" => "wa", :href => "#"}
