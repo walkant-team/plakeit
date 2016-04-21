@@ -376,6 +376,33 @@ footer.page-footer {
   opacity: .75;
 }
 
+.footer-movil-list p {
+	padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer-movil-content {
+  margin-top: 0px;
+  margin-bottom: 0px;
+	a {
+		color: #404d57;
+	}
+}
+
+.footer-social-movil {
+  display: inline-flex;
+	float:right;
+  li {
+    display: inline-flex;
+
+    margin-right: 10px;
+    a {
+			color: white;
+			padding-top: 5px;
+		}
+  }
+}
+
 // margins
 .mb0{
   margin-bottom: 0px;
