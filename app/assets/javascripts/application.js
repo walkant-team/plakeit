@@ -43,6 +43,16 @@ $(function() {
     addeventatc.register('button-dropdown-click', function(obj){
       window.location.reload();
     });
-
   };
+
+  if(window.location.search) {
+    position = $('#form-search').offset();
+    console.log(position)
+    window.scrollTo(0, position.top - 100);
+  }
+
+  $('nav .icon-search').on('click', function(e){
+    $('.search-widget').css('width', '300px');
+    e.preventDefault()
+  })
 })
