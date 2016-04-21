@@ -389,20 +389,6 @@ footer {
 	}
 }
 
-.footer-movil-list p {
-	padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.footer-movil-content {
-  background: #FCFCFC;
-  margin-top: 0px;
-  margin-bottom: 0px;
-	a {
-		color: #404d57;
-	}
-}
-
 // margins
 .mb0{
   margin-bottom: 0px;
@@ -440,6 +426,20 @@ footer {
         color: white;
         padding-top: 5px;
       }
+    }
+  }
+
+  .footer-movil-list p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .footer-movil-content {
+    background: #FCFCFC;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    a {
+      color: #404d57;
     }
   }
 }
