@@ -14,21 +14,20 @@
 
 .row.contentEvent
   .col.l8.push-l2.s12.m12
-    .col.l8.hide-on-small-only.hide-on-med-only
-      %p
-        %i{:class => "tiny material-icons "} location_on
-        = @public_event.address
-      %p
-        %i{:class => "tiny material-icons"} perm_contact_calendar
-        = l(@public_event.start_at, format: :long)
-    .col.l4.m4.hide-on-small-only.hide-on-med-only
-      = render 'shared/addcalendar', event: @public_event
-    .col.s12.center.hide-on-large-only
+    - unless mobile_device?
+      .col.l8.m8.hide-on-small-only
+        %p
+          %i{:class => "tiny material-icons "} location_on
+          = @public_event.address
+        %p
+          %i{:class => "tiny material-icons"} perm_contact_calendar
+          = l(@public_event.start_at, format: :long)
+    .col.l4.m4.s12.addCalendar
       = render 'shared/addcalendar', event: @public_event
 .row
   .col.l8.push-l2.s12.m12
     - if mobile_device?
-      .col.s10.push-s1.hide-on-large-only.hide-on-med-only
+      .col.s12.hide-on-large-only.hide-on-med-only
         = render 'aside'
 
     .col.l8.m8.s12
