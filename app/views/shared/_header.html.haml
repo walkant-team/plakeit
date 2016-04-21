@@ -11,8 +11,10 @@
         %li= link_to 'TEATRO', category_events_path('theater', anchor: 'content-event')
       %ul#nav-mobile.right.hide-on-med-and-down
         %li
-          = link_to '#' do
-            %i.material-icons search
+          = form_tag root_path, method: :get, id: 'nav-search', enforce_utf8: false do
+            .input-field.col.s12
+              %i.material-icons.prefix.icon-search search
+              = text_field_tag :search, params[:search], id: 'icon_prefix', class: 'search-widget', placeholder: 'Nombre o #tag'
         - if logged_in?
           %li
             = link_to '#!', class: 'dropdown-button', data: { activates: 'dropdown1' } do

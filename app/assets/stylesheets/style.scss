@@ -42,6 +42,22 @@ nav{
   }
 }
 
+#nav-search {
+  color: #404D57;
+
+  .icon-search { cursor: pointer; }
+
+  .search-widget {
+    border-bottom: 1px solid #9E9E9E;
+    padding-left: 0;
+    font-size: 1.5rem;
+    height: 40px;
+    width: 0;
+    -webkit-transition: width 2s;
+    transition: width 2s;
+  }
+}
+
 // list events
 .list-events {
   margin-top: 50px;
@@ -286,16 +302,6 @@ nav.calendar{
 	background: linear-gradient(rgba(74, 74, 74, .6), rgba(74, 74, 74, .6)),url(image-path('maps.jpg'));
 	background-position: center center;
 	height: 350px;
-}
-
-#form-search{
-	background-color: white;
-	color:silver;
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #f2f2f2;
-    border-radius: 5px 0px 0px 5px !important;
-    height: 3.8rem;
 }
 
 #form-style{

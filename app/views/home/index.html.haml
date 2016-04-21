@@ -6,11 +6,11 @@
         %h2 Conoce lugares de acuerdo a tu estilo y pásala genial junto a tus amigos.
     .row
       .col.s6.push-s3
-        = simple_form_for :search, url: '' do |f|
+        = form_tag root_path, method: :get, id: 'form-search', enforce_utf8: false do
           .row
             .input-field.col.s12
               %i.material-icons.prefix search
-              = f.input_field :search, id: 'icon_prefix', class: 'search', placeholder: 'Nombre o #tag'
+              = text_field_tag :search, params[:search], id: 'icon_prefix', class: 'search', placeholder: 'Nombre o #tag'
 
 #content-event
   .row.list-events#list-weekly-events
