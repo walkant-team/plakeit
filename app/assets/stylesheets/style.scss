@@ -204,6 +204,7 @@ nav{
   color: white;
   margin-bottom: 0;
   font-size: 24px;
+  text-align: center;
 
   .col {
     height: 100%;
@@ -342,11 +343,17 @@ nav.calendar{
 
 // Footer
 footer {
-	background: #323232 !important;
 	h5 {
 		font-weight: 300;
 		margin-bottom: 1.2em;
 	}
+
+  .footer-copyright { 
+    background: #323232; 
+    color: white;
+    height: 50px;
+    line-height: 50px;
+  }
 }
 
 .footer-social {
@@ -356,11 +363,6 @@ footer {
     margin-right: 10px;
     a { color: black; }
   }
-}
-
-footer.page-footer {
-  margin-top: 0px;
-  padding-top: 0px;
 }
 
 .footer-image img {
@@ -376,10 +378,29 @@ footer.page-footer {
   }
 }
 
-.footer-content p{
-  margin: 0 0 10px;
-  color: #404d57;
-  opacity: .75;
+.footer-content {
+	p {
+	  margin: 0 0 10px;
+	  color: #404d57;
+	  opacity: .75;
+	}
+	a {
+		color: #404d57;
+	}
+}
+
+.footer-movil-list p {
+	padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer-movil-content {
+  background: #FCFCFC;
+  margin-top: 0px;
+  margin-bottom: 0px;
+	a {
+		color: #404d57;
+	}
 }
 
 // margins
@@ -392,79 +413,42 @@ footer.page-footer {
   padding-top: 20px;
 }
 
-@media (max-width: 400px) {
-	.diffuses{
-		margin-top: 20px;
-	}
-
-	.nav-wrapper{
-		margin-left: 10px;
-		margin-right: 10px;
-		padding-top: 5px;
-	}
-
-	.size-content{
-		margin-top: 20px;
-		margin-bottom: 15px;
-		margin-left:0px;
-		margin-right:0px;
-	}
-
-	.pagination{
-		margin-top: 10px;
-		margin-bottom: 10px;
-	}
- }
-
-@media (max-width: 360px) {
-	.nav-wrapper{
-		margin-left: 10px;
-		margin-right: 10px;
-		padding-top: 10px;
-	}
-
-	.size-content{
-		margin-top: 20px;
-		margin-bottom: 15px;
-		margin-left:0px;
-		margin-right:0px;
-	}
-
-	.pagination{
-		margin-top: 10px;
-		margin-bottom: 10px;
-	}
- }
-
-@media (max-width: 320px) {
-	.nav-wrapper{
-		top: 15px;
-		margin-left: 10px;
-		margin-right: 10px;
-	}
-
-	.size-content{
-		margin-top: 20px;
-		margin-bottom: 15px;
-		margin-left:0px;
-		margin-right:0px;
-	}
-
-	.pagination{
-		margin-top: 10px;
-		margin-bottom: 10px;
-	}
- }
-
-@media (min-width:992px) {
-    #aside {
-        width:250px;
+// Mobile Devices
+@media (max-width: 600px) {
+  .contentEvent {
+    .addCalendar {
+      text-align: center; 
     }
+  }
+
+  .card#aside {
+    margin: .5rem auto;
+  }
+
+  .assistant {
+    span { margin-right: 20px; }
+    img { margin: 0 1px; } 
+  }
+
+  footer {
+	  background: #323232;
+  } 
+  .footer-social {
+    float: right;
+    li {
+      a {
+        color: white;
+        padding-top: 5px;
+      }
+    }
+  }
 }
 
-@media (max-width:992px) {
-    #aside.pinned, #aside.pin-bottom {
-        position:static !important;
-        top: auto !important;
-    }
+// Tablet Devices
+@media (max-width: 992px) {
+  .assistant { text-align: center; }
+}
+
+// Desktop Devices
+@media (min-width: 992px) {
 }
