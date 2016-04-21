@@ -424,66 +424,25 @@ footer.page-footer {
   padding-top: 20px;
 }
 
-@media (max-width: 400px) {
-	.diffuses{
-		margin-top: 20px;
-	}
+// Mobile Devices
+@media (max-width: 600px) {
+  .contentEvent {
+    .addCalendar {
+      text-align: center; 
+    }
+  }
 
-	.nav-wrapper{
-		margin-left: 10px;
-		margin-right: 10px;
-		padding-top: 5px;
-	}
+  .card#aside {
+    margin: .5rem auto;
+  }
+}
 
-	.size-content{
-		margin-top: 20px;
-		margin-bottom: 15px;
-		margin-left:0px;
-		margin-right:0px;
-	}
+// Tablet Devices
+@media (max-width: 992px) {
 
-	.pagination{
-		margin-top: 10px;
-		margin-bottom: 10px;
-	}
- }
+}
 
-@media (max-width: 360px) {
-	.nav-wrapper{
-		margin-left: 10px;
-		margin-right: 10px;
-		padding-top: 10px;
-	}
+// Desktop Devices
+@media (min-width: 992px) {
 
-	.size-content{
-		margin-top: 20px;
-		margin-bottom: 15px;
-		margin-left:0px;
-		margin-right:0px;
-	}
-
-	.pagination{
-		margin-top: 10px;
-		margin-bottom: 10px;
-	}
- }
-
-@media (max-width: 320px) {
-	.nav-wrapper{
-		top: 15px;
-		margin-left: 10px;
-		margin-right: 10px;
-	}
-
-	.size-content{
-		margin-top: 20px;
-		margin-bottom: 15px;
-		margin-left:0px;
-		margin-right:0px;
-	}
-
-	.pagination{
-		margin-top: 10px;
-		margin-bottom: 10px;
-	}
 }
