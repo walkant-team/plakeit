@@ -7,9 +7,9 @@
           = @public_event.title
 
     .row.assistant
-      .col.l6.push-l3
+      .col.l6.push-l3.m12.s12
         %span= pluralize(@public_event.users.count, 'asistirá', 'asistirán')
-        - @assistants.each do |assistant|
+        - extract_assistant(@assistants).each do |assistant|
           = image_tag assistant.avatar, class: 'circle', :alt => assistant.fullname, :width => 50, :height => 50
 
 .row.contentEvent
