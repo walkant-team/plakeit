@@ -27,16 +27,18 @@
       = render 'shared/addcalendar', event: @public_event
 .row
   .col.l8.push-l2.s12.m12
-    .col.s10.push-s1.hide-on-large-only.hide-on-med-only
-      = render 'aside'
+    - if mobile_device?
+      .col.s10.push-s1.hide-on-large-only.hide-on-med-only
+        = render 'aside'
 
     .col.l8.m8.s12
       %h5.contentTitle
         = @public_event.title
       %p.contentDescription
         = @public_event.description
-    .col.l4.m4.hide-on-small-only
-      = render 'aside'
+    - unless mobile_device?
+      .col.l4.m4.hide-on-small-only
+        = render 'aside'
 
 .row.mb0
   #map{style: 'width: 100%; height: 470px'}
