@@ -1,0 +1,30 @@
+- if info == 'business'
+  %li
+    %p
+      =link_to 'Conoce mejor a tu clientes', business_root_path
+  %li
+    %p
+      =link_to 'Promociona tus eventos', business_root_path
+  %li
+    %p
+      =link_to 'Convierte asistentes a clientes', business_root_path
+- elsif info == 'user'
+  %li
+    %p
+      = link_to 'Eventos Personalizados', clients_root_path
+  %li
+    %p
+      = link_to 'Eventos según tu estilo', clients_root_path
+  %li
+    %p
+      = link_to 'Gana premios y descuentos', clients_root_path
+  %li
+    %p
+      = link_to 'Une a tu gente', clients_root_path
+- elsif info == 'social'
+  %li
+    = link_to 'https://www.facebook.com/plakeit', target: '_blank' do
+      .fa.fa-facebook-square.fa-2x
+  %li
+    = link_to 'https://www.twitter.com/plakeitOficial', target: '_blank' do
+      .fa.fa-twitter-square.fa-2x
