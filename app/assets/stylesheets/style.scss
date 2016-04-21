@@ -376,10 +376,15 @@ footer.page-footer {
   }
 }
 
-.footer-content p{
-  margin: 0 0 10px;
-  color: #404d57;
-  opacity: .75;
+.footer-content {
+	p {
+	  margin: 0 0 10px;
+	  color: #404d57;
+	  opacity: .75;
+	}
+	a {
+		color: #404d57;
+	}
 }
 
 .footer-movil-list p {
