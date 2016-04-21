@@ -9,6 +9,14 @@ class PublicEvent < Event
     [id, title.parameterize].join('-')
   end
 
+  def self.search(search)
+    if search
+      where('title ILIKE ?', "%#{search}%")
+    else
+      order(:start_at)
+    end
+  end
+
   def assistants(current_user)
     assistants = users.last(8) - [current_user]
 
