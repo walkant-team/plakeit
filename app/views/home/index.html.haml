@@ -5,12 +5,12 @@
         %h1 Encuentra tu lugar de diversión :)
         %h2 Conoce lugares de acuerdo a tu estilo y pásala genial junto a tus amigos.
     .row
-      .col.l6.push-l3.m6.push-m3
+      .col.l6.push-l3.m6.push-m3.s8.push-s2
         = form_tag root_path, method: :get, id: 'form-search', enforce_utf8: false do
           .row
             .input-field.col.l12
               %i.material-icons.prefix search
-              = text_field_tag :search, params[:search], id: 'icon_prefix', class: 'search', placeholder: 'Nombre o #tag'
+              = text_field_tag :search, params[:search], id: 'icon_prefix', class: 'search', placeholder: 'Nombre o #tag', autocomplete: 'off'
 
 #content-event
   .row.mb0.list-events#list-weekly-events
