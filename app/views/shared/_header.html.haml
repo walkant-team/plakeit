@@ -3,22 +3,45 @@
     %li= link_to 'Logout', logout_path
   %nav
     .nav-wrapper
-      = link_to root_path, class: 'left' do
-        = image_tag 'logo.png', alt: 'plakeit', width: 100, height: 40
-      %ul#nav-mobile.left.hide-on-med-and-down
-        %li= link_to 'CONCIERTOS', category_events_path('concerts', anchor: 'content-event')
-        %li= link_to 'MUSICALES', category_events_path('musical', anchor: 'content-event')
-        %li= link_to 'TEATRO', category_events_path('theater', anchor: 'content-event')
-      %ul#nav-mobile.right.hide-on-med-and-down
-        %li
-          = form_tag root_path, method: :get, id: 'nav-search', enforce_utf8: false do
-            .input-field.col.s12
-              %i.material-icons.prefix.icon-search search
-              = text_field_tag :search, params[:search], id: 'icon_prefix', class: 'search-widget', placeholder: 'Nombre o #tag'
-        - if logged_in?
+      - if mobile_device?
+        = link_to root_path, class: 'right' do
+          = image_tag 'logo.png', alt: 'plakeit', width: 100, height: 40
+        = link_to '#', class: 'button-collapse', data: { activates: 'mobile' } do
+          %i.material-icons menu
+        %ul.side-nav#mobile{ 'data-no-turbolink' => true }
           %li
-            = link_to '#!', class: 'dropdown-button', data: { activates: 'dropdown1' } do
-              = image_tag current_user.avatar, class: 'circle user'
-              %i.material-icons.right arrow_drop_down
-        - else
-          %li= link_to 'SIGN UP / LOGIN' ,'/auth/facebook'
+          - if logged_in?
+            = link_to '#!', class: 'avatar-nav' do
+              = image_tag current_user.avatar + '?type=normal', class: 'circle user'
+          - else
+            = link_to root_path do
+              = image_tag 'logo.png', alt: 'plakeit', width: 100, height: 40
+          %li.divider
+          = link_to_current 'CONCIERTOS', category_events_path('concerts')
+          = link_to_current 'MUSICALES', category_events_path('musical')
+          = link_to_current 'TEATRO', category_events_path('theater')
+          %li.divider
+          - if logged_in?
+            %li= link_to 'LOGOUT', logout_path
+          - else
+            %li= link_to 'SIGN UP / LOGIN' ,'/auth/facebook'
+      - else
+        = link_to root_path, class: 'left' do
+          = image_tag 'logo.png', alt: 'plakeit', width: 100, height: 40
+        %ul#nav-mobile.left.hide-on-med-and-down
+          = link_to_current 'CONCIERTOS', category_events_path('concerts')
+          = link_to_current 'MUSICALES', category_events_path('musical')
+          = link_to_current 'TEATRO', category_events_path('theater')
+        %ul#nav-mobile.right.hide-on-med-and-down
+          %li
+            = form_tag root_path, method: :get, id: 'nav-search', enforce_utf8: false do
+              .input-field.col.s12
+                %i.material-icons.prefix.icon-search search
+                = text_field_tag :search, params[:search], id: 'icon_prefix', class: 'search-widget', placeholder: 'Nombre o #tag', autocomplete: 'off'
+          - if logged_in?
+            %li
+              = link_to '#!', class: 'dropdown-button', data: { activates: 'dropdown1' } do
+                = image_tag current_user.avatar, class: 'circle user'
+                %i.material-icons.right arrow_drop_down
+          - else
+            %li= link_to 'SIGN UP / LOGIN' ,'/auth/facebook'

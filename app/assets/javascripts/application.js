@@ -23,6 +23,7 @@
 //= require clients/social
 
 $(function() {
+  $('.button-collapse').sideNav();
   $('select').material_select();
   $('.parallax').parallax();
 
@@ -45,14 +46,15 @@ $(function() {
     });
   };
 
-  if(window.location.search) {
-    position = $('#form-search').offset();
-    console.log(position)
-    window.scrollTo(0, position.top - 100);
-  }
-
   $('nav .icon-search').on('click', function(e){
     $('.search-widget').css('width', '300px');
     e.preventDefault()
   })
+
+  category_regxp = /category/
+  if( window.location.search || category_regxp.test(window.location.pathname) ) {
+    position = $('#form-search').offset();
+    console.log(position)
+    window.scrollTo(0, position.top - 100);
+  }
 })

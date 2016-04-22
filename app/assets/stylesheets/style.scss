@@ -401,6 +401,19 @@ footer {
 
 // Mobile Devices
 @media (max-width: 600px) {
+
+  .button-collapse { color: #26A69A; }
+
+  .side-nav { 
+    background: #FCFCFC; 
+  
+    .avatar-nav {
+      height: 120px;
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+
   .contentEvent {
     .addCalendar {
       text-align: center;

@@ -10,7 +10,7 @@
           .row
             .input-field.col.l12
               %i.material-icons.prefix search
-              = text_field_tag :search, params[:search], id: 'icon_prefix', class: 'search', placeholder: 'Nombre o #tag'
+              = text_field_tag :search, params[:search], id: 'icon_prefix', class: 'search', placeholder: 'Nombre o #tag', autocomplete: 'off'
 
 #content-event
   .row.list-events#list-weekly-events
