@@ -60,7 +60,7 @@ nav{
 
 // list events
 .list-events {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 // card aside
@@ -68,8 +68,8 @@ nav{
   width: 280px;
 
   .card-content {
-    padding: 0;
 
+    padding: 0;
     .detail { padding: 15px; font-size: 20px; }
     .material-icons { vertical-align: bottom; }
   }
@@ -87,7 +87,7 @@ nav{
 .card-image {
   position: relative;
   overflow: hidden;
-  height: 200px;
+  height: 170px;
 }
 .card-image img {
   max-width: 100%;
@@ -103,15 +103,28 @@ nav{
 }
 
 .card-content{
-  font-size: 16px;
-	color: #504e4e;
+  font-size: 1rem;
+	padding-top: 10px !important;
+  padding-bottom: 5px !important;
+	color: #404d57;//#504e4e;
+	opacity: .75;
+	font-family: visuelt-reg,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	a{
 		color: #504e4e;
+		height: 20px;
+		cursor: pointer;
 	}
 }
 
 .card-action{
-	font-size: 12px;
+	p { margin-bottom: 10px; }
+	font-size: 0.9rem;
+	padding-top: 10px !important;
+  padding-bottom: 5px !important;
+	color: #404d57;//#504e4e;
+	opacity: .75;
+	font-family: visuelt-reg,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	i { font-size: 18px; }
 }
 
 .card-image.img-hover{
@@ -292,8 +305,22 @@ nav{
     line-height: 36px;
 	}
 }
+.separation-line {
+  text-align: center;
+	hr {
+    position: relative;
+    z-index: -1;
+    border-top: 2px solid #8c8b8b;
+    top: 32px;
+	}
 
-
+  h5 {
+    margin: 0;
+    padding: 0 20px;
+    display: inline-block;
+    background: #FCFCFC;
+  }
+}
 
 nav.calendar{
 	background: transparent;
@@ -323,9 +350,9 @@ nav.calendar{
 
 // more
 #view-more {
-  padding: 2em;
+  padding: 1em;
   text-align: center;
-  background-color: #33739E;
+  background-color: #323232;
   color: #fff;
   border-width: 0 1px 1px 0;
   border-style: solid;
@@ -337,8 +364,8 @@ nav.calendar{
   -o-transition: all 600ms ease-in-out;
 }
 #view-more:hover {
-  background-color: #33739E;
-  color: red;
+  background-color: #FCFCFC;
+  color: #6F7880;
 }
 
 // Footer
@@ -348,8 +375,8 @@ footer {
 		margin-bottom: 1.2em;
 	}
 
-  .footer-copyright { 
-    background: #323232; 
+  .footer-copyright {
+    background: #323232;
     color: white;
     height: 50px;
     line-height: 50px;
@@ -401,9 +428,22 @@ footer {
 
 // Mobile Devices
 @media (max-width: 600px) {
+
+  .button-collapse { color: #26A69A; }
+
+  .side-nav { 
+    background: #FCFCFC; 
+  
+    .avatar-nav {
+      height: 120px;
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+
   .contentEvent {
     .addCalendar {
-      text-align: center; 
+      text-align: center;
     }
   }
 
@@ -413,12 +453,13 @@ footer {
 
   .assistant {
     span { margin-right: 20px; }
-    img { margin: 0 1px; } 
+    img { margin: 0 1px; }
   }
 
   footer {
 	  background: #323232;
-  } 
+  }
+
   .footer-social {
     float: right;
     li {
@@ -442,11 +483,48 @@ footer {
       color: #404d57;
     }
   }
+
+	.bgIndex {
+    .input-field { margin-top: 0; }
+		height: 70%;
+
+		.header-title {
+      bottom: 15%;
+
+			h1 { font-size: 3rem; }
+		}
+
+		.search {
+    	font-size: 1.5rem;
+		}
+	}
+
+	.input-field {
+		.material-icons { padding-top: 10px; }
+	}
 }
 
 // Tablet Devices
-@media (max-width: 992px) {
-  .assistant { text-align: center; }
+@media (max-width: 992px) and (min-width: 600px) {
+	.bgIndex {
+		height: 50%;
+
+		.header-title {
+      height: 50%;
+      top: 18%;
+      bottom: initial;
+
+		  h1 { font-size: 4rem; }
+		}
+	}
+
+	.card-image {
+	  height: 160px;
+	}
+
+	.card-content{
+		padding-top: 5px !important;
+	}
 }
 
 // Desktop Devices
