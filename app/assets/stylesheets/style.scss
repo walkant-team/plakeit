@@ -59,7 +59,7 @@ nav{
 
 // list events
 .list-events {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 // card aside
@@ -67,8 +67,8 @@ nav{
   width: 280px;
 
   .card-content {
-    padding: 0;
 
+    padding: 0;
     .detail { padding: 15px; font-size: 20px; }
     .material-icons { vertical-align: bottom; }
   }
@@ -86,7 +86,7 @@ nav{
 .card-image {
   position: relative;
   overflow: hidden;
-  height: 200px;
+  height: 170px;
 }
 .card-image img {
   max-width: 100%;
@@ -102,15 +102,28 @@ nav{
 }
 
 .card-content{
-  font-size: 16px;
-	color: #504e4e;
+  font-size: 1rem;
+	padding-top: 10px !important;
+  padding-bottom: 5px !important;
+	color: #404d57;//#504e4e;
+	opacity: .75;
+	font-family: visuelt-reg,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	a{
 		color: #504e4e;
+		height: 20px;
+		cursor: pointer;
 	}
 }
 
 .card-action{
-	font-size: 12px;
+	p { margin-bottom: 10px; }
+	font-size: 0.9rem;
+	padding-top: 10px !important;
+  padding-bottom: 5px !important;
+	color: #404d57;//#504e4e;
+	opacity: .75;
+	font-family: visuelt-reg,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	i { font-size: 18px; }
 }
 
 .card-image.img-hover{
@@ -291,8 +304,17 @@ nav{
     line-height: 36px;
 	}
 }
+.separation-line {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+	hr {
+			align: left;
+			width: 100%;
+			margin-top: 25px;
+			border-top: 2px solid #8c8b8b;
+	}
 
-
+}
 
 nav.calendar{
 	background: transparent;
@@ -465,6 +487,14 @@ footer {
 		.header-title {
 			h1 { font-size: 4rem; }
 		}
+	}
+
+	.card-image {
+	  height: 160px;
+	}
+
+	.card-content{
+		padding-top: 5px !important;
 	}
 }
 

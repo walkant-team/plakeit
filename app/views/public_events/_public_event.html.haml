@@ -7,10 +7,8 @@
       = link_to public_event.title, public_event, class: 'truncate', 'data-no-turbolink' => true
     .card-action
       %p
-        %i{:class => "tiny material-icons"} location_on
-        = public_event.address
-      %br
-      %p
-        %i{:class => "tiny material-icons"} perm_contact_calendar
+        %i.fa.fa-calendar.fa-3x
         = l(public_event.start_at, format: :long)
-      %br
+      %p
+        %i.fa.fa-map-marker.fa-3x
+        = public_event.address

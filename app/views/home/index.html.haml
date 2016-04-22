@@ -13,18 +13,30 @@
               = text_field_tag :search, params[:search], id: 'icon_prefix', class: 'search', placeholder: 'Nombre o #tag'
 
 #content-event
-  .row.list-events#list-weekly-events
+  .row.mb0.list-events#list-weekly-events
     .col.l8.push-l2
-      %h5 Eventos de la semana
+      .col.l12.m12.s12.center
+        .col.l4.m4.center.separation-line
+          %hr
+        .col.l4.m4.s12.center
+          %h5 Eventos de la semana
+        .col.l4.m4.center.separation-line
+          %hr
       = render @weekly_events
 
-  .row.list-events#list-public-events
+  .row.mb0.list-events#list-public-events
     .col.l8.push-l2
-      %h5 Proximos Eventos
+      .col.l12.m12.s12.center
+        .col.l4.m4.center.separation-line
+          %hr
+        .col.l4.m4.s12.center
+          %h5 Próximos Eventos
+        .col.l4.m4.center.separation-line
+          %hr
       = render @public_events
 
 .row.container
-  .col.m4.push-m4.s12.l4.push-l4  
+  .col.m4.push-m4.s12.l4.push-l4
     - unless @public_events.current_page == @public_events.total_pages
       = link_to url_for(page: @public_events.current_page + 1), remote: true do
         %p#view-more View More
