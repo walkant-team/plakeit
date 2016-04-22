@@ -5,7 +5,7 @@
         %h1 Encuentra tu lugar de diversión :)
         %h2 Conoce lugares de acuerdo a tu estilo y pásala genial junto a tus amigos.
     .row
-      .col.l6.push-l3.m6.push-m3
+      .col.l6.push-l3.m6.push-m3.s8.push-s2
         = form_tag root_path, method: :get, id: 'form-search', enforce_utf8: false do
           .row
             .input-field.col.l12
@@ -24,7 +24,7 @@
       = render @public_events
 
 .row.container
-  .col.m4.push-m4.s12.l4.push-l4  
+  .col.m4.push-m4.s12.l4.push-l4
     - unless @public_events.current_page == @public_events.total_pages
       = link_to url_for(page: @public_events.current_page + 1), remote: true do
         %p#view-more View More
