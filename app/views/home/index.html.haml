@@ -5,34 +5,29 @@
         %h1 Encuentra tu lugar de diversión :)
         %h2 Conoce lugares de acuerdo a tu estilo y pásala genial junto a tus amigos.
     .row
-      .col.l6.push-l3.m6.push-m3.s8.push-s2
+      .col.l6.push-l3.m8.push-m2.s12
         = form_tag root_path, method: :get, id: 'form-search', enforce_utf8: false do
           .row
-            .input-field.col.l12
+            .input-field.col.l12.m12.s12
               %i.material-icons.prefix search
               = text_field_tag :search, params[:search], id: 'icon_prefix', class: 'search', placeholder: 'Nombre o #tag', autocomplete: 'off'
 
 #content-event
+  .row
+    .col.l8.push-l2.m12.s12.separation-line
+      %hr
+      %h5 Eventos de la semana
   .row.mb0.list-events#list-weekly-events
     .col.l8.push-l2
-      .col.l12.m12.s12.center
-        .col.l4.m4.center.separation-line
-          %hr
-        .col.l4.m4.s12.center
-          %h5 Eventos de la semana
-        .col.l4.m4.center.separation-line
-          %hr
       = render @weekly_events
+
+  .row
+    .col.l8.push-l2.m12.s12.separation-line
+      %hr
+      %h5 Próximos Eventos
 
   .row.mb0.list-events#list-public-events
     .col.l8.push-l2
-      .col.l12.m12.s12.center
-        .col.l4.m4.center.separation-line
-          %hr
-        .col.l4.m4.s12.center
-          %h5 Próximos Eventos
-        .col.l4.m4.center.separation-line
-          %hr
       = render @public_events
 
 .row.container

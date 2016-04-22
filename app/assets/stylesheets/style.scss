@@ -306,15 +306,20 @@ nav{
 	}
 }
 .separation-line {
-  padding-left: 0px !important;
-  padding-right: 0px !important;
+  text-align: center;
 	hr {
-			align: left;
-			width: 100%;
-			margin-top: 25px;
-			border-top: 2px solid #8c8b8b;
+    position: relative;
+    z-index: -1;
+    border-top: 2px solid #8c8b8b;
+    top: 32px;
 	}
 
+  h5 {
+    margin: 0;
+    padding: 0 20px;
+    display: inline-block;
+    background: #FCFCFC;
+  }
 }
 
 nav.calendar{
@@ -480,11 +485,11 @@ footer {
   }
 
 	.bgIndex {
-		height: 60%;
+    .input-field { margin-top: 0; }
+		height: 70%;
 
 		.header-title {
-      top: 12%;
-      bottom: initial;
+      bottom: 15%;
 
 			h1 { font-size: 3rem; }
 		}
