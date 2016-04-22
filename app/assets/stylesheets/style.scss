@@ -33,7 +33,6 @@ nav{
 	height: 95%;
   color: white;
   .header-title {
-    bottom: 80px;
     position: absolute;
     width: 100%;
   }
@@ -323,9 +322,9 @@ nav.calendar{
 
 // more
 #view-more {
-  padding: 2em;
+  padding: 1em;
   text-align: center;
-  background-color: #33739E;
+  background-color: #323232;
   color: #fff;
   border-width: 0 1px 1px 0;
   border-style: solid;
@@ -337,8 +336,8 @@ nav.calendar{
   -o-transition: all 600ms ease-in-out;
 }
 #view-more:hover {
-  background-color: #33739E;
-  color: red;
+  background-color: #FCFCFC;
+  color: #6F7880;
 }
 
 // Footer
@@ -348,8 +347,8 @@ footer {
 		margin-bottom: 1.2em;
 	}
 
-  .footer-copyright { 
-    background: #323232; 
+  .footer-copyright {
+    background: #323232;
     color: white;
     height: 50px;
     line-height: 50px;
@@ -403,7 +402,7 @@ footer {
 @media (max-width: 600px) {
   .contentEvent {
     .addCalendar {
-      text-align: center; 
+      text-align: center;
     }
   }
 
@@ -413,12 +412,12 @@ footer {
 
   .assistant {
     span { margin-right: 20px; }
-    img { margin: 0 1px; } 
+    img { margin: 0 1px; }
   }
 
   footer {
 	  background: #323232;
-  } 
+  }
   .footer-social {
     float: right;
     li {
@@ -442,11 +441,31 @@ footer {
       color: #404d57;
     }
   }
+
+	.bgIndex {
+		height: 70%;
+		.header-title {
+			h1 { font-size: 3rem; }
+		}
+		.search {
+    	font-size: 1.5rem;
+		}
+	}
+	.input-field {
+		.material-icons { padding-top: 10px; }
+	}
 }
 
 // Tablet Devices
-@media (max-width: 992px) {
+@media (max-width: 992px) and (min-width: 600px){
   .assistant { text-align: center; }
+
+	.bgIndex {
+		height: 50%;
+		.header-title {
+			h1 { font-size: 4rem; }
+		}
+	}
 }
 
 // Desktop Devices
