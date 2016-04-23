@@ -2,16 +2,16 @@ class SessionsController < ApplicationController
   def create
     authentication = Authentication.find_or_create_from_auth_hash(auth_hash)
     self.current_user = authentication.user
-    redirect_to root_path, notice: 'Signed in!'
+    redirect_to previous_url, notice: 'Signed in!'
   end
 
   def destroy
     session[:user_id] = nil
-    redirect_to root_path, notice: 'SIgned out!'
+    redirect_to previous_url, notice: 'SIgned out!'
   end
 
   def failure
-    redirect_to root_path, notice: 'Hubo un error al intentar logearse'
+    redirect_to previous_url, notice: 'Hubo un error al intentar logearse'
   end
 
   protected
