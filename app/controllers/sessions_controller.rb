@@ -1,13 +1,13 @@
 class SessionsController < ApplicationController
   def create
     authentication = Authentication.find_or_create_from_auth_hash(auth_hash)
-    self.current_user = authentication.user
+      self.current_user = authentication.user
     redirect_to previous_url, notice: 'Signed in!'
   end
 
   def destroy
     session[:user_id] = nil
-    redirect_to previous_url, notice: 'SIgned out!'
+    redirect_to previous_url, notice: 'Signed out!'
   end
 
   def failure
