@@ -2,13 +2,13 @@
   %ul#dropdown1.dropdown-content
     %li= link_to 'Logout', logout_path
   %nav
-    .nav-wrapper
+    .nav-wrapper{ 'data-no-turbolink' => true }
       - if mobile_device?
         = link_to root_path, class: 'right' do
           = image_tag 'logo.png', alt: 'plakeit', width: 100, height: 40
         = link_to '#', class: 'button-collapse', data: { activates: 'mobile' } do
           %i.material-icons menu
-        %ul.side-nav#mobile{ 'data-no-turbolink' => true }
+        %ul.side-nav#mobile
           %li
           - if logged_in?
             = link_to '#!', class: 'avatar-nav' do
@@ -32,7 +32,7 @@
           = link_to_current 'CONCIERTOS', category_events_path('concerts')
           = link_to_current 'MUSICALES', category_events_path('musical')
           = link_to_current 'TEATRO', category_events_path('theater')
-        %ul#nav-mobile.right.hide-on-med-and-down{ 'data-no-turbolink' => true }
+        %ul#nav-mobile.right.hide-on-med-and-down
           %li
             = form_tag root_path, method: :get, id: 'nav-search', enforce_utf8: false do
               .input-field.col.s12
