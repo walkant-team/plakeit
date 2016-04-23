@@ -1,6 +1,6 @@
 class PublicEventsController < ApplicationController
-  before_action :current_user_js, only: :show
   impressionist actions: [:show], unique: [:session_hash, :impressionable_type, :impressionable_id]
+  before_action :current_user_js, only: :show
 
   def show
     @public_event = PublicEvent.find(params[:id])
