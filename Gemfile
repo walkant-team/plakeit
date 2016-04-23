@@ -64,6 +64,8 @@ group :development, :test do
   gem 'pronto'
   gem 'pronto-rubocop', require: false
   gem 'pronto-flay', require: false
+  gem 'pronto-haml', require: false
+  gem 'pronto-rails_best_practices', require: false
 end
 
 group :development do

@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
 
   def destroy
     session[:user_id] = nil
-    redirect_to previous_url, notice: 'SIgned out!'
+    redirect_to previous_url, notice: 'Signed out!'
   end
 
   def failure

@@ -4,8 +4,8 @@ module ApplicationHelper
   end
 
   def link_to_current(name = nil, options = nil, html_options = nil, &block)
-    _class =  request.original_fullpath == options ? 'active' : ''
-    content_tag :li, class: _class do
+    css = request.original_fullpath == options ? 'active' : ''
+    content_tag :li, class: css do
       link_to name, options, html_options, &block
     end
   end
