@@ -10,6 +10,10 @@ class SessionsController < ApplicationController
     redirect_to root_path, notice: 'SIgned out!'
   end
 
+  def failure
+    redirect_to root_path, notice: 'Hubo un error al intentar logearse'
+  end
+
   protected
 
   def auth_hash
