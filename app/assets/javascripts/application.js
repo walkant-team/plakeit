@@ -23,6 +23,9 @@
 //= require clients/social
 
 $(function() {
+  // flash messages
+  $('.toast').delay(5000).fadeOut(1000);
+
   $('.button-collapse').sideNav();
   $('select').material_select();
   $('.parallax').parallax();

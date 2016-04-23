@@ -1,3 +1,3 @@
-- flash.each do |message_type, message|
-  #toast-container
+#toast-container
+  - flash.each do |message_type, message|
     .toast{class: message_type}= message
