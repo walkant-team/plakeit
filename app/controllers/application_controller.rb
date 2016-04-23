@@ -26,7 +26,7 @@ class ApplicationController < ActionController::Base
   end
 
   def store_url
-      return unless request.get?
+    return unless request.get?
     session[:previous_url] = request.fullpath
   end
 end
