@@ -5,10 +5,11 @@
       %i.material-icons face
       %span= pluralize @public_event.impression_count, 'visita', 'visitas'
   .card-action.row
-    .col.s4.center
+    .col.l6.s4.m6.center
       %a#fbmsn{:href => "#"}
         = image_tag("icons/fb-messenger.svg")
-    .col.s4.center
+    .col.l6.s4.m6.center
       %a.fa.fa-facebook-square.fa-3x.goodshare{"data-type" => "fb", :href => "#"}
-    .col.s4.center
-      %a.fa.fa-whatsapp.fa-3x.goodshare{"data-type" => "wa", :href => "#"}
+    - if mobile_device?
+      .col.s4.center.hide-on-med-only.hide-on-large-only
+        %a.fa.fa-whatsapp.fa-3x.goodshare{"data-type" => "wa", :href => "#"}
