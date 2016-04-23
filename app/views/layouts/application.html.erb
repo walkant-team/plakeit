@@ -24,9 +24,9 @@
 <body>
   <script src="http://connect.facebook.net/en_US/all.js"></script>
   <div id="fb-root"></div>
-  <div class="flash_messages">
-    <%= render partial: "shared/flash_messages", flash: flash %>
-  </div>
+  <%= render partial: "shared/flash_message", flash: flash %>
+  <!-- <div class="flash_messages"> -->
+  <!-- </div> -->
   <%= render partial: 'shared/header' %>
   <%= yield %>
   <%= render 'shared/footer' %>
