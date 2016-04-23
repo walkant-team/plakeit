@@ -1,9 +1,7 @@
-dependencies:
-  post:
-    - bin/cisetup
-
 test:
   pre:
     - RAILS_ENV=test bundle exec rake db:seed
     - RAILS_ENV=test bundle exec rake assets:clobber
     - RAILS_ENV=test bundle exec rake assets:precompile
+  post:
+    - 'PULL_REQUEST_ID=${CI_PULL_REQUEST##*/} bundle exec pronto run -f github_pr -c origin/master'

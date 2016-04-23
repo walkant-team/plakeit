@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
   def create
     authentication = Authentication.find_or_create_from_auth_hash(auth_hash)
-      self.current_user = authentication.user
+    self.current_user = authentication.user
     redirect_to previous_url, notice: 'Signed in!'
   end
 
