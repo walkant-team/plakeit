@@ -42,6 +42,13 @@ nav{
   }
 }
 
+// flash messages
+#toast-container {
+  .toast.notice { background: #009688; }
+  .toast.error { background: #c62828; }
+  .toast.info { background: #ffff8d; color: black; }
+}
+
 #nav-search {
   color: #404D57;
 

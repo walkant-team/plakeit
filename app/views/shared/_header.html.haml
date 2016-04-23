@@ -32,7 +32,7 @@
           = link_to_current 'CONCIERTOS', category_events_path('concerts')
           = link_to_current 'MUSICALES', category_events_path('musical')
           = link_to_current 'TEATRO', category_events_path('theater')
-        %ul#nav-mobile.right.hide-on-med-and-down
+        %ul#nav-mobile.right.hide-on-med-and-down{ 'data-no-turbolink' => true }
           %li
             = form_tag root_path, method: :get, id: 'nav-search', enforce_utf8: false do
               .input-field.col.s12
