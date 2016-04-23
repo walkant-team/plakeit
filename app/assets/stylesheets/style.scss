@@ -68,8 +68,8 @@ nav{
   width: 280px;
 
   .card-content {
-
     padding: 0;
+
     .detail { padding: 15px; font-size: 20px; }
     .material-icons { vertical-align: bottom; }
   }
@@ -81,62 +81,59 @@ nav{
 }
 
 // card efect - list events
-.card {
-  max-height: 350px;
-}
-.card-image {
-  position: relative;
-  overflow: hidden;
-  height: 170px;
-}
-.card-image img {
-  max-width: 100%;
+.list-events {
+  .card {
+    max-height: 350px;
+  }
+  .card-image {
+    position: relative;
+    overflow: hidden;
+    height: 170px;
+  }
+  .card-image img {
+    max-width: 100%;
 
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.card-image:hover img {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .card-image:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
 
-.card-content{
-  font-size: 1rem;
-	padding-top: 10px !important;
-  padding-bottom: 5px !important;
-	color: #404d57;//#504e4e;
-	opacity: .75;
-	font-family: visuelt-reg,"Helvetica Neue",Helvetica,Arial,sans-serif;
-	a{
-		color: #504e4e;
-		height: 20px;
-		cursor: pointer;
-	}
-}
+  .card-content{
+    padding-top: 10px;
+    padding-bottom: 5px;
 
-.card-action{
-	p { margin-bottom: 10px; }
-	font-size: 0.9rem;
-	padding-top: 10px !important;
-  padding-bottom: 5px !important;
-	color: #404d57;//#504e4e;
-	opacity: .75;
-	font-family: visuelt-reg,"Helvetica Neue",Helvetica,Arial,sans-serif;
-	i { font-size: 18px; }
-}
+    a {
+      color: #504e4e;
+      height: 20px;
+      cursor: pointer;
+    }
+  }
 
-.card-image.img-hover{
-	-moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
+  .card-action{
+    font-size: 0.9rem;
+    padding-top: 10px;
+    padding-bottom: 5px;
 
-.card-image:hover .img-hover{
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+    p { margin-bottom: 10px; }
+    i { font-size: 18px; }
+  }
+
+  .card-image.img-hover{
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  .card-image:hover .img-hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
 }
 
 .parallax-container{

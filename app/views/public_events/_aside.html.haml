@@ -3,7 +3,7 @@
     = render 'shared/addevent', event: @public_event
     .detail.center
       %i.material-icons face
-      %span= "#{@public_event.impressionist_count} visitas"
+      %span= pluralize @public_event.impression_count, 'visita', 'visitas'
   .card-action.row
     .col.s4.center
       %a#fbmsn{:href => "#"}
