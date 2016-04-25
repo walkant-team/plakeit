@@ -11,7 +11,7 @@ class User < ActiveRecord::Base
       user.fullname = info['name']
       user.avatar   = info['image']
       user.gender   = extra_info['gender']
-      user.birthday = Date.strptime(extra_info['birthday'], '%m/%d/%Y')
+      user.birthday = Date.strptime(extra_info['birthday'], '%m/%d/%Y') if extra_info['birthday']
       user.region   = info['location']
     end
   end
