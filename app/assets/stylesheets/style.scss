@@ -431,7 +431,7 @@ footer {
 }
 
 .pt10{
-	padding-top: 10px !important;
+  padding-top: 10px !important;
 }
 // Mobile Devices
 @media (max-width: 600px) {
@@ -445,12 +445,6 @@ footer {
       height: 120px;
       text-align: center;
       margin-top: 10px;
-    }
-  }
-
-  .contentEvent {
-    .addCalendar {
-      text-align: center;
     }
   }
 
