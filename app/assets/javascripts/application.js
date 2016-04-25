@@ -32,7 +32,9 @@ $(function() {
 
   window.addeventasync = function(){
     addeventatc.settings({
-      css        : false
+      css       : false,
+      outlook   : { show: false },
+      appleical : { show: false }
     });
 
     addeventatc.register('button-click', function(obj){
