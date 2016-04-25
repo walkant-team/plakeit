@@ -430,3 +430,26 @@
     }
   }
 }
+
+@media (max-width: 992px) and (min-width: 600px) {
+  .theme4 {
+    &.addeventatc {
+      width: 240px;
+      .date {
+        width: 50px;
+        .bdr1 {
+          right: 1px;
+        }
+        .bdr2 {
+          right: 2px;
+        }
+      }
+      .desc {
+        width: 180px;
+        p {
+          padding: 7px 0px 0px 0px;
+        }
+      }
+    }
+  }
+}

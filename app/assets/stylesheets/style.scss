@@ -430,24 +430,21 @@ footer {
   padding-top: 20px;
 }
 
+.pt10{
+  padding-top: 10px !important;
+}
 // Mobile Devices
 @media (max-width: 600px) {
 
   .button-collapse { color: #26A69A; }
 
-  .side-nav { 
-    background: #FCFCFC; 
-  
+  .side-nav {
+    background: #FCFCFC;
+
     .avatar-nav {
       height: 120px;
       text-align: center;
       margin-top: 10px;
-    }
-  }
-
-  .contentEvent {
-    .addCalendar {
-      text-align: center;
     }
   }
 
@@ -528,6 +525,10 @@ footer {
 
 	.card-content{
 		padding-top: 5px !important;
+	}
+
+	.card#aside {
+	  width: 240px;
 	}
 }
 

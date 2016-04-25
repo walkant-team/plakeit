@@ -6,9 +6,9 @@
     .card-content
       = link_to public_event.title, public_event, class: 'truncate', 'data-no-turbolink' => true
     .card-action
-      %p
+      %p.truncate
         %i.fa.fa-calendar.fa-1x
         = l(public_event.start_at, format: :long)
-      %p
-        %i.fa.fa-map-marker.fa-1x
+      %p.truncate
+        %i{:class => "tiny material-icons"} business
         = public_event.location
