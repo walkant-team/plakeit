@@ -6,7 +6,6 @@
   &.addeventatc {
     display: inline-block;
     position: relative;
-    z-index: 999998;
     font-family: Roboto,Optima,Segoe,"Segoe UI",Candara,Calibri,Arial,sans-serif;
     color: #000 !important;
     cursor: pointer;
@@ -190,7 +189,6 @@
     width: 280px;
     display: inline-block;
     position: relative;
-    z-index: 999998;
     cursor: pointer;
     background: #f7f7f7;
     font-family: Roboto,Optima,Segoe,"Segoe UI",Candara,Calibri,Arial,sans-serif;
