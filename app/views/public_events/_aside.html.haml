@@ -9,8 +9,7 @@
       %a#fbmsn{:href => "#"}
         = image_tag("icons/fb-messenger.svg")
     .col.l6.s4.m6.center
-      = social_share_button_tag @public_event.title, url: 'http://www.juergon.com', image: 'https://s3.amazonaws.com/joinnus.com-tester-bucket/user/2/act571839ae82af8.jpg'
-      -# %a.fa.fa-facebook-square.fa-3x.goodshare{"data-type" => "fb", :href => "#"}
+      %a.fa.fa-facebook-square.fa-3x.goodshare{"data-type" => "fb", :href => "#"}
     - if mobile_device?
       .col.s4.center.hide-on-med-only.hide-on-large-only
         %a.fa.fa-whatsapp.fa-3x.goodshare{"data-type" => "wa", :href => "#"}
