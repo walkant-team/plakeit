@@ -17,12 +17,12 @@
   <%= javascript_include_tag '//maps.google.com/maps/api/js?v=3.18&sensor=false&client=&key=&libraries=geometry&language=&hl=&region=' %>
   <%= javascript_include_tag '//google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.14/src/markerclusterer_packed.js' %>
   <%= javascript_include_tag 'https://addevent.com/libs/atc/1.6.1/atc.min.js', 'async' => true, 'defer' => true %>
+  <script src="http://connect.facebook.net/en_US/all.js"></script>
   <%= javascript_include_tag 'https://cdn.jsdelivr.net/jquery.goodshare.js/3.2.8/goodshare.min.js' %>
   <%= Gon::Base.render_data %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <script src="http://connect.facebook.net/en_US/all.js"></script>
   <div id="fb-root"></div>
   <%= render partial: "shared/flash_message", flash: flash %>
   <%= render partial: 'shared/header' %>
