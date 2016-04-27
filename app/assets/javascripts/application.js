@@ -19,6 +19,7 @@
 //= require gmaps/google
 //= require clients/map.google
 //= require clients/facebookmsn
+//= require social-share-button
 //= require_self
 
 $(function() {

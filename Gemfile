@@ -94,3 +94,5 @@ end
 # These gems are selectively required in production when we want to generate
 # seed data. Normally, they are only used in test.
 gem 'ffaker', require: false
+
+gem 'social-share-button'
