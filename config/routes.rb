@@ -1,10 +1,5 @@
 Rails.application.routes.draw do
-  if Rails.env.production?
-    root 'clients/static_pages#index'
-    resources :home, only: [:index]
-  else
-    root 'home#index'
-  end
+  root 'home#index'
 
   resources :scrappers
   get 'category/:category' => 'home#index', as: :category_events
