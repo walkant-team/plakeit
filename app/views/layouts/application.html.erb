@@ -19,16 +19,22 @@
   <%= javascript_include_tag '//maps.google.com/maps/api/js?v=3.18&sensor=false&client=&key=&libraries=geometry&language=&hl=&region=' %>
   <%= javascript_include_tag '//google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.14/src/markerclusterer_packed.js' %>
   <%= javascript_include_tag 'https://addevent.com/libs/atc/1.6.1/atc.min.js', 'async' => true, 'defer' => true %>
-  <script src="http://connect.facebook.net/en_US/all.js"></script>
-  <%= javascript_include_tag 'https://cdn.jsdelivr.net/jquery.goodshare.js/3.2.8/goodshare.min.js' %>
   <%= Gon::Base.render_data %>
   <%= csrf_meta_tags %>
 </head>
 <body>
   <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=869593549833020";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
   <%= render partial: "shared/flash_message", flash: flash %>
   <%= render partial: 'shared/header' %>
   <%= yield %>
+  <div class="fb-share-button" data-href="http://www.juergon.com" data-layout="button_count" data-mobile-iframe="true"></div>
   <%= render 'shared/footer' %>
   <% if Rails.env.production? %>
     <script>
