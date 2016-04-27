@@ -12,13 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require base/modernizr.min
 //= require materialize-sprockets
 //= require turbolinks
 //= require underscore
-//= require gmaps/google
-//= require clients/map.google
-//= require clients/facebookmsn
 //= require_self
 
 $(function() {
