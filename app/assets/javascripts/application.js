@@ -19,7 +19,6 @@
 //= require gmaps/google
 //= require clients/map.google
 //= require clients/facebookmsn
-//= require clients/social
 //= require_self
 
 $(function() {
