@@ -32,4 +32,6 @@ Rails.application.routes.draw do
   resources :public_events, only: [:show], path: ''
   # get ':name_event' => 'public_events#show', as: 'events'
 
+  # user
+  resources :users
 end

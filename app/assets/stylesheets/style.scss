@@ -433,6 +433,18 @@ footer {
 .pt10{
   padding-top: 10px !important;
 }
+
+.panel-header{
+  padding-top: 10px;
+	margin-bottom: 0;
+	background: #323232;
+  p{
+    margin: 10px 0 10px;
+		color: #ffffff;
+		font-size: 1.4rem;
+  }
+}
+
 // Mobile Devices
 @media (max-width: 600px) {
 
