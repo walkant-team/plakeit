@@ -19,10 +19,10 @@
 //= require gmaps/google
 //= require clients/map.google
 //= require clients/facebookmsn
+//= require clients/social
 //= require_self
 
 $(function() {
-
   // flash messages
   $('.toast').delay(5000).fadeOut(1000);
 
