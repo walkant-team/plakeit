@@ -1,6 +1,8 @@
-Category.find_or_create_by!(name: 'concert')
-Category.find_or_create_by!(name: 'musical')
-Category.find_or_create_by!(name: 'theater')
+Category.find_or_create_by!(name: 'conciertos')
+Category.find_or_create_by!(name: 'nocturnos')
+Category.find_or_create_by!(name: 'cultura')
+Category.find_or_create_by!(name: 'viaje&aventura')
+Category.find_or_create_by!(name: 'ejercicios')
 
 # Tag de eventos concierto
 list_tag_concert = ['Música Sinfónica', 'Navidad']
