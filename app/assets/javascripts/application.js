@@ -18,9 +18,9 @@
 //= require underscore
 //= require gmaps/google
 //= require clients/map.google
-//= require_self
 //= require clients/facebookmsn
 //= require clients/social
+//= require_self
 
 $(function() {
   // flash messages
