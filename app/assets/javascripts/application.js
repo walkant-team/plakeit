@@ -22,6 +22,16 @@
 //= require_self
 
 $(function() {
+  $.post(
+    'https://graph.facebook.com',
+    {
+        id: '<?php echo $url; ?>',
+        scrape: true
+    },
+    function(response){
+        console.log(response);
+    }
+  );
   // flash messages
   $('.toast').delay(5000).fadeOut(1000);
 
