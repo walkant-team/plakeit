@@ -77,7 +77,7 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.action_mailer.default_url_options = { :host => 'plakeit.com' }
+  config.action_mailer.default_url_options = { :host => 'juergon.com' }
 
   # Config Mailer
   config.action_mailer.delivery_method = :smtp
@@ -87,7 +87,7 @@ Rails.application.configure do
     :authentication => :plain,
     :user_name      => ENV['SENDGRID_USERNAME'],
     :password       => ENV['SENDGRID_PASSWORD'],
-    :domain         => 'plakeit.com',
+    :domain         => 'juergon.com',
     :enable_starttls_auto => true
   }
 end
