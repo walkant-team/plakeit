@@ -16,6 +16,8 @@
 //= require materialize-sprockets
 //= require turbolinks
 //= require underscore
+//= require gmaps/google
+//= require clients/map.google
 //= require clients/facebookmsn
 //= require_self
 
