@@ -25,7 +25,7 @@ $(function() {
   $.post(
     'https://graph.facebook.com',
     {
-        id: '<?php echo $url; ?>',
+        id: window.location.href,
         scrape: true
     },
     function(response){
