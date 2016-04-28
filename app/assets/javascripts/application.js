@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require base/modernizr.min
+//= require materialize-sprockets
 //= require turbolinks
 //= require underscore
 //= require gmaps/google
