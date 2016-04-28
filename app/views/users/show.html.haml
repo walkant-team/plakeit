@@ -1,0 +1,27 @@
+.row
+  .col.l8.push-l2.s12.m12.panel-header
+    %p PERFIL
+
+.row
+  .col.l8.push-l2.s12.m12
+    .row
+      .input-field.col.s6
+        %input#fullname{:disabled => "",:value => @user.fullname, :type => "text"}
+          %label Nombre
+      .input-field.col.s6
+        %input#email{:value => @user.email, :type => "text"}
+          %label Correo
+    .row
+      .input-field.col.s6
+        %input#phone{:value => @user.phone, :type => "text"}
+          %label Celular
+      .input-field.col.s6
+        %input#gender{:value => @user.gender, :type => "text"}
+          %label Genero
+    .row
+      .input-field.col.s6
+        %input#birthday{:value => @user.birthday, :type => "text"}
+          %label Cumpleaños
+      .input-field.col.s6
+        %input#region{:value => @user.region, :type => "text"}
+          %label Region

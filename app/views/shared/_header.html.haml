@@ -1,6 +1,8 @@
 .navbar-fixed
   %ul#dropdown1.dropdown-content
     %li= link_to 'Logout', logout_path
+    %li= link_to 'Perfil', user_path(current_user)
+
   %nav
     .nav-wrapper{ 'data-no-turbolink' => true }
       - if mobile_device?
